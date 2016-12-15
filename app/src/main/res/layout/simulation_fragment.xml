@@ -1,0 +1,2662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flowchart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/onerousflowchart"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="547dp"
+        android:id="@+id/opHeliContainer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli20"
+            android:layout_toRightOf="@+id/opheli18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli18"
+            android:layout_toRightOf="@+id/opheli16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli16"
+            android:layout_toRightOf="@+id/opheli14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli12"
+            android:layout_toRightOf="@+id/opheli11" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli11"
+            android:layout_toRightOf="@+id/opheli13" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli13"
+            android:layout_toRightOf="@+id/opheli15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli15"
+            android:layout_toRightOf="@+id/opheli17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli17"
+            android:layout_toRightOf="@+id/opheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli10"
+            android:layout_toRightOf="@+id/opheli8"
+            android:layout_alignTop="@+id/opheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli8"
+            android:layout_toRightOf="@+id/opheli6"
+            android:layout_alignTop="@+id/opheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli6"
+            android:layout_toRightOf="@+id/opheli4"
+            android:layout_alignTop="@+id/opheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli4"
+            android:layout_toRightOf="@+id/opheli2"
+            android:layout_alignTop="@+id/opheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli2"
+            android:layout_toRightOf="@+id/opheli1"
+            android:layout_alignTop="@+id/opheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli1"
+            android:layout_toRightOf="@+id/opheli3"
+            android:layout_alignTop="@+id/opheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli3"
+            android:layout_toRightOf="@+id/opheli5"
+            android:layout_alignTop="@+id/opheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli5"
+            android:layout_toRightOf="@+id/opheli7"
+            android:layout_alignTop="@+id/opheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli7"
+            android:layout_toRightOf="@+id/opheli9"
+            android:layout_alignTop="@+id/opheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli9"
+            android:layout_alignParentRight="false"
+            android:layout_below="@+id/opheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/opheli14"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/opheli12"
+            android:layout_toEndOf="@+id/opheli12" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:layout_alignLeft="@+id/opHeliContainer"
+        android:layout_alignStart="@+id/opHeliContainer"
+        android:id="@+id/repairteamcontainer"
+        android:layout_below="@+id/opHeliContainer"
+        android:layout_marginTop="530dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/idlerepair9"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/idlerepair7"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/idlerepair5"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/idlerepair3"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/idlerepair1"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/idlerepair2"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/idlerepair4"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/idlerepair6"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/idlerepair8"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/idlerepair10"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:id="@+id/msrdidlecontainer"
+        android:layout_below="@+id/opHeliContainer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="545dp"
+        android:layout_marginLeft="545dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/msrdidle9"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/msrdidle7"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/msrdidle5"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/msrdidle3"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/msrdidle1"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/msrdidle2"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/msrdidle4"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/msrdidle6"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/msrdidle8"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/msrdidle10"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/failedHeliContainer"
+        android:layout_marginRight="81dp"
+        android:layout_marginEnd="81dp"
+        android:layout_toLeftOf="@+id/repairteamcontainer"
+        android:layout_toStartOf="@+id/repairteamcontainer"
+        android:layout_alignTop="@+id/opHeliContainer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli20"
+            android:layout_toRightOf="@+id/failedheli18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli18"
+            android:layout_toRightOf="@+id/failedheli16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli16"
+            android:layout_toRightOf="@+id/failedheli14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli12"
+            android:layout_toRightOf="@+id/failedheli11" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli11"
+            android:layout_toRightOf="@+id/failedheli13" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli13"
+            android:layout_toRightOf="@+id/failedheli15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli15"
+            android:layout_toRightOf="@+id/failedheli17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli17"
+            android:layout_toRightOf="@+id/failedheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli10"
+            android:layout_toRightOf="@+id/failedheli8"
+            android:layout_alignTop="@+id/failedheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli8"
+            android:layout_toRightOf="@+id/failedheli6"
+            android:layout_alignTop="@+id/failedheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli6"
+            android:layout_toRightOf="@+id/failedheli4"
+            android:layout_alignTop="@+id/failedheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli4"
+            android:layout_toRightOf="@+id/failedheli2"
+            android:layout_alignTop="@+id/failedheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli2"
+            android:layout_toRightOf="@+id/failedheli1"
+            android:layout_alignTop="@+id/failedheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli1"
+            android:layout_toRightOf="@+id/failedheli3"
+            android:layout_alignTop="@+id/failedheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli3"
+            android:layout_toRightOf="@+id/failedheli5"
+            android:layout_alignTop="@+id/failedheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli5"
+            android:layout_toRightOf="@+id/failedheli7"
+            android:layout_alignTop="@+id/failedheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli7"
+            android:layout_toRightOf="@+id/failedheli9"
+            android:layout_alignTop="@+id/failedheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli9"
+            android:layout_alignParentRight="false"
+            android:layout_below="@+id/failedheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/failedheli14"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/failedheli12"
+            android:layout_toEndOf="@+id/failedheli12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/removecontainer"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="110dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/removemsrd10"
+            android:layout_toRightOf="@+id/removemsrd8" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/removemsrd8"
+            android:layout_toRightOf="@+id/removemsrd6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/removemsrd6"
+            android:layout_toRightOf="@+id/removemsrd4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/removemsrd4"
+            android:layout_toRightOf="@+id/removemsrd2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/removemsrd2"
+            android:layout_toRightOf="@+id/removemsrd1"
+            android:layout_marginLeft="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/removemsrd1"
+            android:layout_toRightOf="@+id/removemsrd3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/removemsrd3"
+            android:layout_toRightOf="@+id/removemsrd5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/removemsrd5"
+            android:layout_toRightOf="@+id/removemsrd7" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/removemsrd7"
+            android:layout_toRightOf="@+id/removemsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/removeheli10"
+            android:layout_toRightOf="@+id/removeheli8"
+            android:layout_below="@+id/removemsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/removeheli8"
+            android:layout_toRightOf="@+id/removeheli6"
+            android:layout_below="@+id/removemsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/removeheli6"
+            android:layout_toRightOf="@+id/removeheli4"
+            android:layout_below="@+id/removemsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/removeheli4"
+            android:layout_toRightOf="@+id/removeheli2"
+            android:layout_below="@+id/removemsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/removeheli2"
+            android:layout_toRightOf="@+id/removeheli1"
+            android:layout_below="@+id/removemsrd9"
+            android:layout_marginLeft="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/removeheli1"
+            android:layout_toRightOf="@+id/removeheli3"
+            android:layout_below="@+id/removemsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/removeheli3"
+            android:layout_toRightOf="@+id/removeheli5"
+            android:layout_below="@+id/removemsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/removeheli5"
+            android:layout_toRightOf="@+id/removeheli7"
+            android:layout_below="@+id/removemsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/removeheli7"
+            android:layout_toRightOf="@+id/removeheli9"
+            android:layout_below="@+id/removemsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/removeheli9"
+            android:layout_below="@+id/removemsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/removemsrd9" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitengine"
+        android:layout_below="@+id/removecontainer"
+        android:layout_alignLeft="@+id/removecontainer"
+        android:layout_alignStart="@+id/removecontainer"
+        android:id="@+id/removeengine"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:layout_below="@+id/goodenginecontainer"
+        android:layout_alignLeft="@+id/removecontainer"
+        android:layout_alignStart="@+id/removecontainer"
+        android:id="@+id/toworkshopcontainer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine30"
+            android:layout_toRightOf="@+id/toworkshopengine28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine29"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine27" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine28"
+            android:layout_toRightOf="@+id/toworkshopengine26" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine27"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine25" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine26"
+            android:layout_toRightOf="@+id/toworkshopengine24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine25"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine23" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine24"
+            android:layout_toRightOf="@+id/toworkshopengine22" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine23"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine21" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine22"
+            android:layout_toRightOf="@+id/toworkshopengine20" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine21"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine10" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine10"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine8" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine8"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine6"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine4"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine2"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine1"
+            android:layout_marginLeft="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine1"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine3"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine5"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine7" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine7"
+            android:layout_below="@+id/toworkshopengine19"
+            android:layout_toRightOf="@+id/toworkshopengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine20"
+            android:layout_toRightOf="@+id/toworkshopengine18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine18"
+            android:layout_toRightOf="@+id/toworkshopengine16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine16"
+            android:layout_toRightOf="@+id/toworkshopengine14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine14"
+            android:layout_toRightOf="@+id/toworkshopengine12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine12"
+            android:layout_toRightOf="@+id/toworkshopengine11"
+            android:layout_marginLeft="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine11"
+            android:layout_toRightOf="@+id/toworkshopengine13" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine13"
+            android:layout_toRightOf="@+id/toworkshopengine15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine15"
+            android:layout_toRightOf="@+id/toworkshopengine17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine17"
+            android:layout_toRightOf="@+id/toworkshopengine19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine9"
+            android:layout_below="@+id/toworkshopengine19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/toworkshopengine19" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/badenginecontainer"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/toworkshopcontainer"
+        android:layout_alignLeft="@+id/failedHeliContainer"
+        android:layout_alignStart="@+id/failedHeliContainer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine10"
+            android:layout_below="@+id/badengine19"
+            android:layout_toRightOf="@+id/badengine8" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine8"
+            android:layout_below="@+id/badengine19"
+            android:layout_toRightOf="@+id/badengine6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine6"
+            android:layout_below="@+id/badengine19"
+            android:layout_toRightOf="@+id/badengine4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine4"
+            android:layout_below="@+id/badengine19"
+            android:layout_toRightOf="@+id/badengine2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine2"
+            android:layout_below="@+id/badengine19"
+            android:layout_toRightOf="@+id/badengine1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine1"
+            android:layout_below="@+id/badengine19"
+            android:layout_toRightOf="@+id/badengine3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine3"
+            android:layout_below="@+id/badengine19"
+            android:layout_toRightOf="@+id/badengine5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine5"
+            android:layout_below="@+id/badengine19"
+            android:layout_toRightOf="@+id/badengine7" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine7"
+            android:layout_below="@+id/badengine19"
+            android:layout_toRightOf="@+id/badengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine9"
+            android:layout_below="@+id/badengine19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine20"
+            android:layout_below="@+id/badengine29"
+            android:layout_toRightOf="@+id/badengine18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine18"
+            android:layout_below="@+id/badengine29"
+            android:layout_toRightOf="@+id/badengine16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine16"
+            android:layout_below="@+id/badengine29"
+            android:layout_toRightOf="@+id/badengine14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine14"
+            android:layout_below="@+id/badengine29"
+            android:layout_toRightOf="@+id/badengine12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine12"
+            android:layout_below="@+id/badengine29"
+            android:layout_toRightOf="@+id/badengine11" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine11"
+            android:layout_below="@+id/badengine29"
+            android:layout_toRightOf="@+id/badengine13" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine13"
+            android:layout_below="@+id/badengine29"
+            android:layout_toRightOf="@+id/badengine15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine15"
+            android:layout_below="@+id/badengine29"
+            android:layout_toRightOf="@+id/badengine17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine17"
+            android:layout_below="@+id/badengine29"
+            android:layout_toRightOf="@+id/badengine19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine19"
+            android:layout_below="@+id/badengine29" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine30"
+            android:layout_toRightOf="@+id/badengine28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine28"
+            android:layout_toRightOf="@+id/badengine26" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine26"
+            android:layout_toRightOf="@+id/badengine24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine24"
+            android:layout_toRightOf="@+id/badengine22" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine22"
+            android:layout_toRightOf="@+id/badengine21" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine21"
+            android:layout_toRightOf="@+id/badengine23" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine23"
+            android:layout_toRightOf="@+id/badengine25" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine25"
+            android:layout_toRightOf="@+id/badengine27" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine27"
+            android:layout_toRightOf="@+id/badengine29" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/badengine29" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repaircontainer"
+        android:layout_alignBottom="@+id/badenginecontainer"
+        android:layout_alignLeft="@+id/repairteamcontainer"
+        android:layout_alignStart="@+id/repairteamcontainer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/repairengine10"
+            android:layout_below="@+id/repairteam9"
+            android:layout_toRightOf="@+id/repairengine8" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/repairengine8"
+            android:layout_below="@+id/repairteam9"
+            android:layout_toRightOf="@+id/repairengine6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/repairengine6"
+            android:layout_below="@+id/repairteam9"
+            android:layout_toRightOf="@+id/repairengine4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/repairengine4"
+            android:layout_below="@+id/repairteam9"
+            android:layout_toRightOf="@+id/repairengine2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/repairengine2"
+            android:layout_below="@+id/repairteam9"
+            android:layout_toRightOf="@+id/repairengine1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/repairengine1"
+            android:layout_below="@+id/repairteam9"
+            android:layout_toRightOf="@+id/repairengine3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/repairengine3"
+            android:layout_below="@+id/repairteam9"
+            android:layout_toRightOf="@+id/repairengine5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/repairengine5"
+            android:layout_below="@+id/repairteam9"
+            android:layout_toRightOf="@+id/repairengine7" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/repairengine7"
+            android:layout_below="@+id/repairteam9"
+            android:layout_toRightOf="@+id/repairengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/repairengine9"
+            android:layout_below="@+id/repairteam9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/repairteam10"
+            android:layout_toRightOf="@+id/repairteam8" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/repairteam8"
+            android:layout_toRightOf="@+id/repairteam6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/repairteam6"
+            android:layout_toRightOf="@+id/repairteam4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/repairteam4"
+            android:layout_toRightOf="@+id/repairteam2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/repairteam2"
+            android:layout_toRightOf="@+id/repairteam1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/repairteam1"
+            android:layout_toRightOf="@+id/repairteam3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/repairteam3"
+            android:layout_toRightOf="@+id/repairteam5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/repairteam5"
+            android:layout_toRightOf="@+id/repairteam7" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/repairteam7"
+            android:layout_toRightOf="@+id/repairteam9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitteam"
+            android:id="@+id/repairteam9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_above="@+id/badenginecontainer"
+        android:layout_alignRight="@+id/goodenginecontainer"
+        android:layout_alignEnd="@+id/goodenginecontainer"
+        android:id="@+id/tooperationcontainer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine20"
+            android:layout_toRightOf="@+id/tooperationengine18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine10"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine8" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine18"
+            android:layout_toRightOf="@+id/tooperationengine16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine8"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine16"
+            android:layout_toRightOf="@+id/tooperationengine14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine6"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine14"
+            android:layout_toRightOf="@+id/tooperationengine12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine4"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine12"
+            android:layout_toRightOf="@+id/tooperationengine11"
+            android:layout_marginLeft="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine2"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine1"
+            android:layout_marginLeft="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine1"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine3"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine5"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine7" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine7"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine9"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine21" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine21"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine23" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine23"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine25" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine25"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine27" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine27"
+            android:layout_below="@+id/tooperationengine30"
+            android:layout_toRightOf="@+id/tooperationengine29" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine11"
+            android:layout_toRightOf="@+id/tooperationengine13" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine15"
+            android:layout_toRightOf="@+id/tooperationengine17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine17"
+            android:layout_toRightOf="@+id/tooperationengine19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine19"
+            android:layout_toRightOf="@+id/tooperationengine22" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine22"
+            android:layout_toRightOf="@+id/tooperationengine24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine24"
+            android:layout_toRightOf="@+id/tooperationengine26" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine26"
+            android:layout_toRightOf="@+id/tooperationengine28" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine28"
+            android:layout_toRightOf="@+id/tooperationengine30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine29"
+            android:layout_below="@+id/tooperationengine30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine30" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/tooperationengine13"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tooperationengine5"
+            android:layout_toEndOf="@+id/tooperationengine5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/goodenginecontainer"
+        android:layout_below="@+id/removeengine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine20"
+            android:layout_below="@+id/goodengine29"
+            android:layout_toRightOf="@+id/goodengine18"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine18"
+            android:layout_below="@+id/goodengine29"
+            android:layout_toRightOf="@+id/goodengine16"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine16"
+            android:layout_below="@+id/goodengine29"
+            android:layout_toRightOf="@+id/goodengine14"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine14"
+            android:layout_below="@+id/goodengine29"
+            android:layout_toRightOf="@+id/goodengine12"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine12"
+            android:layout_below="@+id/goodengine29"
+            android:layout_toRightOf="@+id/goodengine11"
+            android:layout_marginLeft="14dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine11"
+            android:layout_below="@+id/goodengine29"
+            android:layout_toRightOf="@+id/goodengine13"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine13"
+            android:layout_below="@+id/goodengine29"
+            android:layout_toRightOf="@+id/goodengine15"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine17"
+            android:layout_below="@+id/goodengine29"
+            android:layout_toRightOf="@+id/goodengine19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine15"
+            android:layout_below="@+id/goodengine29"
+            android:layout_toRightOf="@+id/goodengine17"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine9"
+            android:layout_below="@+id/goodengine19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine10"
+            android:layout_below="@+id/goodengine19"
+            android:layout_toRightOf="@+id/goodengine8"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine8"
+            android:layout_below="@+id/goodengine19"
+            android:layout_toRightOf="@+id/goodengine6"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine6"
+            android:layout_below="@+id/goodengine19"
+            android:layout_toRightOf="@+id/goodengine4"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine4"
+            android:layout_below="@+id/goodengine19"
+            android:layout_toRightOf="@+id/goodengine2"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine2"
+            android:layout_below="@+id/goodengine19"
+            android:layout_toRightOf="@+id/goodengine1"
+            android:layout_marginLeft="14dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine19"
+            android:layout_below="@+id/goodengine29" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine1"
+            android:layout_below="@+id/goodengine19"
+            android:layout_toRightOf="@+id/goodengine3"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine3"
+            android:layout_below="@+id/goodengine19"
+            android:layout_toRightOf="@+id/goodengine5"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine5"
+            android:layout_below="@+id/goodengine19"
+            android:layout_toRightOf="@+id/goodengine7"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine7"
+            android:layout_below="@+id/goodengine19"
+            android:layout_toRightOf="@+id/goodengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine29"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine27"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/goodengine29" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine25"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/goodengine27" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine23"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/goodengine25" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine21"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/goodengine23" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine22"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/goodengine21"
+            android:layout_marginLeft="14dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine24"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/goodengine22" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine26"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/goodengine24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine28"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/goodengine26" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/goodengine30"
+            android:layout_weight="1"
+            android:layout_toRightOf="@+id/goodengine28" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/msrdidlecontainer"
+        android:layout_alignRight="@+id/goodenginecontainer"
+        android:layout_alignEnd="@+id/goodenginecontainer"
+        android:id="@+id/refitcontainer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/refitengine10"
+            android:layout_below="@+id/refitmsrd9"
+            android:layout_toRightOf="@+id/refitengine8" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/refitengine8"
+            android:layout_below="@+id/refitmsrd9"
+            android:layout_toRightOf="@+id/refitengine6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/refitengine6"
+            android:layout_below="@+id/refitmsrd9"
+            android:layout_toRightOf="@+id/refitengine4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/refitengine4"
+            android:layout_below="@+id/refitmsrd9"
+            android:layout_toRightOf="@+id/refitengine2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/refitengine2"
+            android:layout_below="@+id/refitmsrd9"
+            android:layout_toRightOf="@+id/refitengine1"
+            android:layout_marginLeft="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/refitengine1"
+            android:layout_below="@+id/refitmsrd9"
+            android:layout_toRightOf="@+id/refitengine3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/refitengine3"
+            android:layout_below="@+id/refitmsrd9"
+            android:layout_toRightOf="@+id/refitengine5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/refitengine5"
+            android:layout_below="@+id/refitmsrd9"
+            android:layout_toRightOf="@+id/refitengine7"  />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/refitengine9"
+            android:layout_below="@+id/refitmsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/refitmsrd10"
+            android:layout_toRightOf="@+id/refitmsrd8" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/refitmsrd8"
+            android:layout_toRightOf="@+id/refitmsrd6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/refitmsrd6"
+            android:layout_toRightOf="@+id/refitmsrd4" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/refitmsrd4"
+            android:layout_toRightOf="@+id/refitmsrd2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/refitmsrd2"
+            android:layout_toRightOf="@+id/refitmsrd1"
+            android:layout_marginLeft="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/refitmsrd1"
+            android:layout_toRightOf="@+id/refitmsrd3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/refitmsrd3"
+            android:layout_toRightOf="@+id/refitmsrd5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/refitmsrd5"
+            android:layout_toRightOf="@+id/refitmsrd7" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/refitmsrd7"
+            android:layout_toRightOf="@+id/refitmsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/refitheli10"
+            android:layout_toRightOf="@+id/refitheli8"
+            android:layout_below="@+id/refitengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/refitheli8"
+            android:layout_toRightOf="@+id/refitheli6"
+            android:layout_below="@+id/refitengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/refitheli6"
+            android:layout_toRightOf="@+id/refitheli4"
+            android:layout_below="@+id/refitengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/refitheli4"
+            android:layout_toRightOf="@+id/refitheli2"
+            android:layout_below="@+id/refitengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/refitheli2"
+            android:layout_toRightOf="@+id/refitheli1"
+            android:layout_below="@+id/refitengine9"
+            android:layout_marginLeft="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/refitheli1"
+            android:layout_toRightOf="@+id/refitheli3"
+            android:layout_below="@+id/refitengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/refitheli3"
+            android:layout_toRightOf="@+id/refitheli5"
+            android:layout_below="@+id/refitengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/refitheli5"
+            android:layout_toRightOf="@+id/refitheli7"
+            android:layout_below="@+id/refitengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/refitheli7"
+            android:layout_toRightOf="@+id/refitheli9"
+            android:layout_below="@+id/refitengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/refitheli9"
+            android:layout_below="@+id/refitengine9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitmsrd"
+            android:id="@+id/refitmsrd9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitengine"
+            android:id="@+id/refitengine7"
+            android:layout_below="@+id/refitmsrd7"
+            android:layout_toRightOf="@+id/refitengine9"
+            android:layout_toEndOf="@+id/refitengine9" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/qforopcontainer"
+        android:layout_alignTop="@+id/opHeliContainer"
+        android:layout_toRightOf="@+id/opHeliContainer"
+        android:layout_toEndOf="@+id/opHeliContainer"
+        android:layout_marginLeft="82dp"
+        android:layout_marginStart="82dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli20"
+            android:layout_toRightOf="@+id/qforopheli18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli18"
+            android:layout_toRightOf="@+id/qforopheli16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli16"
+            android:layout_toRightOf="@+id/qforopheli14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli12"
+            android:layout_toRightOf="@+id/qforopheli11" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli11"
+            android:layout_toRightOf="@+id/qforopheli13" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli13"
+            android:layout_toRightOf="@+id/qforopheli15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli15"
+            android:layout_toRightOf="@+id/qforopheli17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli17"
+            android:layout_toRightOf="@+id/qforopheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli10"
+            android:layout_toRightOf="@+id/qforopheli8"
+            android:layout_alignTop="@+id/qforopheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli8"
+            android:layout_toRightOf="@+id/qforopheli6"
+            android:layout_alignTop="@+id/qforopheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli6"
+            android:layout_toRightOf="@+id/qforopheli4"
+            android:layout_alignTop="@+id/qforopheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli4"
+            android:layout_toRightOf="@+id/qforopheli2"
+            android:layout_alignTop="@+id/qforopheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli2"
+            android:layout_toRightOf="@+id/qforopheli1"
+            android:layout_alignTop="@+id/qforopheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli1"
+            android:layout_toRightOf="@+id/qforopheli3"
+            android:layout_alignTop="@+id/qforopheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli3"
+            android:layout_toRightOf="@+id/qforopheli5"
+            android:layout_alignTop="@+id/qforopheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli5"
+            android:layout_toRightOf="@+id/qforopheli7"
+            android:layout_alignTop="@+id/qforopheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli7"
+            android:layout_toRightOf="@+id/qforopheli9"
+            android:layout_alignTop="@+id/qforopheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli9"
+            android:layout_alignParentRight="false"
+            android:layout_below="@+id/qforopheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/qforopheli14"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/qforopheli12"
+            android:layout_toEndOf="@+id/qforopheli12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/awaitenginecontainer"
+        android:layout_below="@+id/removeengine"
+        android:layout_alignLeft="@+id/msrdidlecontainer"
+        android:layout_alignStart="@+id/msrdidlecontainer"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli20"
+            android:layout_toRightOf="@+id/awaitengineheli18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli18"
+            android:layout_toRightOf="@+id/awaitengineheli16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli16"
+            android:layout_toRightOf="@+id/awaitengineheli14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli12"
+            android:layout_toRightOf="@+id/awaitengineheli11" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli11"
+            android:layout_toRightOf="@+id/awaitengineheli13" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli13"
+            android:layout_toRightOf="@+id/awaitengineheli15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli15"
+            android:layout_toRightOf="@+id/awaitengineheli17" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli17"
+            android:layout_toRightOf="@+id/awaitengineheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli10"
+            android:layout_toRightOf="@+id/awaitengineheli8"
+            android:layout_alignTop="@+id/awaitengineheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli8"
+            android:layout_toRightOf="@+id/awaitengineheli6"
+            android:layout_alignTop="@+id/awaitengineheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli6"
+            android:layout_toRightOf="@+id/awaitengineheli4"
+            android:layout_alignTop="@+id/awaitengineheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli4"
+            android:layout_toRightOf="@+id/awaitengineheli2"
+            android:layout_alignTop="@+id/awaitengineheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli2"
+            android:layout_toRightOf="@+id/awaitengineheli1"
+            android:layout_alignTop="@+id/awaitengineheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli1"
+            android:layout_toRightOf="@+id/awaitengineheli3"
+            android:layout_alignTop="@+id/awaitengineheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli3"
+            android:layout_toRightOf="@+id/awaitengineheli5"
+            android:layout_alignTop="@+id/awaitengineheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli5"
+            android:layout_toRightOf="@+id/awaitengineheli7"
+            android:layout_alignTop="@+id/awaitengineheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli7"
+            android:layout_toRightOf="@+id/awaitengineheli9"
+            android:layout_alignTop="@+id/awaitengineheli9" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli9"
+            android:layout_alignParentRight="false"
+            android:layout_below="@+id/awaitengineheli19" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bitheli"
+            android:id="@+id/awaitengineheli14"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/awaitengineheli12"
+            android:layout_toEndOf="@+id/awaitengineheli12" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="Days: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysLabel"
+        android:textSize="25sp"
+        android:textStyle="normal|bold"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="false"
+        android:layout_below="@+id/opHeliContainer"
+        android:layout_marginTop="350dp"
+        android:textColor="@android:color/black"
+        android:layout_alignLeft="@+id/opHeliContainer"
+        android:layout_marginLeft="25dp" />
+
+    <TextView
+        android:text="0.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysValue"
+        android:layout_alignBaseline="@+id/daysLabel"
+        android:layout_alignBottom="@+id/daysLabel"
+        android:layout_toRightOf="@+id/daysLabel"
+        android:layout_toEndOf="@+id/daysLabel"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitheli"
+        android:id="@+id/optofailedheli"
+        android:layout_alignLeft="@+id/opHeliContainer"
+        android:layout_alignStart="@+id/opHeliContainer"
+        android:layout_alignBottom="@+id/opHeliContainer"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitheli"
+        android:layout_alignBottom="@+id/failedHeliContainer"
+        android:id="@+id/failedtoremoveheli"
+        android:layout_alignStart="@+id/failedHeliContainer"
+        android:layout_alignLeft="@+id/failedHeliContainer"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitmsrd"
+        android:layout_alignTop="@+id/msrdidlecontainer"
+        android:id="@+id/msrdtoremove"
+        android:layout_alignStart="@+id/msrdidlecontainer"
+        android:layout_alignLeft="@+id/msrdidlecontainer"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitheli"
+        android:id="@+id/removetoheliwait"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/removecontainer"
+        android:layout_alignEnd="@+id/removecontainer"
+        android:layout_alignRight="@+id/removecontainer" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitmsrd"
+        android:id="@+id/removetomsrdidle"
+        android:layout_alignBottom="@+id/removecontainer"
+        android:layout_alignEnd="@+id/removecontainer"
+        android:layout_alignRight="@+id/removecontainer"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitengine"
+        android:id="@+id/dq1totransport"
+        android:layout_above="@+id/toworkshopcontainer"
+        android:layout_alignLeft="@+id/removecontainer"
+        android:layout_marginLeft="61dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitengine"
+        android:layout_alignBottom="@+id/toworkshopcontainer"
+        android:id="@+id/transporttobadeng"
+        android:layout_alignLeft="@+id/toworkshopcontainer"
+        android:layout_alignStart="@+id/toworkshopcontainer"
+        android:visibility="invisible"
+        android:layout_marginLeft="40dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitengine"
+        android:layout_alignLeft="@+id/badenginecontainer"
+        android:layout_alignStart="@+id/badenginecontainer"
+        android:id="@+id/badengtorepair"
+        android:layout_alignBottom="@+id/badenginecontainer"
+        android:layout_marginLeft="130dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitteam"
+        android:layout_alignBottom="@+id/repairteamcontainer"
+        android:layout_alignLeft="@+id/repairteamcontainer"
+        android:layout_alignStart="@+id/repairteamcontainer"
+        android:id="@+id/teamtorepair"
+        android:layout_marginLeft="65dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitteam"
+        android:id="@+id/teamfromrepair"
+        android:layout_alignRight="@+id/repaircontainer"
+        android:layout_alignEnd="@+id/repaircontainer"
+        android:layout_alignTop="@+id/repaircontainer"
+        android:layout_marginRight="50dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitengine"
+        android:layout_alignBottom="@+id/repaircontainer"
+        android:id="@+id/fromrepairtodq2"
+        android:layout_alignRight="@+id/repaircontainer"
+        android:layout_alignEnd="@+id/repaircontainer"
+        android:layout_marginRight="50dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitengine"
+        android:layout_alignBottom="@+id/repaircontainer"
+        android:layout_toRightOf="@+id/repaircontainer"
+        android:layout_toEndOf="@+id/repaircontainer"
+        android:id="@+id/dq2totransport"
+        android:layout_marginLeft="200dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitengine"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:id="@+id/transporttogoodeng"
+        android:layout_alignRight="@+id/tooperationcontainer"
+        android:layout_alignEnd="@+id/tooperationcontainer"
+        android:layout_alignBottom="@+id/tooperationcontainer"
+        android:layout_marginRight="68dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitheli"
+        android:layout_alignBottom="@+id/awaitenginecontainer"
+        android:layout_toRightOf="@+id/awaitenginecontainer"
+        android:layout_toEndOf="@+id/awaitenginecontainer"
+        android:id="@+id/helitorefit"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitengine"
+        android:layout_alignBottom="@+id/goodenginecontainer"
+        android:id="@+id/engtorefit"
+        android:layout_alignEnd="@+id/goodenginecontainer"
+        android:layout_alignRight="@+id/goodenginecontainer"
+        android:layout_marginRight="68dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitmsrd"
+        android:layout_alignBottom="@+id/msrdidlecontainer"
+        android:layout_toRightOf="@+id/awaitenginecontainer"
+        android:layout_toEndOf="@+id/awaitenginecontainer"
+        android:id="@+id/msrdtorefit"
+        android:layout_marginLeft="-21dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitmsrd"
+        android:layout_alignBottom="@+id/refitcontainer"
+        android:id="@+id/msrdrefittoidle"
+        android:layout_alignStart="@+id/refitcontainer"
+        android:layout_alignLeft="@+id/refitcontainer"
+        android:layout_marginLeft="10dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitheli"
+        android:layout_alignBottom="@+id/refitcontainer"
+        android:layout_toRightOf="@+id/refitcontainer"
+        android:layout_toEndOf="@+id/refitcontainer"
+        android:id="@+id/helitoqforop"
+        android:layout_marginLeft="-86dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bitheli"
+        android:layout_alignBottom="@+id/qforopcontainer"
+        android:id="@+id/helitoop"
+        android:layout_alignStart="@+id/qforopcontainer"
+        android:layout_alignLeft="@+id/qforopcontainer"
+        android:layout_marginLeft="18dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:text="Run Simulation"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/runSimButton"
+        android:onClick="runSimClick"
+        android:layout_centerHorizontal="false"
+        android:layout_below="@+id/awaitenginecontainer"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="75dp"
+        android:layout_toLeftOf="@+id/daysLabel" />
+
+    <Button
+        android:text="Reset Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resetImageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/msrdrefittoidle"
+        android:layout_alignStart="@+id/msrdrefittoidle" />
+
+    <Button
+        android:text="Toggle Animation"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/toggleanim"
+        android:layout_alignBaseline="@+id/togglegraphics"
+        android:layout_alignBottom="@+id/togglegraphics"
+        android:layout_toRightOf="@+id/togglegraphics"
+        android:layout_toEndOf="@+id/togglegraphics" />
+
+    <Button
+        android:text="Toggle Graphics"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/togglegraphics"
+        android:layout_alignBaseline="@+id/runSimButton"
+        android:layout_alignBottom="@+id/runSimButton"
+        android:layout_toRightOf="@+id/runSimButton"
+        android:layout_toEndOf="@+id/runSimButton" />
+
+    <TextView
+        android:text="Animations: ON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/animstatus"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        android:textColor="#42B956" />
+
+    <TextView
+        android:text="Graphics: ON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/animstatus"
+        android:layout_toStartOf="@+id/animstatus"
+        android:id="@+id/graphicsstatus"
+        android:padding="10dp"
+        android:textStyle="normal|bold"
+        android:textColor="#42B956" />
+
+</RelativeLayout>

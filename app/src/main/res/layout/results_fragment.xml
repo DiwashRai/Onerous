@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+                <TableLayout
+                    android:id="@+id/table_main"
+                    android:background="#3d455b"
+                    android:layout_width="390dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" >
+                </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:text="Transit from Repair"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enginerepairstatsbtn"
+        android:layout_toLeftOf="@+id/scrollView1"
+        android:layout_toStartOf="@+id/scrollView1"
+        android:id="@+id/transitfromrepairstatsbtn" />
+
+    <Button
+        android:text="Repair Team Working"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msrdworkingstatsbtn"
+        android:layout_alignEnd="@+id/ophelistatsbtn"
+        android:layout_alignRight="@+id/ophelistatsbtn"
+        android:id="@+id/repairteamworkingstatsbtn" />
+
+    <Button
+        android:text="Failed Queue"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repairteamworkingstatsbtn"
+        android:layout_alignEnd="@+id/ophelistatsbtn"
+        android:layout_alignRight="@+id/ophelistatsbtn"
+        android:id="@+id/failedqstatsbtn" />
+
+    <Button
+        android:text="Remove Engine"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/failedqstatsbtn"
+        android:layout_alignEnd="@+id/ophelistatsbtn"
+        android:layout_alignRight="@+id/ophelistatsbtn"
+        android:id="@+id/removeenginestatsbtn" />
+
+    <Button
+        android:text="Refit Engine"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/scrollView1"
+        android:layout_toEndOf="@+id/scrollView1"
+        android:id="@+id/refitenginestatsbtn" />
+
+    <Button
+        android:text="Queue for Operational"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/refitenginestatsbtn"
+        android:layout_alignLeft="@+id/refitenginestatsbtn"
+        android:layout_alignStart="@+id/refitenginestatsbtn"
+        android:id="@+id/qforopstatsbtn" />
+
+    <Button
+        android:text="Helicopters awaiting Engines"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qforopstatsbtn"
+        android:layout_alignLeft="@+id/qforopstatsbtn"
+        android:layout_alignStart="@+id/qforopstatsbtn"
+        android:id="@+id/heliwaitstatsbtn" />
+
+    <Button
+        android:text="MSRD Idle Queue"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heliwaitstatsbtn"
+        android:layout_alignLeft="@+id/heliwaitstatsbtn"
+        android:layout_alignStart="@+id/heliwaitstatsbtn"
+        android:id="@+id/msrdidlesqstatsbtn" />
+
+    <Button
+        android:text="Operational Helicopters"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ophelistatsbtn"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/transittorepairstatsbtn"
+        android:layout_toStartOf="@+id/transittorepairstatsbtn" />
+
+    <Button
+        android:text="Engine Repair"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/enginerepairstatsbtn"
+        android:layout_toLeftOf="@+id/scrollView1"
+        android:layout_toStartOf="@+id/scrollView1"
+        android:layout_below="@+id/badengineqstatsbtn" />
+
+    <Button
+        android:text="Repair Teams Idle Queue"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/repairteamsidleqstatsbtn"
+        android:layout_below="@+id/msrdidlesqstatsbtn"
+        android:layout_alignLeft="@+id/msrdidlesqstatsbtn"
+        android:layout_alignStart="@+id/msrdidlesqstatsbtn" />
+
+    <Button
+        android:text="Transit to Repair"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/transittorepairstatsbtn"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/scrollView1"
+        android:layout_toStartOf="@+id/scrollView1" />
+
+    <Button
+        android:text="Bad Engine Queue"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/badengineqstatsbtn"
+        android:layout_toLeftOf="@+id/scrollView1"
+        android:layout_toStartOf="@+id/scrollView1"
+        android:layout_below="@+id/transittorepairstatsbtn" />
+
+    <Button
+        android:text="MSRD Working"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/msrdworkingstatsbtn"
+        android:layout_below="@+id/ophelistatsbtn"
+        android:layout_alignEnd="@+id/ophelistatsbtn"
+        android:layout_alignRight="@+id/ophelistatsbtn" />
+
+    <Button
+        android:text="Good Engine Queue"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/goodengineqstatsbtn"
+        android:layout_alignBaseline="@+id/removeenginestatsbtn"
+        android:layout_alignBottom="@+id/removeenginestatsbtn"
+        android:layout_toRightOf="@+id/failedqstatsbtn"
+        android:layout_toEndOf="@+id/failedqstatsbtn" />
+
+</RelativeLayout>
+

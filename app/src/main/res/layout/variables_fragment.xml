@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <Button
+        android:text="Update Variables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateVariablesButton"
+        android:onClick="animate"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/updateVariablesButton"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginBottom="69dp"
+        android:layout_centerHorizontal="true"
+        android:selectAllOnFocus="true">
+
+        <TextView
+            android:text="Max Helicopters: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView18"
+            android:paddingTop="10dp"
+            android:layout_alignTop="@+id/helicoptersText"
+            android:layout_toRightOf="@+id/helicoptersText"
+            android:layout_toEndOf="@+id/helicoptersText" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/daysText"
+            android:text="250"
+            android:textSize="14sp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/textView11"
+            android:layout_toRightOf="@+id/textView12"
+            android:layout_toEndOf="@+id/textView12" />
+
+        <TextView
+            android:text="Warm-up period: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textView11"
+            android:layout_toRightOf="@+id/textView11"
+            android:layout_toEndOf="@+id/textView11" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/warmUpText"
+            android:text="25"
+            android:textSize="14sp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:layout_alignTop="@+id/textView14"
+            android:layout_toRightOf="@+id/textView14"
+            android:layout_toEndOf="@+id/textView14" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/maxHelicoptersText"
+            android:text="10"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_alignTop="@+id/textView18"
+            android:layout_toRightOf="@+id/textView18"
+            android:layout_toEndOf="@+id/textView18" />
+
+        <TextView
+            android:text="Spare Engines: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView19"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/helicoptersText"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/spareEnginesText"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_below="@+id/helicoptersText"
+            android:layout_toRightOf="@+id/textView19"
+            android:layout_toEndOf="@+id/textView19" />
+
+        <TextView
+            android:text="REME MSRD: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView20"
+            android:paddingTop="10dp"
+            android:layout_alignTop="@+id/spareEnginesText"
+            android:layout_toRightOf="@+id/spareEnginesText"
+            android:layout_toEndOf="@+id/spareEnginesText" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/repairTeamsText"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_below="@+id/spareEnginesText"
+            android:layout_toRightOf="@+id/textView21"
+            android:layout_toEndOf="@+id/textView21" />
+
+        <TextView
+            android:text="Days: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView12"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textView11"
+            android:layout_alignLeft="@+id/textView11"
+            android:layout_alignStart="@+id/textView11" />
+
+        <TextView
+            android:text="Entity Numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/daysText"
+            android:layout_alignLeft="@+id/textView12"
+            android:layout_alignStart="@+id/textView12" />
+
+        <TextView
+            android:text="Helicopters: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView17"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/textView15"
+            android:layout_alignLeft="@+id/textView15"
+            android:layout_alignStart="@+id/textView15" />
+
+        <TextView
+            android:text="Repair Teams: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView21"
+            android:paddingTop="10dp"
+            android:layout_alignTop="@+id/repairTeamsText"
+            android:layout_alignLeft="@+id/textView19"
+            android:layout_alignStart="@+id/textView19" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/rememsrdText"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_below="@+id/maxHelicoptersText"
+            android:layout_toRightOf="@+id/textView20"
+            android:layout_toEndOf="@+id/textView20" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/helicoptersText"
+            android:text="10"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:layout_below="@+id/textView15"
+            android:layout_toRightOf="@+id/textView17"
+            android:layout_toEndOf="@+id/textView17" />
+
+        <TextView
+            android:text="Run Parameters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
