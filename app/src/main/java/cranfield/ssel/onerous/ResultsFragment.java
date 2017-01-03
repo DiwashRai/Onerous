@@ -14,7 +14,14 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+
 import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ResultsFragment extends Fragment{
 
@@ -164,7 +171,7 @@ public class ResultsFragment extends Fragment{
         TableLayout resultstable1 = (TableLayout) view.findViewById(R.id.table_main);
         TableRow toptablerow = new TableRow(this.getActivity());
         TextView tv0 = new TextView(this.getActivity());
-        tv0.setText("   NO TABLE LOADED   ");
+        tv0.setText("   NO AVAILABLE DATA   ");
         tv0.setTextColor(Color.WHITE);
         toptablerow.addView(tv0);
         toptablerow.setGravity(Gravity.CENTER);
@@ -207,6 +214,23 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.operationalStats, resultstable1);
+
+        LineChart chart = (LineChart) view.findViewById(R.id.graph);
+
+        List<Entry> entries = new ArrayList<Entry>();
+
+        for (int i=0; i<4000;++i){
+            if ((Variables.opGraphData[i][0] != 0) || (Variables.opGraphData[i][1]!=0)){
+                entries.add(new Entry((float)Variables.opGraphData[i][0],(float)Variables.opGraphData[i][1]));
+            }
+
+        }
+
+        LineDataSet dataSet = new LineDataSet(entries, "Test chart");
+
+        LineData lineData = new LineData(dataSet);
+        chart.setData(lineData);
+        chart.invalidate();
     }
 
     public void showMSRDworkingstats(View view)
@@ -506,7 +530,7 @@ public class ResultsFragment extends Fragment{
         toptablerow.setGravity(Gravity.CENTER);
         resultstable1.addView(toptablerow);
 
-        populateResultsTable(Variables.repairStats, resultstable1);
+        populateResultsTable(Variables.qHelisNoEngineStats, resultstable1);
     }
 
     public void showMSRDidlestats(View view)

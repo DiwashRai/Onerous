@@ -186,7 +186,26 @@ public class SimMethods {
         }
     }
 
-    public void resetAllStats () {resetStats(Variables.operationalStats);}
+    public void resetAllStats () {
+        resetStats(Variables.operationalStats);
+
+        resetStats(Variables.qforRemovalStats);
+        resetStats(Variables.removalStats);
+        resetStats(Variables.qHelisNoEngineStats);
+        resetStats(Variables.MSRDIdleStats);
+        resetStats(Variables.qforToWorkshopStats);
+        resetStats(Variables.toWorkshopStats);
+        resetStats(Variables.qforRepairStats);
+        resetStats(Variables.repairStats);
+        resetStats(Variables.repairTeamsIdleStats);
+        resetStats(Variables.qforToOperationStats);
+        resetStats(Variables.toOperationStats);
+        resetStats(Variables.qforRefitStats);
+        resetStats(Variables.refitStats);
+        resetStats(Variables.qforOperationalStats);
+
+        resetStats(Variables.MSRDWorkingStats);
+    }
 
     public void getEvent ()
     {

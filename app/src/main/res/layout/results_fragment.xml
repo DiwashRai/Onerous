@@ -159,5 +159,12 @@
         android:layout_toRightOf="@+id/failedqstatsbtn"
         android:layout_toEndOf="@+id/failedqstatsbtn" />
 
+    <com.github.mikephil.charting.charts.LineChart
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:id="@+id/graph"
+        android:layout_below="@+id/scrollView1"
+        android:layout_centerHorizontal="true"  />
+
 </RelativeLayout>
 

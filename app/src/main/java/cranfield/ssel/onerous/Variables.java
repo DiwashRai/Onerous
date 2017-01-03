@@ -67,4 +67,8 @@ public class Variables {
     static ResultsData qforOperationalStats = new ResultsData();
 
     static ResultsData MSRDWorkingStats = new ResultsData();
+
+    static int maxGraphPoints = 4000;
+    static int numGraphPoint = 0;
+    static double [][] opGraphData = new double [maxGraphPoints][2];
 }

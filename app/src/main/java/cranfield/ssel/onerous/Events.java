@@ -34,7 +34,13 @@ public class Events {
             try {Thread.sleep(1000);}
             catch (InterruptedException e) {e.printStackTrace();}
         }
+        if ((Variables.numGraphPoint <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            saveGraphStats();
+        }
         Variables.numOperational = Variables.numOperational - 1;
+        if ((Variables.numGraphPoint <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            saveGraphStats();
+        }
 
         stats.updateStats(Variables.qforRemovalStats, Variables.numQforRemoval);
         doGraphic("Failed",Variables.numQforRemoval,true);
@@ -483,7 +489,13 @@ public class Events {
             Variables.numQforOperational = Variables.numQforOperational -1;
 
             stats.updateStats(Variables.operationalStats, Variables.numOperational );
+            if ((Variables.numGraphPoint <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+                saveGraphStats();
+            }
             Variables.numOperational = Variables.numOperational + 1;
+            if ((Variables.numGraphPoint <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+                saveGraphStats();
+            }
             doGraphic("Operational", Variables.numOperational, true);
 
             t = stats.getDuration(Variables.operationalTime);
@@ -508,5 +520,13 @@ public class Events {
                 }
             });
         }
+    }
+
+    public void saveGraphStats ()
+    {
+        Variables.opGraphData[Variables.numGraphPoint][0] = Variables.SimTime;
+        Variables.opGraphData[Variables.numGraphPoint][1] = Variables.numOperational;
+
+        Variables.numGraphPoint += 1;
     }
 }
