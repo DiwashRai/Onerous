@@ -26,6 +26,7 @@ public class SimMethods {
         initVariables();
         initDataVariables();
         resetAllStats();
+        resetAllGraphData();
 
         Variables.SimTime = 0.0;
         Variables.endFlag = false;
@@ -131,7 +132,7 @@ public class SimMethods {
         Stats stats = new Stats();
         for (int i = 0; i<Variables.numOperational;i++)
         {
-            Variables.newEvent = (new EventData (stats.getDuration(Variables.operationalTime),1)); // 1 denotes normal distribution type here. (2 = uniform random, 3 = constant)
+            Variables.newEvent = (new EventData (stats.getDuration(Variables.operationalTime),1));  //Integer value here denotes "kind" of event. (1 here = engine failure event)
             addEvent(Variables.list, Variables.newEvent);
         }
     }
@@ -177,6 +178,7 @@ public class SimMethods {
 
     public void resetStats (ResultsData info)
     {
+        Variables.opheliGraphPointNum =0;
         info.setLastTime(0.0);
         info.setMean(0.0);
         for (int i =0; i<30; i++)
@@ -205,6 +207,32 @@ public class SimMethods {
         resetStats(Variables.qforOperationalStats);
 
         resetStats(Variables.MSRDWorkingStats);
+    }
+
+    public void resetAllGraphData()
+    {
+        resetGraphData(Variables.opHeliGraphData);
+        resetGraphData(Variables.msrdWorkingGraphData);
+        resetGraphData(Variables.repairWorkingGraphData);
+        resetGraphData(Variables.failedQGraphData);
+        resetGraphData(Variables.removeEngGraphData);
+        resetGraphData(Variables.toRepairGraphData);
+        resetGraphData(Variables.badEngQGraphData);
+        resetGraphData(Variables.engRepairGraphData);
+        resetGraphData(Variables.toOperationGraphData);
+        resetGraphData(Variables.goodEngQGraphData);
+        resetGraphData(Variables.refitEngGraphData);
+        resetGraphData(Variables.qForOpGraphData);
+        resetGraphData(Variables.heliAwaitEngGraphData);
+        resetGraphData(Variables.msrdIdleQGraphData);
+        resetGraphData(Variables.repairTeamIdleGraphData);
+    }
+
+    public void resetGraphData(double [][] graphData){
+        for (int i=0; i<Variables.maxGraphPoints; ++i){
+            graphData[i][0] = 0;
+            graphData[i][1] = 0;
+        }
     }
 
     public void getEvent ()

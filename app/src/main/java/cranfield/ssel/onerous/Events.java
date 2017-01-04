@@ -34,17 +34,17 @@ public class Events {
             try {Thread.sleep(1000);}
             catch (InterruptedException e) {e.printStackTrace();}
         }
-        if ((Variables.numGraphPoint <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
-            saveGraphStats();
+        if ((Variables.opheliGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            saveGraphStats("opHeli");
         }
         Variables.numOperational = Variables.numOperational - 1;
-        if ((Variables.numGraphPoint <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
-            saveGraphStats();
+        if ((Variables.opheliGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            saveGraphStats("opHeli");
         }
 
         stats.updateStats(Variables.qforRemovalStats, Variables.numQforRemoval);
-        doGraphic("Failed",Variables.numQforRemoval,true);
         Variables.numQforRemoval = Variables.numQforRemoval + 1;
+        doGraphic("Failed",Variables.numQforRemoval,true);
 
         startOperational();
         startRemoval();
@@ -54,7 +54,6 @@ public class Events {
     {
         double t;
         EventData N = new EventData();
-
         if ((Variables.numQforRemoval > 0) && (Variables.numMSRDIdle > 0))
         {
             stats.updateStats(Variables.qforRemovalStats, Variables.numQforRemoval);
@@ -489,12 +488,12 @@ public class Events {
             Variables.numQforOperational = Variables.numQforOperational -1;
 
             stats.updateStats(Variables.operationalStats, Variables.numOperational );
-            if ((Variables.numGraphPoint <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
-                saveGraphStats();
+            if ((Variables.opheliGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+                saveGraphStats("opHeli");
             }
             Variables.numOperational = Variables.numOperational + 1;
-            if ((Variables.numGraphPoint <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
-                saveGraphStats();
+            if ((Variables.opheliGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+                saveGraphStats("opHeli");
             }
             doGraphic("Operational", Variables.numOperational, true);
 
@@ -522,11 +521,62 @@ public class Events {
         }
     }
 
-    public void saveGraphStats ()
+    public void saveGraphStats (String whichGraph )
     {
-        Variables.opGraphData[Variables.numGraphPoint][0] = Variables.SimTime;
-        Variables.opGraphData[Variables.numGraphPoint][1] = Variables.numOperational;
+        switch(whichGraph){
+            case "opHeli":
+                Variables.opHeliGraphData[Variables.opheliGraphPointNum][0] = Variables.SimTime;
+                Variables.opHeliGraphData[Variables.opheliGraphPointNum][1] = Variables.numOperational;
 
-        Variables.numGraphPoint += 1;
+                Variables.opheliGraphPointNum += 1;
+                break;
+            case "msrdWorking":
+
+                break;
+            case "repairWorking":
+
+                break;
+            case "failedQ":
+
+                break;
+            case "removeEng":
+
+                break;
+            case "toRepair":
+
+                break;
+            case "badEngQ":
+
+                break;
+            case "engRepair":
+
+                break;
+            case "toOperation":
+
+                break;
+            case "goodEngQ":
+
+                break;
+            case "refitEng":
+
+                break;
+            case "qForOp":
+
+                break;
+            case "heliAwaitEng":
+
+                break;
+            case "msrdIdleQ":
+
+                break;
+            case "repairTeamIdle":
+
+                break;
+            default:
+                System.out.println("Invalid String entered into saveGraphStats method.");
+                break;
+
+
+        }
     }
 }

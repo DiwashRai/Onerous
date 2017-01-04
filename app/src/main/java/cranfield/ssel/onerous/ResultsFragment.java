@@ -217,20 +217,30 @@ public class ResultsFragment extends Fragment{
 
         LineChart chart = (LineChart) view.findViewById(R.id.graph);
 
-        List<Entry> entries = new ArrayList<Entry>();
+        if (Variables.opheliGraphPointNum ==0){
+            chart.setBackgroundColor(android.graphics.Color.rgb(229,231,233));
+            chart.invalidate();
+        }
+        else
+        {
+            List<Entry> entries = new ArrayList<Entry>();
+            for (int i=0; i<4000;++i){
+                if ((Variables.opHeliGraphData[i][0] != 0) || (Variables.opHeliGraphData[i][1]!=0)){
+                    entries.add(new Entry((float)Variables.opHeliGraphData[i][0],(float)Variables.opHeliGraphData[i][1]));
+                }
 
-        for (int i=0; i<4000;++i){
-            if ((Variables.opGraphData[i][0] != 0) || (Variables.opGraphData[i][1]!=0)){
-                entries.add(new Entry((float)Variables.opGraphData[i][0],(float)Variables.opGraphData[i][1]));
             }
 
+            LineDataSet dataSet = new LineDataSet(entries, "Operational Helicopters");
+            dataSet.setDrawCircles(false);
+            dataSet.setLineWidth(3);
+            dataSet.setColor(android.graphics.Color.rgb(70,130,180));
+
+            LineData lineData = new LineData(dataSet);
+            chart.setBackgroundColor(android.graphics.Color.rgb(229,231,233));
+            chart.setData(lineData);
+            chart.invalidate();
         }
-
-        LineDataSet dataSet = new LineDataSet(entries, "Test chart");
-
-        LineData lineData = new LineData(dataSet);
-        chart.setData(lineData);
-        chart.invalidate();
     }
 
     public void showMSRDworkingstats(View view)
