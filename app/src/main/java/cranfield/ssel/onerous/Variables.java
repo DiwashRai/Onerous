@@ -101,7 +101,7 @@ public class Variables {
     static int toOperationGraphPointNum = 0;
     static int goodEngQGraphPointNum = 0;
     static int refitEngGraphPointNum = 0;
-    static int qForOperationalGraphPointNum = 0;
+    static int qForOpGraphPointNum = 0;
     static int heliAwaitEngGraphPointNum = 0;
     static int msrdIdleQGraphPointNum = 0;
     static int repairTeamIdleGraphPointNum = 0;

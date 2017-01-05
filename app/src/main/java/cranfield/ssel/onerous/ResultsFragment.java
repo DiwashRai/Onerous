@@ -215,32 +215,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.operationalStats, resultstable1);
 
-        LineChart chart = (LineChart) view.findViewById(R.id.graph);
-
-        if (Variables.opheliGraphPointNum ==0){
-            chart.setBackgroundColor(android.graphics.Color.rgb(229,231,233));
-            chart.invalidate();
-        }
-        else
-        {
-            List<Entry> entries = new ArrayList<Entry>();
-            for (int i=0; i<4000;++i){
-                if ((Variables.opHeliGraphData[i][0] != 0) || (Variables.opHeliGraphData[i][1]!=0)){
-                    entries.add(new Entry((float)Variables.opHeliGraphData[i][0],(float)Variables.opHeliGraphData[i][1]));
-                }
-
-            }
-
-            LineDataSet dataSet = new LineDataSet(entries, "Operational Helicopters");
-            dataSet.setDrawCircles(false);
-            dataSet.setLineWidth(3);
-            dataSet.setColor(android.graphics.Color.rgb(70,130,180));
-
-            LineData lineData = new LineData(dataSet);
-            chart.setBackgroundColor(android.graphics.Color.rgb(229,231,233));
-            chart.setData(lineData);
-            chart.invalidate();
-        }
+        populateGraph(view, Variables.opheliGraphPointNum, Variables.opHeliGraphData, "Operational Helicopters");
     }
 
     public void showMSRDworkingstats(View view)
@@ -316,6 +291,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.qforRemovalStats, resultstable1);
+
+        populateGraph(view, Variables.failedQGraphPointNum, Variables.failedQGraphData, "Failed Queue");
     }
 
     public void showRemoveEnginestats(View view)
@@ -628,6 +605,33 @@ public class ResultsFragment extends Fragment{
         resultTv1.setTextColor(Color.WHITE);
         tbrow.addView(resultTv1);
         table.addView(tbrow);
+    }
+
+    public void populateGraph (View view, int graphPointNum, double [][] graphData, String dataSetlabel){
+        LineChart chart = (LineChart) view.findViewById(R.id.graph);
+
+        if (graphPointNum ==0){
+            chart.setBackgroundColor(android.graphics.Color.rgb(229,231,233));
+            chart.invalidate();
+        }
+        else {
+            List<Entry> entries = new ArrayList<Entry>();
+            for (int i = 0; i < 4000; ++i) {
+                if ((graphData[i][0] != 0) || (graphData[i][1] != 0)) {
+                    entries.add(new Entry((float) graphData[i][0], (float) graphData[i][1]));
+                }
+            }
+
+            LineDataSet dataSet = new LineDataSet(entries, dataSetlabel);
+            dataSet.setDrawCircles(false);
+            dataSet.setLineWidth(3);
+            dataSet.setColor(android.graphics.Color.rgb(70, 130, 180));
+
+            LineData lineData = new LineData(dataSet);
+            chart.setBackgroundColor(android.graphics.Color.rgb(229, 231, 233));
+            chart.setData(lineData);
+            chart.invalidate();
+        }
     }
 }
 

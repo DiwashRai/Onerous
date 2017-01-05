@@ -93,7 +93,8 @@ public class Stats {
             Variables.MSRDWorkingStats.setNumbers(i, Variables.MSRDIdleStats.getNumber(Variables.MSRD-i));
         }
         Variables.MSRDWorkingStats.setCumulative(29, Variables.MSRDWorkingStats.getNumber(29));
-        for (int i = 28; i>-1; i--) Variables.MSRDWorkingStats.setCumulative(i, Variables.MSRDWorkingStats.getNumber(i)+ Variables.MSRDWorkingStats.getCumulative(i+1));
+        for (int i = 28; i>-1; i--)
+            Variables.MSRDWorkingStats.setCumulative(i, Variables.MSRDWorkingStats.getNumber(i)+ Variables.MSRDWorkingStats.getCumulative(i+1));
 
         if (Variables.MSRDIdleStats.getMean() > 0){
             Variables.MSRDWorkingStats.setMean(Variables.MSRD - Variables.MSRDIdleStats.getMean());
