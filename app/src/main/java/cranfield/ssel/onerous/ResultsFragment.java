@@ -404,7 +404,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.repairStats, resultstable1);
 
-        populateGraph(view, Variables.engRepairGraphPointNum, Variables.engRepairGraphData, "Repair team working");
+        populateGraph(view, Variables.engRepairGraphPointNum, Variables.engRepairGraphData, "Engines being repaired");
     }
 
     public void showTransitFromRepairstats(View view)
