@@ -179,7 +179,10 @@ public class Events {
         doGraphic("MSRDidle",Variables.numMSRDIdle, true);
 
         stats.updateStats(Variables.qforToWorkshopStats, Variables.numQforToWorkshop);
+
+        //DummyQ1 node.
         Variables.numQforToWorkshop = Variables.numQforToWorkshop + 1;
+
         if ((Variables.animationsOn)&& (Variables.graphicsOn))
         {
             handler.post(new Runnable() {
@@ -228,6 +231,8 @@ public class Events {
                 try {Thread.sleep(2400);}
                 catch (InterruptedException e) {e.printStackTrace();}
             }
+
+            //DummyQ1 node.
             Variables.numQforToWorkshop = Variables.numQforToWorkshop - 1;
 
             stats.updateStats(Variables.toWorkshopStats, Variables.numToWorkshop);
@@ -604,11 +609,13 @@ public class Events {
 
             stats.updateStats(Variables.toOperationStats, Variables.numToOperation);
 
-            if ((Variables.goodEngQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
-                saveGraphStats("goodEngQ");
+            if ((Variables.toOperationGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+                saveGraphStats("toOperation");
             }
             Variables.numToOperation = Variables.numToOperation + 1;
-
+            if ((Variables.toOperationGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+                saveGraphStats("toOperation");
+            }
 
             doGraphic("ToOperation", Variables.numToOperation, true);
 
@@ -619,11 +626,19 @@ public class Events {
         }
     }
 
-    public void endToOperation () // endToOperation -1. numQforRefit +1.
+    public void endToOperation () // numToOperation -1. numQforRefit +1.
     {
         stats.updateStats(Variables.toOperationStats, Variables.numToOperation);
         doGraphic("ToOperation", Variables.numToOperation, false);
+
+        if ((Variables.toOperationGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            saveGraphStats("toOperation");
+        }
         Variables.numToOperation = Variables.numToOperation -1;
+        if ((Variables.toOperationGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            saveGraphStats("toOperation");
+        }
+
         if ((Variables.animationsOn)&& (Variables.graphicsOn))
         {
             handler.post(new Runnable() {
@@ -671,7 +686,14 @@ public class Events {
                 try {Thread.sleep(1000);}
                 catch (InterruptedException e) {e.printStackTrace();}
             }
+
+            if ((Variables.qForOpGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+                saveGraphStats("qForOp");
+            }
             Variables.numQforOperational = Variables.numQforOperational -1;
+            if ((Variables.qForOpGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+                saveGraphStats("qForOp");
+            }
 
             stats.updateStats(Variables.operationalStats, Variables.numOperational );
             if ((Variables.opheliGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
@@ -716,18 +738,10 @@ public class Events {
 
                 Variables.opheliGraphPointNum += 1;
                 break;
-            case "msrdWorking":
-                Variables.msrdWorkingGraphData[Variables.msrdWorkingGraphPointNum][0] = Variables.SimTime;
-                Variables.msrdWorkingGraphData[Variables.msrdWorkingGraphPointNum][1] = Variables.MSRD -  Variables.numMSRDIdle;
 
-                Variables.msrdIdleQGraphPointNum += 1;
-                break;
-            case "repairWorking":
-                Variables.repairWorkingGraphData[Variables.repairWorkingGraphPointNum][0] = Variables.SimTime;
-                Variables.repairWorkingGraphData[Variables.repairWorkingGraphPointNum][1] = Variables.numRepair; //Variables.numRepair is equivalent to 'Variables.repairTeams = Variables.numRepairTeamsIdle'
-                                                                                                                    //However, Variables.numRepair is more efficient. Perhaps less understandable though?
-                Variables.repairWorkingGraphPointNum += 1;
-                break;
+            //repairWorking and msrdWorking cases are irrelevant.
+            //msrdWorking graph data will be generated from msrdIdle data. repairWorking graph data is equivalent to engRepair
+
             case "failedQ":
                 Variables.failedQGraphData[Variables.failedQGraphPointNum][0] = Variables.SimTime;
                 Variables.failedQGraphData[Variables.failedQGraphPointNum][1] = Variables.numQforRemoval;
