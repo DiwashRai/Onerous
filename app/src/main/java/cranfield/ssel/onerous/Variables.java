@@ -68,13 +68,12 @@ public class Variables {
 
     static ResultsData MSRDWorkingStats = new ResultsData();
 
-    static int maxGraphPoints = 4000;
+    static final int maxGraphPoints = 4000;
 
     //Section that initialises the 2D arrays that hold the coordinates to output as graphs
 
     static double [][] opHeliGraphData = new double [maxGraphPoints][2];
     static double [][] msrdWorkingGraphData = new double [maxGraphPoints][2];
-    static double [][] repairWorkingGraphData = new double [maxGraphPoints][2];
     static double [][] failedQGraphData = new double [maxGraphPoints][2];
     static double [][] removeEngGraphData = new double [maxGraphPoints][2];
     static double [][] toRepairGraphData = new double [maxGraphPoints][2];
@@ -91,8 +90,7 @@ public class Variables {
     //Initialise integer objects that count which
 
     static int opheliGraphPointNum = 0;
-    static int msrdWorkingGraphPointNum = 0;
-    static int repairWorkingGraphPointNum = 0;
+    //msrdWorkingGraphPointNum would go here but is irrelevant.the Graph data is generated using msrdIdleGraphData
     static int failedQGraphPointNum = 0;
     static int removeEngGraphPointNum = 0;
     static int toRepairGraphPointNum = 0;

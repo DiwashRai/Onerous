@@ -1,5 +1,7 @@
 package cranfield.ssel.onerous;
 
+import com.github.mikephil.charting.data.Entry;
+
 import java.util.Random;
 
 /**
@@ -88,6 +90,7 @@ public class Stats {
 
     public void setupMSRDworkingStats ()
     {
+        //Section that adds converts MSRDidle stats to MSRDworking stats
         for (int i = 0; i <= Variables.MSRD; i++)
         {
             Variables.MSRDWorkingStats.setNumbers(i, Variables.MSRDIdleStats.getNumber(Variables.MSRD-i));
@@ -100,6 +103,14 @@ public class Stats {
             Variables.MSRDWorkingStats.setMean(Variables.MSRD - Variables.MSRDIdleStats.getMean());
         }else{
             Variables.MSRDWorkingStats.setMean(0);
+        }
+
+        //Section that adds converts MSRDidle graph data to MSRDworking graph data
+        for (int i = 0; i < 4000; ++i) {
+            if ((Variables.msrdIdleQGraphData[i][0] != 0) || (Variables.msrdIdleQGraphData[i][1] != 0)) {
+                Variables.msrdWorkingGraphData[i][0] = Variables.msrdIdleQGraphData[i][0];
+                Variables.msrdWorkingGraphData[i][1] = Variables.MSRD - Variables.msrdIdleQGraphData[i][1];
+            }
         }
     }
 

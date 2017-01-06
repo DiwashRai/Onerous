@@ -756,7 +756,7 @@ public class Events {
                 break;
             case "toRepair":
                 Variables.toRepairGraphData[Variables.toRepairGraphPointNum][0] = Variables.SimTime;
-                Variables.toRepairGraphData[Variables.toRepairGraphPointNum][1] = Variables.numRepair;
+                Variables.toRepairGraphData[Variables.toRepairGraphPointNum][1] = Variables.numToWorkshop;
 
                 Variables.toRepairGraphPointNum += 1;
                 break;

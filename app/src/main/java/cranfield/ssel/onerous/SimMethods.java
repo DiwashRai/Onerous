@@ -213,7 +213,6 @@ public class SimMethods {
     {
         resetGraphData(Variables.opHeliGraphData);
         resetGraphData(Variables.msrdWorkingGraphData);
-        resetGraphData(Variables.repairWorkingGraphData);
         resetGraphData(Variables.failedQGraphData);
         resetGraphData(Variables.removeEngGraphData);
         resetGraphData(Variables.toRepairGraphData);

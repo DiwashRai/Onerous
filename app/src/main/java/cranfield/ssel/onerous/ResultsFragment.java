@@ -241,6 +241,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.MSRDWorkingStats, resultstable1);
+
+        populateGraph(view,Variables.msrdIdleQGraphPointNum,Variables.msrdWorkingGraphData, "MSRD working");
     }
 
     public void showRepairTeamWorkingstats(View view)
@@ -266,6 +268,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.repairStats, resultstable1);
+
+        populateGraph(view, Variables.engRepairGraphPointNum, Variables.engRepairGraphData, "Repair teams working");
     }
 
     public void showFailedQueuestats(View view)
@@ -292,7 +296,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.qforRemovalStats, resultstable1);
 
-        populateGraph(view, Variables.failedQGraphPointNum, Variables.failedQGraphData, "Failed Queue");
+        populateGraph(view, Variables.failedQGraphPointNum, Variables.failedQGraphData, "Failed engines awaiting removal");
     }
 
     public void showRemoveEnginestats(View view)
@@ -318,6 +322,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.removalStats, resultstable1);
+
+        populateGraph(view, Variables.removeEngGraphPointNum, Variables.removeEngGraphData, "Engine removals taking place ");
     }
 
     public void showTransitToRepairstats(View view)
@@ -343,6 +349,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.toWorkshopStats, resultstable1);
+
+        populateGraph(view, Variables.toRepairGraphPointNum, Variables.toRepairGraphData, "Engines being transported for repair");
     }
 
     public void showBadEngineQstats(View view)
@@ -368,6 +376,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.qforRepairStats, resultstable1);
+
+        populateGraph(view, Variables.badEngQGraphPointNum, Variables.badEngQGraphData, "Bad engines awaiting repair");
     }
 
     public void showEngineRepairstats(View view)
@@ -393,6 +403,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.repairStats, resultstable1);
+
+        populateGraph(view, Variables.engRepairGraphPointNum, Variables.engRepairGraphData, "Repair team working");
     }
 
     public void showTransitFromRepairstats(View view)
@@ -418,6 +430,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.toOperationStats, resultstable1);
+
+        populateGraph(view, Variables.toOperationGraphPointNum, Variables.toOperationGraphData, "Repaired good engines being transported for refitting");
     }
 
     public void showGoodEngineQstats(View view)
@@ -443,6 +457,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.qforRefitStats, resultstable1);
+
+        populateGraph(view, Variables.goodEngQGraphPointNum, Variables.goodEngQGraphData, "Good engines await refit");
     }
 
     public void showRefitEnginestats(View view)
@@ -468,6 +484,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.refitStats, resultstable1);
+
+        populateGraph(view, Variables.refitEngGraphPointNum, Variables.refitEngGraphData, "Engine refits");
     }
 
     public void showQforOPstats(View view)
@@ -493,6 +511,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.qforOperationalStats, resultstable1);
+
+        populateGraph(view, Variables.qForOpGraphPointNum, Variables.qForOpGraphData, "Helicopters in queue ready for operation");
     }
 
     public void showHeliWaitstats(View view)
@@ -518,6 +538,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.qHelisNoEngineStats, resultstable1);
+
+        populateGraph(view, Variables.heliAwaitEngGraphPointNum, Variables.heliAwaitEngGraphData, "Helicopters waiting to be refitted with engine");
     }
 
     public void showMSRDidlestats(View view)
@@ -543,6 +565,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.MSRDIdleStats, resultstable1);
+
+        populateGraph(view,Variables.msrdIdleQGraphPointNum,Variables.msrdIdleQGraphData, "MSRD teams Idle");
     }
 
     public void showRepairTeamidlestats(View view)
@@ -568,6 +592,8 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.repairTeamsIdleStats, resultstable1);
+
+        populateGraph(view, Variables.repairTeamIdleGraphPointNum, Variables.repairTeamIdleGraphData, "Repair teams idle");
     }
 
     public void populateResultsTable(ResultsData results, TableLayout table)
