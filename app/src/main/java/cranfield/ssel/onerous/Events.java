@@ -569,13 +569,8 @@ public class Events {
 
         stats.updateStats(Variables.qforToOperationStats, Variables.numQforToOperation);
 
-        if ((Variables.qForOpGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
-            saveGraphStats("qForOp");
-        }
+        //dummy Q2 node. No need for graph
         Variables.numQforToOperation = Variables.numQforToOperation +1;
-        if ((Variables.qForOpGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
-            saveGraphStats("qForOp");
-        }
 
         doGraphic("DummyQ2", Variables.numQforToOperation, true);
 
@@ -603,11 +598,12 @@ public class Events {
                 try {Thread.sleep(3000);}
                 catch (InterruptedException e) {e.printStackTrace();}
             }
+
+            //Dummy Q2 node. no need for graph
             Variables.numQforToOperation = Variables.numQforToOperation - 1;
 
             stats.updateStats(Variables.toOperationStats, Variables.numToOperation);
 
-            //Continue from here. Double check this section. Seems like a mixup between goodEngQ and numQforRefit
             if ((Variables.goodEngQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
                 saveGraphStats("goodEngQ");
             }
