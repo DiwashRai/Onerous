@@ -67,4 +67,40 @@ public class Variables {
     static ResultsData qforOperationalStats = new ResultsData();
 
     static ResultsData MSRDWorkingStats = new ResultsData();
+
+    static final int maxGraphPoints = 4000;
+
+    //Section that initialises the 2D arrays that hold the coordinates to output as graphs
+
+    static double [][] opHeliGraphData = new double [maxGraphPoints][2];
+    static double [][] msrdWorkingGraphData = new double [maxGraphPoints][2];
+    static double [][] failedQGraphData = new double [maxGraphPoints][2];
+    static double [][] removeEngGraphData = new double [maxGraphPoints][2];
+    static double [][] toRepairGraphData = new double [maxGraphPoints][2];
+    static double [][] badEngQGraphData = new double [maxGraphPoints][2];
+    static double [][] engRepairGraphData = new double [maxGraphPoints][2];
+    static double [][] toOperationGraphData = new double [maxGraphPoints][2];
+    static double [][] goodEngQGraphData = new double [maxGraphPoints][2];
+    static double [][] refitEngGraphData = new double [maxGraphPoints][2];
+    static double [][] qForOpGraphData = new double [maxGraphPoints][2];
+    static double [][] heliAwaitEngGraphData = new double [maxGraphPoints][2];
+    static double [][] msrdIdleQGraphData = new double [maxGraphPoints][2];
+    static double [][] repairTeamIdleGraphData = new double [maxGraphPoints][2];
+
+    //Initialise integer objects that count which
+
+    static int opheliGraphPointNum = 0;
+    //msrdWorkingGraphPointNum would go here but is irrelevant.the Graph data is generated using msrdIdleGraphData
+    static int failedQGraphPointNum = 0;
+    static int removeEngGraphPointNum = 0;
+    static int toRepairGraphPointNum = 0;
+    static int badEngQGraphPointNum = 0;
+    static int engRepairGraphPointNum = 0;
+    static int toOperationGraphPointNum = 0;
+    static int goodEngQGraphPointNum = 0;
+    static int refitEngGraphPointNum = 0;
+    static int qForOpGraphPointNum = 0;
+    static int heliAwaitEngGraphPointNum = 0;
+    static int msrdIdleQGraphPointNum = 0;
+    static int repairTeamIdleGraphPointNum = 0;
 }
