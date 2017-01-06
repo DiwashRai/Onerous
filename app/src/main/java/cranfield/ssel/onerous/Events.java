@@ -817,8 +817,6 @@ public class Events {
             default:
                 System.out.println("Invalid String entered into saveGraphStats method.");
                 break;
-
-
         }
     }
 }
