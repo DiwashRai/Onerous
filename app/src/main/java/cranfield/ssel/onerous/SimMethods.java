@@ -307,7 +307,7 @@ public class SimMethods {
         }
     }
 
-    public static void arrayUsageOut (){
+    public static void arrayUsageOut (){ //method used for tracking mermory usage to generate the graphs
         System.out.println("failed Q: " + Variables.failedQGraphPointNum);
         System.out.println("Remove Eng:" + Variables.removeEngGraphPointNum);
         System.out.println("To repair:" + Variables.toRepairGraphPointNum);
@@ -317,8 +317,8 @@ public class SimMethods {
         System.out.println("good eng Q:" + Variables.goodEngQGraphPointNum);
         System.out.println("refit Eng Graph" + Variables.refitEngGraphPointNum);
         System.out.println("Q for op:" + Variables.qForOpGraphPointNum);
-        System.out.println(Variables.heliAwaitEngGraphPointNum);
-        System.out.println(Variables.msrdIdleQGraphPointNum);
-        System.out.println(Variables.repairTeamIdleGraphPointNum);
+        System.out.println("heli Await Eng:" + Variables.heliAwaitEngGraphPointNum);
+        System.out.println("msrd idle:" + Variables.msrdIdleQGraphPointNum);
+        System.out.println("repair team Idle:" + Variables.repairTeamIdleGraphPointNum);
     }
 }
