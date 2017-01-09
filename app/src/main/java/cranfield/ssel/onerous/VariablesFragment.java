@@ -30,6 +30,14 @@ public class VariablesFragment extends Fragment{
           }
         });
 
+        Button restoreDefaultBtn = (Button) view.findViewById(R.id.restoreDefaultBtn);
+        restoreDefaultBtn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v){
+                restoreDefaultValues(view);
+            }
+        });
+
         refreshCurrentVarValues(view);
 
         return view;
@@ -79,5 +87,18 @@ public class VariablesFragment extends Fragment{
         spareEnginges2.setText("Spare Engines: " + Variables.spareEngines);
         remeMSRD2.setText("REME MSRD: " + Variables.MSRD);
         repairTeams2.setText("Repair Teams: " + Variables.repairTeams);
+    }
+
+    public void restoreDefaultValues (View v)
+    {
+        Variables.RunTime = 250;
+        Variables.warmUp = 25;
+        Variables.helicopters = 10;
+        Variables.maxHelicopters = 10;
+        Variables.spareEngines = 1;
+        Variables.MSRD = 1;
+        Variables.repairTeams = 1;
+
+        refreshCurrentVarValues(v);
     }
 }

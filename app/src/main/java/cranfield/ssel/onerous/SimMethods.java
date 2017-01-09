@@ -93,6 +93,7 @@ public class SimMethods {
             }
         });
 
+        arrayUsageOut();
         stats.finalStats();
     }
 
@@ -304,5 +305,20 @@ public class SimMethods {
                 }
             }
         }
+    }
+
+    public static void arrayUsageOut (){
+        System.out.println("failed Q: " + Variables.failedQGraphPointNum);
+        System.out.println("Remove Eng:" + Variables.removeEngGraphPointNum);
+        System.out.println("To repair:" + Variables.toRepairGraphPointNum);
+        System.out.println("bad eng Q:" + Variables.badEngQGraphPointNum);
+        System.out.println("eng Repair:" + Variables.engRepairGraphPointNum);
+        System.out.println("to Operation:" + Variables.toOperationGraphPointNum);
+        System.out.println("good eng Q:" + Variables.goodEngQGraphPointNum);
+        System.out.println("refit Eng Graph" + Variables.refitEngGraphPointNum);
+        System.out.println("Q for op:" + Variables.qForOpGraphPointNum);
+        System.out.println(Variables.heliAwaitEngGraphPointNum);
+        System.out.println(Variables.msrdIdleQGraphPointNum);
+        System.out.println(Variables.repairTeamIdleGraphPointNum);
     }
 }

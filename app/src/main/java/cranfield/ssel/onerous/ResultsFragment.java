@@ -13,6 +13,8 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
@@ -636,6 +638,17 @@ public class ResultsFragment extends Fragment{
 
     public void populateGraph (View view, int graphPointNum, double [][] graphData, String dataSetlabel){
         LineChart chart = (LineChart) view.findViewById(R.id.graph);
+
+        XAxis xAxis = chart.getXAxis();
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+        xAxis.setDrawAxisLine(true);
+        xAxis.setDrawGridLines(false);
+
+        chart.getAxisRight().setEnabled(false);
+        YAxis leftAxis = chart.getAxisLeft();
+        leftAxis.setDrawZeroLine(true);
+        leftAxis.setDrawGridLines(false);
+        leftAxis.setDrawAxisLine(true);
 
         if (graphPointNum ==0){
             chart.setBackgroundColor(android.graphics.Color.rgb(229,231,233));
