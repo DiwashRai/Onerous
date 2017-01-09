@@ -70,7 +70,8 @@
         android:id="@+id/transitfromrepairstatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="80dp" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -85,40 +86,40 @@
         android:text="Refit Engine"
         android:id="@+id/refitenginestatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
-        android:layout_toRightOf="@+id/msrdworkingstatsbtn"
-        android:layout_toEndOf="@+id/msrdworkingstatsbtn" />
+        android:layout_toRightOf="@+id/goodengineqstatsbtn"
+        android:layout_toEndOf="@+id/goodengineqstatsbtn" />
 
     <Button
         style="@style/resultsButtonStyle"
         android:text="Queue for Operational"
         android:id="@+id/qforopstatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
-        android:layout_toRightOf="@+id/repairteamworkingstatsbtn"
-        android:layout_toEndOf="@+id/repairteamworkingstatsbtn" />
+        android:layout_toRightOf="@+id/refitenginestatsbtn"
+        android:layout_toEndOf="@+id/refitenginestatsbtn" />
 
     <Button
         style="@style/resultsButtonStyle"
         android:text="Helicopters awaiting Engines"
         android:id="@+id/heliwaitstatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
-        android:layout_toRightOf="@+id/failedqstatsbtn"
-        android:layout_toEndOf="@+id/failedqstatsbtn" />
+        android:layout_toRightOf="@+id/qforopstatsbtn"
+        android:layout_toEndOf="@+id/qforopstatsbtn" />
 
     <Button
         style="@style/resultsButtonStyle"
         android:text="MSRD Idle Queue"
         android:id="@+id/msrdidlesqstatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
-        android:layout_toRightOf="@+id/removeenginestatsbtn"
-        android:layout_toEndOf="@+id/removeenginestatsbtn" />
+        android:layout_toRightOf="@+id/heliwaitstatsbtn"
+        android:layout_toEndOf="@+id/heliwaitstatsbtn" />
 
     <Button
         style="@style/resultsButtonStyle"
         android:text="Repair Teams Idle Queue"
         android:id="@+id/repairteamsidleqstatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
-        android:layout_toRightOf="@+id/transittorepairstatsbtn"
-        android:layout_toEndOf="@+id/transittorepairstatsbtn" />
+        android:layout_toRightOf="@+id/msrdidlesqstatsbtn"
+        android:layout_toEndOf="@+id/msrdidlesqstatsbtn" />
 
     <ScrollView android:id="@+id/scrollView1"
         android:layout_width="wrap_content"

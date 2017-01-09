@@ -1,7 +1,5 @@
 package cranfield.ssel.onerous;
 
-import android.app.Activity;
-import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -176,6 +174,9 @@ public class ResultsFragment extends Fragment{
         toptablerow.addView(tv0);
         toptablerow.setGravity(Gravity.CENTER);
         resultstable1.addView(toptablerow);
+
+        LineChart chart = (LineChart) view.findViewById(R.id.graph);
+        chart.setBackgroundColor(android.graphics.Color.rgb(229, 231, 233));
 
         return view;
     }

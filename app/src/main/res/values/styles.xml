@@ -22,4 +22,8 @@
         <item name="android:layout_height">55dp</item>
     </style>
 
+    <style name="currentVariablesStyle">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
 </resources>
