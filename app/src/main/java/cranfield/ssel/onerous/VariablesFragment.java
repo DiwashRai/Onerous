@@ -611,7 +611,26 @@ public class VariablesFragment extends Fragment{
         remeMSRD2.setText(Html.fromHtml("REME MSRD: " + "<b>" + Variables.MSRD + "</b>"));
         repairTeams2.setText(Html.fromHtml("Repair Teams: " + "<b>" + Variables.repairTeams+ "</b>"));
 
-        //Continue
+        ////////////// Activity Durations refresh ///////////////////////////////////////////////////////////
+        TextView engineFailure2 = (TextView) v.findViewById(R.id.engineFailure2);
+        TextView engineRemoval2 = (TextView) v.findViewById(R.id.engineRemoval2);
+        TextView badEngineTransit2 = (TextView) v.findViewById(R.id.badEngineTransit2);
+        TextView engineRepair2 = (TextView) v.findViewById(R.id.engineRepair2);
+        TextView goodEngineTransit2 = (TextView) v.findViewById(R.id.goodEngineTransit2);
+        TextView engineInstall2 = (TextView) v.findViewById(R.id.engineInstall2);
+
+        engineFailure2.setText(Html.fromHtml("Engine Failure: <b>" + "Bounded Normal </b>"));
+        engineRemoval2.setText(Html.fromHtml(""));
+        badEngineTransit2.setText(Html.fromHtml(""));
+        engineRepair2.setText(Html.fromHtml(""));
+        goodEngineTransit2.setText(Html.fromHtml(""));
+        engineInstall2.setText(Html.fromHtml(""));
+    }
+
+    public String distributionTypeString (ActivityDistribution activity){
+        String type = "";
+        // Continue
+        return type;
     }
 
     public void restoreDefaultValues (View v)
