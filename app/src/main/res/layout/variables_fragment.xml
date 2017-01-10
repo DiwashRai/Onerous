@@ -339,7 +339,7 @@
                     android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:id="@+id/engineRepairDistitbutionType"
+                    android:id="@+id/engineRepairDistritbutionType"
                     android:layout_below="@+id/activityDuration1"
                     android:layout_toRightOf="@+id/engineFailure1"
                     android:layout_marginLeft="20dp"
@@ -1085,6 +1085,95 @@
 
             <TextView
                 style="@style/currentVariablesStyle"
+                android:text="Engine Removal: Constant. Value: 0.5."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/engineRemoval2"
+                android:layout_centerHorizontal="false"
+                android:layout_alignLeft="@+id/activityDurations2"
+                android:layout_alignStart="@+id/activityDurations2"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/engineFailure2" />
+
+            <TextView
+                style="@style/currentVariablesStyle"
+                android:text="Bad Engine Transit: Copnstant. Value: 0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/badEngineTransit2"
+                android:layout_centerHorizontal="false"
+                android:layout_alignLeft="@+id/activityDurations2"
+                android:layout_alignStart="@+id/activityDurations2"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/engineRemoval2" />
+
+            <TextView
+                style="@style/currentVariablesStyle"
+                android:text="Engine Repair: Uniform.  Mimimum: 0.0. Maximum: 8.0."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/engineRepair2"
+                android:layout_centerHorizontal="false"
+                android:layout_alignLeft="@+id/activityDurations2"
+                android:layout_alignStart="@+id/activityDurations2"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/badEngineTransit2" />
+
+            <TextView
+                style="@style/currentVariablesStyle"
+                android:text="Engine Install: Constant. Value: 0.5."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/engineInstall2"
+                android:layout_centerHorizontal="false"
+                android:layout_alignLeft="@+id/activityDurations2"
+                android:layout_alignStart="@+id/activityDurations2"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/goodEngineTransit2" />
+
+            <TextView
+                style="@style/currentVariablesStyle"
+                android:text="Good Engine Transit: Constant. Value: 0.5."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/goodEngineTransit2"
+                android:layout_centerHorizontal="false"
+                android:layout_alignLeft="@+id/activityDurations2"
+                android:layout_alignStart="@+id/activityDurations2"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/engineRepair2" />
+
+            <TextView
+                android:text="Activity Durations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityDurations2"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/repairTeams2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                style="@style/currentVariablesStyle"
+                android:text="Engine Failure: Bounded Normal. Mean: 15. Std Dev: 3.9. Minimum: 0.0. Maximum: 25.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/engineFailure2"
+                android:layout_alignLeft="@+id/activityDurations2"
+                android:layout_alignStart="@+id/activityDurations2"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/activityDurations2" />
+
+            <TextView
+                style="@style/currentVariablesStyle"
                 android:text="Warm-up period: "
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -1102,9 +1191,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/days2"
                 android:layout_below="@+id/runParameters2"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:paddingTop="10dp" />
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:paddingTop="10dp"
+                android:layout_alignLeft="@+id/runParameters2"
+                android:layout_alignStart="@+id/runParameters2" />
 
             <TextView
                 android:text="Run Parameters"
@@ -1115,7 +1206,8 @@
                 android:textSize="16sp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="120dp" />
 
             <TextView
                 android:text="Entity Numbers"
@@ -1125,9 +1217,11 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_below="@+id/warmUpPeriod2"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="10dp" />
+                android:layout_alignParentLeft="false"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="false"
+                android:layout_alignLeft="@+id/runParameters2"
+                android:layout_alignStart="@+id/runParameters2" />
 
             <TextView
                 style="@style/currentVariablesStyle"
@@ -1137,8 +1231,10 @@
                 android:id="@+id/helicopters2"
                 android:paddingTop="10dp"
                 android:layout_below="@+id/entityNumbers2"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="false"
+                android:layout_alignStart="@+id/runParameters2"
+                android:layout_alignLeft="@+id/runParameters2"
+                android:layout_alignParentLeft="false" />
 
             <TextView
                 style="@style/currentVariablesStyle"
@@ -1148,8 +1244,10 @@
                 android:id="@+id/spareEngines2"
                 android:paddingTop="10dp"
                 android:layout_below="@+id/helicopters2"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignLeft="@+id/runParameters2"
+                android:layout_alignStart="@+id/runParameters2" />
 
             <TextView
                 style="@style/currentVariablesStyle"
@@ -1185,8 +1283,10 @@
                 android:id="@+id/repairTeams2"
                 android:paddingTop="10dp"
                 android:layout_below="@+id/spareEngines2"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignStart="@+id/runParameters2"
+                android:layout_alignLeft="@+id/runParameters2" />
 
         </RelativeLayout>
 

@@ -2,6 +2,7 @@ package cranfield.ssel.onerous;
 
 import android.os.Bundle;
 import android.preference.EditTextPreference;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,7 +51,6 @@ public class VariablesFragment extends Fragment{
         engineFailureSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-                System.out.println("this far?");
                 TextView param1tv = (TextView) view.findViewById(R.id.engineFailureParam1L);
                 TextView param2tv = (TextView) view.findViewById(R.id.engineFailureParam2L);
                 TextView param3tv = (TextView) view.findViewById(R.id.engineFailureParam3L);
@@ -126,7 +126,6 @@ public class VariablesFragment extends Fragment{
         engineRemovalSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-                System.out.println("this far?");
                 TextView param1tv = (TextView) view.findViewById(R.id.engineRemovalParam1L);
                 TextView param2tv = (TextView) view.findViewById(R.id.engineRemovalParam2L);
                 TextView param3tv = (TextView) view.findViewById(R.id.engineRemovalParam3L);
@@ -202,7 +201,6 @@ public class VariablesFragment extends Fragment{
         badEngineTransitSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-                System.out.println("this far?");
                 TextView param1tv = (TextView) view.findViewById(R.id.badEngineTransitParam1L);
                 TextView param2tv = (TextView) view.findViewById(R.id.badEngineTransitParam2L);
                 TextView param3tv = (TextView) view.findViewById(R.id.badEngineTransitParam3L);
@@ -273,12 +271,11 @@ public class VariablesFragment extends Fragment{
         badEngineTransitSpinner.setSelection(2);
 
         ////////////////////////////////////////// Engine Repair Spinner  /////////////////////////////////////////////////////////////////
-        Spinner engineRepairSpinner = (Spinner) view.findViewById(R.id.engineRepairDistitbutionType);
+        Spinner engineRepairSpinner = (Spinner) view.findViewById(R.id.engineRepairDistritbutionType);
         engineRepairSpinner.setAdapter(adapter);
         engineRepairSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-                System.out.println("this far?");
                 TextView param1tv = (TextView) view.findViewById(R.id.engineRepairParam1L);
                 TextView param2tv = (TextView) view.findViewById(R.id.engineRepairParam2L);
                 TextView param3tv = (TextView) view.findViewById(R.id.engineRepairParam3L);
@@ -354,7 +351,6 @@ public class VariablesFragment extends Fragment{
         goodEngineTransitSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-                System.out.println("this far?");
                 TextView param1tv = (TextView) view.findViewById(R.id.goodEngineTransitParam1L);
                 TextView param2tv = (TextView) view.findViewById(R.id.goodEngineTransitParam2L);
                 TextView param3tv = (TextView) view.findViewById(R.id.goodEngineTransitParam3L);
@@ -430,7 +426,6 @@ public class VariablesFragment extends Fragment{
         engineInstallSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View v, int position, long id) {
-                System.out.println("this far?");
                 TextView param1tv = (TextView) view.findViewById(R.id.engineInstallParam1L);
                 TextView param2tv = (TextView) view.findViewById(R.id.engineInstallParam2L);
                 TextView param3tv = (TextView) view.findViewById(R.id.engineInstallParam3L);
@@ -513,6 +508,7 @@ public class VariablesFragment extends Fragment{
 
     public void updateVars(View v)
     {
+        // entering user entered run param settings and entity  number values
         EditText days = (EditText) v.findViewById(R.id.daysText);
         Variables.RunTime = Integer.parseInt(days.getText().toString());
         EditText warmup = (EditText) v.findViewById(R.id.warmUpText);
@@ -528,6 +524,46 @@ public class VariablesFragment extends Fragment{
         EditText repairteams = (EditText) v.findViewById(R.id.repairTeamsText);
         Variables.repairTeams = Integer.parseInt(repairteams.getText().toString());
 
+        //////////// Entering user entered activity distribution values   ////////////////////////////////////////
+        Spinner engineFailureSpinner = (Spinner) v.findViewById(R.id.engineFailureDistributionType);
+        EditText engineFailureParam1 = (EditText) v.findViewById(R.id.engineFailureParam1Text);
+        EditText engineFailureParam2 = (EditText) v.findViewById(R.id.engineFailureParam2Text);
+        EditText engineFailureParam3 = (EditText) v.findViewById(R.id.engineFailureParam3Text);
+        EditText engineFailureParam4 = (EditText) v.findViewById(R.id.engineFailureParam4Text);
+        Variables.operationalTime.setType(engineFailureSpinner.getSelectedItemPosition()+1);
+        Variables.operationalTime.setParameter1(Double.parseDouble(engineFailureParam1.getText().toString()));
+        Variables.operationalTime.setParameter2(Double.parseDouble(engineFailureParam2.getText().toString()));
+        Variables.operationalTime.setParameter3(Double.parseDouble(engineFailureParam3.getText().toString()));
+        Variables.operationalTime.setParameter4(Double.parseDouble(engineFailureParam4.getText().toString()));
+
+        Spinner engineRemovalSpinner = (Spinner) v.findViewById(R.id.engineRemovalDistributionType);
+        EditText engineRemovalParam1 = (EditText) v.findViewById(R.id.engineRemovalParam1Text);
+        EditText engineRemovalParam2 = (EditText) v.findViewById(R.id.engineRemovalParam2Text);
+        EditText engineRemovalParam3 = (EditText) v.findViewById(R.id.engineRemovalParam3Text);
+        EditText engineRemovalParam4 = (EditText) v.findViewById(R.id.engineRemovalParam4Text);
+        Variables.removalTime.setType(engineRemovalSpinner.getSelectedItemPosition()+1);
+        Variables.removalTime.setParameter1(Double.parseDouble(engineRemovalParam1.toString()));
+        Variables.removalTime.setParameter2(Double.parseDouble(engineRemovalParam2.toString()));
+        Variables.removalTime.setParameter3(Double.parseDouble(engineRemovalParam3.toString()));
+        Variables.removalTime.setParameter4(Double.parseDouble(engineRemovalParam4.toString()));
+
+        Spinner badEngineTransitSpinner = (Spinner) v.findViewById(R.id.badEngineTransitDistributionType);
+        EditText badEngineTransitParam1 = (EditText) v.findViewById(R.id.badEngineTransitParam1Text);
+        EditText badEngineTransitParam2 = (EditText) v.findViewById(R.id.badEngineTransitParam2Text);
+        EditText badEngineTransitParam3 = (EditText) v.findViewById(R.id.badEngineTransitParam3Text);
+        EditText badEngineTransitParam4 = (EditText) v.findViewById(R.id.badEngineTransitParam4Text);
+        Variables.toWorkshopTime.setType(badEngineTransitSpinner.getSelectedItemPosition() + 1);
+        Variables.toWorkshopTime.setParameter1(Double.parseDouble(badEngineTransitParam1.toString()));
+        Variables.toWorkshopTime.setParameter2(Double.parseDouble(badEngineTransitParam2.toString()));
+        Variables.toWorkshopTime.setParameter3(Double.parseDouble(badEngineTransitParam3.toString()));
+        Variables.toWorkshopTime.setParameter4(Double.parseDouble(badEngineTransitParam4.toString()));
+
+        Spinner engineRepairSpinner = (Spinner) v.findViewById(R.id.engineRepairDistritbutionType);
+        EditText engineRepairParam1 = (EditText) v.findViewById(R.id.engineRepairParam1Text);
+        EditText engineRepairParam2 = (EditText) v.findViewById(R.id.engineRepairParam2Text);
+        EditText engineRepairParam3 = (EditText) v.findViewById(R.id.engineRepairParam3Text);
+        EditText engineRepairParam4 = (EditText) v.findViewById(R.id.engineRepairParam4Text);
+//Continue
         refreshCurrentVarValues(v);
     }
 
@@ -540,13 +576,13 @@ public class VariablesFragment extends Fragment{
         TextView remeMSRD2 = (TextView) v.findViewById(R.id.remeMSRD2);
         TextView repairTeams2 = (TextView) v.findViewById(R.id.repairTeams2);
 
-        days2.setText("Days: " + Variables.RunTime);
-        warmUpPeriod2.setText("Warm-up period: " + Variables.warmUp);
-        helicopters2.setText("Helicopters: " + Variables.helicopters);
-        maxHelicopters2.setText("Max Helicopters: " + Variables.maxHelicopters);
-        spareEnginges2.setText("Spare Engines: " + Variables.spareEngines);
-        remeMSRD2.setText("REME MSRD: " + Variables.MSRD);
-        repairTeams2.setText("Repair Teams: " + Variables.repairTeams);
+        days2.setText(Html.fromHtml("Days: " +"<b>" + Variables.RunTime + "</b>"));
+        warmUpPeriod2.setText(Html.fromHtml("Warm-up period: " + "<b>" + Variables.warmUp + "</b>"));
+        helicopters2.setText(Html.fromHtml("Helicopters: " + "<b>" + Variables.helicopters + "</b>"));
+        maxHelicopters2.setText(Html.fromHtml("Max Helicopters: " + "<b>" + Variables.maxHelicopters + "</b>"));
+        spareEnginges2.setText(Html.fromHtml("Spare Engines: " + "<b>" + Variables.spareEngines + "</b>"));
+        remeMSRD2.setText(Html.fromHtml("REME MSRD: " + "<b>" + Variables.MSRD + "</b>"));
+        repairTeams2.setText(Html.fromHtml("Repair Teams: " + "<b>" + Variables.repairTeams+ "</b>"));
     }
 
     public void restoreDefaultValues (View v)
