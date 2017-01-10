@@ -24,7 +24,6 @@ public class SimMethods {
         Events Events = new Events(view, handler);
 
         initVariables();
-        initDataVariables();
         resetAllStats();
         resetAllGraphData();
 
@@ -136,45 +135,6 @@ public class SimMethods {
             Variables.newEvent = (new EventData (stats.getDuration(Variables.operationalTime),1));  //Integer value here denotes "kind" of event. (1 here = engine failure event)
             addEvent(Variables.list, Variables.newEvent);
         }
-    }
-
-    public void initDataVariables()
-    {
-        Variables.operationalTime.setType(1);
-        Variables.operationalTime.setParameter1(15);
-        Variables.operationalTime.setParameter2(3.9);
-        Variables.operationalTime.setParameter3(0);
-        Variables.operationalTime.setParameter4(25);
-
-        Variables.removalTime.setType(3);
-        Variables.removalTime.setParameter1(0.5);
-        Variables.removalTime.setParameter2(0);
-        Variables.removalTime.setParameter3(0);
-        Variables.removalTime.setParameter4(0);
-
-        Variables.toWorkshopTime.setType(3);
-        Variables.toWorkshopTime.setParameter1(0.5);
-        Variables.toWorkshopTime.setParameter2(0);
-        Variables.toWorkshopTime.setParameter3(0);
-        Variables.toWorkshopTime.setParameter4(0);
-
-        Variables.repairTime.setType(2);
-        Variables.repairTime.setParameter1(1);
-        Variables.repairTime.setParameter2(8);
-        Variables.repairTime.setParameter3(0);
-        Variables.repairTime.setParameter4(0);
-
-        Variables.toOperationTime.setType(3);
-        Variables.toOperationTime.setParameter1(0.5);
-        Variables.toOperationTime.setParameter2(0);
-        Variables.toOperationTime.setParameter3(0);
-        Variables.toOperationTime.setParameter4(0);
-
-        Variables.refitTime.setType(3);
-        Variables.refitTime.setParameter1(0.5);
-        Variables.refitTime.setParameter2(0);
-        Variables.refitTime.setParameter3(0);
-        Variables.refitTime.setParameter4(0);
     }
 
     public void resetStats (ResultsData info)

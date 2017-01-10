@@ -35,18 +35,562 @@
             android:id="@+id/updateVariablesButton"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="121dp" />
+            android:layout_marginBottom="80dp" />
 
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/changeVarElements"
-            android:layout_alignParentTop="false"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentStart="false"
-            android:layout_centerHorizontal="true"
             android:layout_below="@+id/changeVariableTitle"
-            android:layout_marginTop="20dp">
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/engineInstallActivityDistribution1"
+                android:layout_below="@+id/goodEngineTransiActivityDistribution1"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:text="Engine Install:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineInstall1"
+                    android:layout_centerHorizontal="false"
+                    android:layout_alignLeft="@+id/activityDuration1"
+                    android:layout_alignStart="@+id/activityDuration1"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/engineInstallDistributionType"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailure1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineInstallParam1L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineInstallParam1Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineInstallParam2L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineInstallParam2Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineInstallParam3L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineInstallParam3Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineInstallParam4L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineInstallParam4Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/goodEngineTransiActivityDistribution1"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/engineRepairActivityDistribution1">
+
+                <TextView
+                    android:text="Good Engine Transit:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/goodEngineTransit1"
+                    android:layout_centerHorizontal="false"
+                    android:layout_alignLeft="@+id/activityDuration1"
+                    android:layout_alignStart="@+id/activityDuration1"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp" />
+
+                <Spinner
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/goodEngineTransitDistributionType"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailure1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/goodEngineTransitParam1L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/goodEngineTransitParam1Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/goodEngineTransitParam2L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/goodEngineTransitParam2Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/goodEngineTransitParam3L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/goodEngineTransitParam3Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/goodEngineTransitParam4L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/goodEngineTransitParam4Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/engineRepairActivityDistribution1"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/badEngineTransitActivityDistrubution1">
+
+                <TextView
+                    android:text="Engine Repair:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineRepair1"
+                    android:layout_centerHorizontal="false"
+                    android:layout_alignLeft="@+id/activityDuration1"
+                    android:layout_alignStart="@+id/activityDuration1"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp" />
+
+                <Spinner
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/engineRepairDistitbutionType"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailure1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineRepairParam1L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineRepairParam1Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineRepairParam2L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineRepairParam2Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineRepairParam3L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineRepairParam3Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineRepairParam4L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineRepairParam4Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activityDuration1"
+                android:id="@+id/EngineFailureAcitivityDistribution1"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:text="Engine Failure:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineFailure1"
+                    android:layout_centerHorizontal="false"
+                    android:layout_alignLeft="@+id/activityDuration1"
+                    android:layout_alignStart="@+id/activityDuration1"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/engineFailureDistributionType"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailure1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineFailureParam1L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineFailureParam1Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P2:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineFailureParam2L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineFailureParam2Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P3:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineFailureParam3L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineFailureParam3Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P4:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineFailureParam4L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineFailureParam4Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:text="Activity Durations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/activityDuration1"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/repairTeams1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp" />
 
             <EditText
                 android:layout_width="80dp"
@@ -104,8 +648,8 @@
                 android:id="@+id/spareEngines1"
                 android:paddingTop="10dp"
                 android:layout_below="@+id/helicoptersText"
-                android:layout_alignLeft="@+id/runParameters1"
-                android:layout_alignStart="@+id/runParameters1" />
+                android:layout_alignLeft="@+id/entityNumber1"
+                android:layout_alignStart="@+id/entityNumber1" />
 
             <EditText
                 android:layout_width="80dp"
@@ -151,8 +695,8 @@
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:layout_below="@+id/daysText"
-                android:layout_alignLeft="@+id/days1"
-                android:layout_alignStart="@+id/days1" />
+                android:layout_alignLeft="@+id/runParameters1"
+                android:layout_alignStart="@+id/runParameters1" />
 
             <TextView
                 android:text="Helicopters: "
@@ -171,8 +715,8 @@
                 android:id="@+id/repairTeams1"
                 android:paddingTop="10dp"
                 android:layout_alignTop="@+id/repairTeamsText"
-                android:layout_alignLeft="@+id/spareEngines1"
-                android:layout_alignStart="@+id/spareEngines1" />
+                android:layout_alignLeft="@+id/entityNumber1"
+                android:layout_alignStart="@+id/entityNumber1" />
 
             <EditText
                 android:layout_width="80dp"
@@ -209,7 +753,8 @@
                 android:textSize="16sp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="120dp" />
 
             <TextView
                 android:text="Days: "
@@ -218,8 +763,10 @@
                 android:id="@+id/days1"
                 android:paddingTop="10dp"
                 android:layout_below="@+id/runParameters1"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignLeft="@+id/runParameters1"
+                android:layout_alignStart="@+id/runParameters1" />
 
             <TextView
                 android:text="Max Helicopters: "
@@ -230,7 +777,278 @@
                 android:layout_alignTop="@+id/helicoptersText"
                 android:layout_toRightOf="@+id/helicoptersText"
                 android:layout_toEndOf="@+id/helicoptersText" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="false"
+                android:id="@+id/badEngineTransitActivityDistrubution1"
+                android:layout_weight="1"
+                android:layout_below="@+id/engineRemovalActivityDistribution1"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:text="Bad Engine Transit:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/badEngineTransit1"
+                    android:layout_centerHorizontal="false"
+                    android:layout_alignLeft="@+id/activityDuration1"
+                    android:layout_alignStart="@+id/activityDuration1"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp" />
+
+                <Spinner
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/badEngineTransitDistributionType"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailure1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/badEngineTransitParam1L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/badEngineTransitParam1Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/badEngineTransitParam2L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/badEngineTransitParam2Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/badEngineTransitParam3L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/badEngineTransitParam3Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/badEngineTransitParam4L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/badEngineTransitParam4Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/engineRemovalActivityDistribution1"
+                android:layout_below="@+id/EngineFailureAcitivityDistribution1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:text="Engine Removal:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineRemoval1"
+                    android:layout_centerHorizontal="false"
+                    android:layout_alignLeft="@+id/activityDuration1"
+                    android:layout_alignStart="@+id/activityDuration1"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <Spinner
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/engineRemovalDistributionType"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailure1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineRemovalParam1L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineRemovalParam1Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineRemovalParam2L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineRemovalParam2Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineRemovalParam3L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineRemovalParam3Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:text="P1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engineRemovalParam4L"
+                    android:layout_below="@+id/activityDuration1"
+                    android:layout_toRightOf="@+id/engineFailureDistributionType"
+                    android:layout_toEndOf="@+id/engineFailureDistributionType"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/engineRemovalParam4Text"
+                    android:layout_alignTop="@+id/engineFailureParam1L"
+                    android:layout_toRightOf="@+id/spareEnginesText"
+                    android:layout_toEndOf="@+id/spareEnginesText"
+                    android:text="0"
+                    android:textSize="13sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
         </RelativeLayout>
+
     </RelativeLayout>
 
     <View
