@@ -79,9 +79,14 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.VISIBLE);
 
                         param1text.setNextFocusDownId(R.id.engineFailureParam2Text);
-                        param2text.setNextFocusDownId(R.id.engineFailureParam2Text);
-                        param3text.setNextFocusDownId(R.id.engineFailureParam2Text);
-                        param4text.setNextFocusDownId(R.id.engineFailureParam2Text);/// Continue
+                        param2text.setNextFocusDownId(R.id.engineFailureParam3Text);
+                        param3text.setNextFocusDownId(R.id.engineFailureParam4Text);
+                        param4text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineFailureParam2Text);
+                        param2text.setNextFocusForwardId(R.id.engineFailureParam3Text);
+                        param3text.setNextFocusForwardId(R.id.engineFailureParam4Text);
+                        param4text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
                         break;
                     case 1:
                         param1tv.setText("Minimum: ");
@@ -96,6 +101,17 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.engineFailureParam2Text);
+                        param2text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+                        param3text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+                        param4text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineFailureParam2Text);
+                        param2text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
+                        param3text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
+                        param4text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
+
                         break;
                     case 2:
                         param1tv.setText("Value: ");
@@ -109,6 +125,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+                        param2text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+                        param3text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+                        param4text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
+                        param2text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
+                        param3text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
+                        param4text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
                         break;
                     case 3:
                         param1tv.setVisibility(EditText.VISIBLE);
@@ -120,6 +146,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+                        param2text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+                        param3text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+                        param4text.setNextFocusDownId(R.id.engineRemovalParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
+                        param2text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
+                        param3text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
+                        param4text.setNextFocusForwardId(R.id.engineRemovalParam1Text);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.operationalTime.getParameter1()));
@@ -166,6 +202,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.VISIBLE);
                         param4text.setVisibility(EditText.VISIBLE);
+
+                        param1text.setNextFocusDownId(R.id.engineRemovalParam2Text);
+                        param2text.setNextFocusDownId(R.id.engineRemovalParam3Text);
+                        param3text.setNextFocusDownId(R.id.engineRemovalParam4Text);
+                        param4text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineRemovalParam2Text);
+                        param2text.setNextFocusForwardId(R.id.engineRemovalParam3Text);
+                        param3text.setNextFocusForwardId(R.id.engineRemovalParam4Text);
+                        param4text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
                         break;
                     case 1:
                         param1tv.setText("Minimum: ");
@@ -180,6 +226,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.engineRemovalParam2Text);
+                        param2text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+                        param3text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+                        param4text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineRemovalParam2Text);
+                        param2text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
+                        param3text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
+                        param4text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
                         break;
                     case 2:
                         param1tv.setText("Value: ");
@@ -193,6 +249,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+                        param2text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+                        param3text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+                        param4text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
+                        param2text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
+                        param3text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
+                        param4text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
                         break;
                     case 3:
                         param1tv.setVisibility(EditText.VISIBLE);
@@ -204,6 +270,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+                        param2text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+                        param3text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+                        param4text.setNextFocusDownId(R.id.badEngineTransitParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
+                        param2text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
+                        param3text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
+                        param4text.setNextFocusForwardId(R.id.badEngineTransitParam1Text);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.removalTime.getParameter1()));
@@ -250,6 +326,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.VISIBLE);
                         param4text.setVisibility(EditText.VISIBLE);
+
+                        param1text.setNextFocusDownId(R.id.badEngineTransitParam2Text);
+                        param2text.setNextFocusDownId(R.id.badEngineTransitParam3Text);
+                        param3text.setNextFocusDownId(R.id.badEngineTransitParam4Text);
+                        param4text.setNextFocusDownId(R.id.engineRepairParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.badEngineTransitParam2Text);
+                        param2text.setNextFocusForwardId(R.id.badEngineTransitParam3Text);
+                        param3text.setNextFocusForwardId(R.id.badEngineTransitParam4Text);
+                        param4text.setNextFocusForwardId(R.id.engineRepairParam1Text);
                         break;
                     case 1:
                         param1tv.setText("Minimum: ");
@@ -264,6 +350,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.badEngineTransitParam2Text);
+                        param2text.setNextFocusDownId(R.id.engineRepairParam1Text);
+                        param3text.setNextFocusDownId(R.id.engineRepairParam1Text);
+                        param4text.setNextFocusDownId(R.id.engineRepairParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.badEngineTransitParam2Text);
+                        param2text.setNextFocusForwardId(R.id.engineRepairParam1Text);
+                        param3text.setNextFocusForwardId(R.id.engineRepairParam1Text);
+                        param4text.setNextFocusForwardId(R.id.engineRepairParam1Text);
                         break;
                     case 2:
                         param1tv.setText("Value: ");
@@ -277,6 +373,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.engineRepairParam1Text);
+                        param2text.setNextFocusDownId(R.id.engineRepairParam1Text);
+                        param3text.setNextFocusDownId(R.id.engineRepairParam1Text);
+                        param4text.setNextFocusDownId(R.id.engineRepairParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineRepairParam1Text);
+                        param2text.setNextFocusForwardId(R.id.engineRepairParam1Text);
+                        param3text.setNextFocusForwardId(R.id.engineRepairParam1Text);
+                        param4text.setNextFocusForwardId(R.id.engineRepairParam1Text);
                         break;
                     case 3:
                         param1tv.setVisibility(EditText.VISIBLE);
@@ -288,6 +394,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.engineRepairParam1Text);
+                        param2text.setNextFocusDownId(R.id.engineRepairParam1Text);
+                        param3text.setNextFocusDownId(R.id.engineRepairParam1Text);
+                        param4text.setNextFocusDownId(R.id.engineRepairParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineRepairParam1Text);
+                        param2text.setNextFocusForwardId(R.id.engineRepairParam1Text);
+                        param3text.setNextFocusForwardId(R.id.engineRepairParam1Text);
+                        param4text.setNextFocusForwardId(R.id.engineRepairParam1Text);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.toWorkshopTime.getParameter1()));
@@ -334,6 +450,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.VISIBLE);
                         param4text.setVisibility(EditText.VISIBLE);
+
+                        param1text.setNextFocusDownId(R.id.engineRepairParam2Text);
+                        param2text.setNextFocusDownId(R.id.engineRepairParam3Text);
+                        param3text.setNextFocusDownId(R.id.engineRepairParam4Text);
+                        param4text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineRepairParam2Text);
+                        param2text.setNextFocusForwardId(R.id.engineRepairParam3Text);
+                        param3text.setNextFocusForwardId(R.id.engineRepairParam4Text);
+                        param4text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
                         break;
                     case 1:
                         param1tv.setText("Minimum: ");
@@ -348,6 +474,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.engineRepairParam2Text);
+                        param2text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+                        param3text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+                        param4text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineRepairParam2Text);
+                        param2text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
+                        param3text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
+                        param4text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
                         break;
                     case 2:
                         param1tv.setText("Value: ");
@@ -361,6 +497,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+                        param2text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+                        param3text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+                        param4text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
+                        param2text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
+                        param3text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
+                        param4text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
                         break;
                     case 3:
                         param1tv.setVisibility(EditText.VISIBLE);
@@ -372,6 +518,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+                        param2text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+                        param3text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+                        param4text.setNextFocusDownId(R.id.goodEngineTransitParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
+                        param2text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
+                        param3text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
+                        param4text.setNextFocusForwardId(R.id.goodEngineTransitParam1Text);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.repairTime.getParameter1()));
@@ -418,6 +574,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.VISIBLE);
                         param4text.setVisibility(EditText.VISIBLE);
+
+                        param1text.setNextFocusDownId(R.id.goodEngineTransitParam2Text);
+                        param2text.setNextFocusDownId(R.id.goodEngineTransitParam3Text);
+                        param3text.setNextFocusDownId(R.id.goodEngineTransitParam4Text);
+                        param4text.setNextFocusDownId(R.id.engineInstallParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.goodEngineTransitParam2Text);
+                        param2text.setNextFocusForwardId(R.id.goodEngineTransitParam3Text);
+                        param3text.setNextFocusForwardId(R.id.goodEngineTransitParam4Text);
+                        param4text.setNextFocusForwardId(R.id.engineInstallParam1Text);
                         break;
                     case 1:
                         param1tv.setText("Minimum: ");
@@ -432,6 +598,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.goodEngineTransitParam2Text);
+                        param2text.setNextFocusDownId(R.id.engineInstallParam1Text);
+                        param3text.setNextFocusDownId(R.id.engineInstallParam1Text);
+                        param4text.setNextFocusDownId(R.id.engineInstallParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.goodEngineTransitParam2Text);
+                        param2text.setNextFocusForwardId(R.id.engineInstallParam1Text);
+                        param3text.setNextFocusForwardId(R.id.engineInstallParam1Text);
+                        param4text.setNextFocusForwardId(R.id.engineInstallParam1Text);
                         break;
                     case 2:
                         param1tv.setText("Value: ");
@@ -445,6 +621,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.engineInstallParam1Text);
+                        param2text.setNextFocusDownId(R.id.engineInstallParam1Text);
+                        param3text.setNextFocusDownId(R.id.engineInstallParam1Text);
+                        param4text.setNextFocusDownId(R.id.engineInstallParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineInstallParam1Text);
+                        param2text.setNextFocusForwardId(R.id.engineInstallParam1Text);
+                        param3text.setNextFocusForwardId(R.id.engineInstallParam1Text);
+                        param4text.setNextFocusForwardId(R.id.engineInstallParam1Text);
                         break;
                     case 3:
                         param1tv.setVisibility(EditText.VISIBLE);
@@ -456,6 +642,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.engineInstallParam1Text);
+                        param2text.setNextFocusDownId(R.id.engineInstallParam1Text);
+                        param3text.setNextFocusDownId(R.id.engineInstallParam1Text);
+                        param4text.setNextFocusDownId(R.id.engineInstallParam1Text);
+
+                        param1text.setNextFocusForwardId(R.id.engineInstallParam1Text);
+                        param2text.setNextFocusForwardId(R.id.engineInstallParam1Text);
+                        param3text.setNextFocusForwardId(R.id.engineInstallParam1Text);
+                        param4text.setNextFocusForwardId(R.id.engineInstallParam1Text);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.toOperationTime.getParameter1()));
@@ -502,6 +698,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.VISIBLE);
                         param4text.setVisibility(EditText.VISIBLE);
+
+                        param1text.setNextFocusDownId(R.id.engineInstallParam2Text);
+                        param2text.setNextFocusDownId(R.id.engineInstallParam3Text);
+                        param3text.setNextFocusDownId(R.id.engineInstallParam4Text);
+                        param4text.setNextFocusDownId(R.id.updateVariablesButton);
+
+                        param1text.setNextFocusForwardId(R.id.engineInstallParam2Text);
+                        param2text.setNextFocusForwardId(R.id.engineInstallParam3Text);
+                        param3text.setNextFocusForwardId(R.id.engineInstallParam4Text);
+                        param4text.setNextFocusForwardId(R.id.updateVariablesButton);
                         break;
                     case 1:
                         param1tv.setText("Minimum: ");
@@ -516,6 +722,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.engineInstallParam2Text);
+                        param2text.setNextFocusDownId(R.id.updateVariablesButton);
+                        param3text.setNextFocusDownId(R.id.updateVariablesButton);
+                        param4text.setNextFocusDownId(R.id.updateVariablesButton);
+
+                        param1text.setNextFocusForwardId(R.id.engineInstallParam2Text);
+                        param2text.setNextFocusForwardId(R.id.updateVariablesButton);
+                        param3text.setNextFocusForwardId(R.id.updateVariablesButton);
+                        param4text.setNextFocusForwardId(R.id.updateVariablesButton);
                         break;
                     case 2:
                         param1tv.setText("Value: ");
@@ -529,6 +745,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.updateVariablesButton);
+                        param2text.setNextFocusDownId(R.id.updateVariablesButton);
+                        param3text.setNextFocusDownId(R.id.updateVariablesButton);
+                        param4text.setNextFocusDownId(R.id.updateVariablesButton);
+
+                        param1text.setNextFocusForwardId(R.id.updateVariablesButton);
+                        param2text.setNextFocusForwardId(R.id.updateVariablesButton);
+                        param3text.setNextFocusForwardId(R.id.updateVariablesButton);
+                        param4text.setNextFocusForwardId(R.id.updateVariablesButton);
                         break;
                     case 3:
                         param1tv.setVisibility(EditText.VISIBLE);
@@ -540,6 +766,16 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
+
+                        param1text.setNextFocusDownId(R.id.updateVariablesButton);
+                        param2text.setNextFocusDownId(R.id.updateVariablesButton);
+                        param3text.setNextFocusDownId(R.id.updateVariablesButton);
+                        param4text.setNextFocusDownId(R.id.updateVariablesButton);
+
+                        param1text.setNextFocusForwardId(R.id.updateVariablesButton);
+                        param2text.setNextFocusForwardId(R.id.updateVariablesButton);
+                        param3text.setNextFocusForwardId(R.id.updateVariablesButton);
+                        param4text.setNextFocusForwardId(R.id.updateVariablesButton);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.refitTime.getParameter1()));
