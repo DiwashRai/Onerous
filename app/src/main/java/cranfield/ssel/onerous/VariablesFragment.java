@@ -3,6 +3,7 @@ package cranfield.ssel.onerous;
 import android.os.Bundle;
 import android.preference.EditTextPreference;
 import android.text.Html;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -105,6 +106,15 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
+                        param1tv.setVisibility(EditText.GONE);
+                        param2tv.setVisibility(EditText.GONE);
+                        param3tv.setVisibility(EditText.GONE);
+                        param4tv.setVisibility(EditText.GONE);
+
+                        param1text.setVisibility(EditText.GONE);
+                        param2text.setVisibility(EditText.GONE);
+                        param3text.setVisibility(EditText.GONE);
+                        param4text.setVisibility(EditText.GONE);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.operationalTime.getParameter1()));
@@ -180,6 +190,15 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
+                        param1tv.setVisibility(EditText.GONE);
+                        param2tv.setVisibility(EditText.GONE);
+                        param3tv.setVisibility(EditText.GONE);
+                        param4tv.setVisibility(EditText.GONE);
+
+                        param1text.setVisibility(EditText.GONE);
+                        param2text.setVisibility(EditText.GONE);
+                        param3text.setVisibility(EditText.GONE);
+                        param4text.setVisibility(EditText.GONE);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.removalTime.getParameter1()));
@@ -255,6 +274,15 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
+                        param1tv.setVisibility(EditText.GONE);
+                        param2tv.setVisibility(EditText.GONE);
+                        param3tv.setVisibility(EditText.GONE);
+                        param4tv.setVisibility(EditText.GONE);
+
+                        param1text.setVisibility(EditText.GONE);
+                        param2text.setVisibility(EditText.GONE);
+                        param3text.setVisibility(EditText.GONE);
+                        param4text.setVisibility(EditText.GONE);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.toWorkshopTime.getParameter1()));
@@ -330,6 +358,15 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
+                        param1tv.setVisibility(EditText.GONE);
+                        param2tv.setVisibility(EditText.GONE);
+                        param3tv.setVisibility(EditText.GONE);
+                        param4tv.setVisibility(EditText.GONE);
+
+                        param1text.setVisibility(EditText.GONE);
+                        param2text.setVisibility(EditText.GONE);
+                        param3text.setVisibility(EditText.GONE);
+                        param4text.setVisibility(EditText.GONE);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.repairTime.getParameter1()));
@@ -405,6 +442,15 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
+                        param1tv.setVisibility(EditText.GONE);
+                        param2tv.setVisibility(EditText.GONE);
+                        param3tv.setVisibility(EditText.GONE);
+                        param4tv.setVisibility(EditText.GONE);
+
+                        param1text.setVisibility(EditText.GONE);
+                        param2text.setVisibility(EditText.GONE);
+                        param3text.setVisibility(EditText.GONE);
+                        param4text.setVisibility(EditText.GONE);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.toOperationTime.getParameter1()));
@@ -480,6 +526,15 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
+                        param1tv.setVisibility(EditText.GONE);
+                        param2tv.setVisibility(EditText.GONE);
+                        param3tv.setVisibility(EditText.GONE);
+                        param4tv.setVisibility(EditText.GONE);
+
+                        param1text.setVisibility(EditText.GONE);
+                        param2text.setVisibility(EditText.GONE);
+                        param3text.setVisibility(EditText.GONE);
+                        param4text.setVisibility(EditText.GONE);
                         break;
                 }
                 param1text.setText(Double.toString(Variables.refitTime.getParameter1()));
@@ -542,10 +597,10 @@ public class VariablesFragment extends Fragment{
         EditText engineRemovalParam3 = (EditText) v.findViewById(R.id.engineRemovalParam3Text);
         EditText engineRemovalParam4 = (EditText) v.findViewById(R.id.engineRemovalParam4Text);
         Variables.removalTime.setType(engineRemovalSpinner.getSelectedItemPosition()+1);
-        Variables.removalTime.setParameter1(Double.parseDouble(engineRemovalParam1.toString()));
-        Variables.removalTime.setParameter2(Double.parseDouble(engineRemovalParam2.toString()));
-        Variables.removalTime.setParameter3(Double.parseDouble(engineRemovalParam3.toString()));
-        Variables.removalTime.setParameter4(Double.parseDouble(engineRemovalParam4.toString()));
+        Variables.removalTime.setParameter1(Double.parseDouble(engineRemovalParam1.getText().toString()));
+        Variables.removalTime.setParameter2(Double.parseDouble(engineRemovalParam2.getText().toString()));
+        Variables.removalTime.setParameter3(Double.parseDouble(engineRemovalParam3.getText().toString()));
+        Variables.removalTime.setParameter4(Double.parseDouble(engineRemovalParam4.getText().toString()));
 
         Spinner badEngineTransitSpinner = (Spinner) v.findViewById(R.id.badEngineTransitDistributionType);
         EditText badEngineTransitParam1 = (EditText) v.findViewById(R.id.badEngineTransitParam1Text);
@@ -553,10 +608,10 @@ public class VariablesFragment extends Fragment{
         EditText badEngineTransitParam3 = (EditText) v.findViewById(R.id.badEngineTransitParam3Text);
         EditText badEngineTransitParam4 = (EditText) v.findViewById(R.id.badEngineTransitParam4Text);
         Variables.toWorkshopTime.setType(badEngineTransitSpinner.getSelectedItemPosition() + 1);
-        Variables.toWorkshopTime.setParameter1(Double.parseDouble(badEngineTransitParam1.toString()));
-        Variables.toWorkshopTime.setParameter2(Double.parseDouble(badEngineTransitParam2.toString()));
-        Variables.toWorkshopTime.setParameter3(Double.parseDouble(badEngineTransitParam3.toString()));
-        Variables.toWorkshopTime.setParameter4(Double.parseDouble(badEngineTransitParam4.toString()));
+        Variables.toWorkshopTime.setParameter1(Double.parseDouble(badEngineTransitParam1.getText().toString()));
+        Variables.toWorkshopTime.setParameter2(Double.parseDouble(badEngineTransitParam2.getText().toString()));
+        Variables.toWorkshopTime.setParameter3(Double.parseDouble(badEngineTransitParam3.getText().toString()));
+        Variables.toWorkshopTime.setParameter4(Double.parseDouble(badEngineTransitParam4.getText().toString()));
 
         Spinner engineRepairSpinner = (Spinner) v.findViewById(R.id.engineRepairDistritbutionType);
         EditText engineRepairParam1 = (EditText) v.findViewById(R.id.engineRepairParam1Text);
@@ -564,10 +619,10 @@ public class VariablesFragment extends Fragment{
         EditText engineRepairParam3 = (EditText) v.findViewById(R.id.engineRepairParam3Text);
         EditText engineRepairParam4 = (EditText) v.findViewById(R.id.engineRepairParam4Text);
         Variables.repairTime.setType(engineRepairSpinner.getSelectedItemPosition() +1);
-        Variables.repairTime.setParameter1(Double.parseDouble(engineRepairParam1.toString()));
-        Variables.repairTime.setParameter2(Double.parseDouble(engineRepairParam2.toString()));
-        Variables.repairTime.setParameter3(Double.parseDouble(engineRepairParam3.toString()));
-        Variables.repairTime.setParameter4(Double.parseDouble(engineRepairParam4.toString()));
+        Variables.repairTime.setParameter1(Double.parseDouble(engineRepairParam1.getText().toString()));
+        Variables.repairTime.setParameter2(Double.parseDouble(engineRepairParam2.getText().toString()));
+        Variables.repairTime.setParameter3(Double.parseDouble(engineRepairParam3.getText().toString()));
+        Variables.repairTime.setParameter4(Double.parseDouble(engineRepairParam4.getText().toString()));
 
         Spinner goodEngineTransitSpinner = (Spinner) v.findViewById(R.id.goodEngineTransitDistributionType);
         EditText goodEngineTransitParam1 = (EditText) v.findViewById(R.id.goodEngineTransitParam1Text);
@@ -575,10 +630,10 @@ public class VariablesFragment extends Fragment{
         EditText goodEngineTransitParam3 = (EditText) v.findViewById(R.id.goodEngineTransitParam3Text);
         EditText goodEngineTransitParam4 = (EditText) v.findViewById(R.id.goodEngineTransitParam4Text);
         Variables.toOperationTime.setType(goodEngineTransitSpinner.getSelectedItemPosition() + 1);
-        Variables.toOperationTime.setParameter1(Double.parseDouble(goodEngineTransitParam1.toString()));
-        Variables.toOperationTime.setParameter2(Double.parseDouble(goodEngineTransitParam2.toString()));
-        Variables.toOperationTime.setParameter3(Double.parseDouble(goodEngineTransitParam3.toString()));
-        Variables.toOperationTime.setParameter4(Double.parseDouble(goodEngineTransitParam4.toString()));
+        Variables.toOperationTime.setParameter1(Double.parseDouble(goodEngineTransitParam1.getText().toString()));
+        Variables.toOperationTime.setParameter2(Double.parseDouble(goodEngineTransitParam2.getText().toString()));
+        Variables.toOperationTime.setParameter3(Double.parseDouble(goodEngineTransitParam3.getText().toString()));
+        Variables.toOperationTime.setParameter4(Double.parseDouble(goodEngineTransitParam4.getText().toString()));
 
         Spinner engineInstallSpinner = (Spinner) v.findViewById(R.id.engineInstallDistributionType);
         EditText engineInstallTransitParam1 = (EditText) v.findViewById(R.id.engineInstallParam1Text);
@@ -586,10 +641,10 @@ public class VariablesFragment extends Fragment{
         EditText engineInstallTransitParam3 = (EditText) v.findViewById(R.id.engineInstallParam3Text);
         EditText engineInstallTransitParam4 = (EditText) v.findViewById(R.id.engineInstallParam4Text);
         Variables.refitTime.setType(engineInstallSpinner.getSelectedItemPosition() + 1);
-        Variables.refitTime.setParameter1(Double.parseDouble(engineInstallTransitParam1.toString()));
-        Variables.refitTime.setParameter2(Double.parseDouble(engineInstallTransitParam2.toString()));
-        Variables.refitTime.setParameter3(Double.parseDouble(engineInstallTransitParam3.toString()));
-        Variables.refitTime.setParameter4(Double.parseDouble(engineInstallTransitParam4.toString()));
+        Variables.refitTime.setParameter1(Double.parseDouble(engineInstallTransitParam1.getText().toString()));
+        Variables.refitTime.setParameter2(Double.parseDouble(engineInstallTransitParam2.getText().toString()));
+        Variables.refitTime.setParameter3(Double.parseDouble(engineInstallTransitParam3.getText().toString()));
+        Variables.refitTime.setParameter4(Double.parseDouble(engineInstallTransitParam4.getText().toString()));
 
         refreshCurrentVarValues(v);
     }
@@ -619,18 +674,29 @@ public class VariablesFragment extends Fragment{
         TextView goodEngineTransit2 = (TextView) v.findViewById(R.id.goodEngineTransit2);
         TextView engineInstall2 = (TextView) v.findViewById(R.id.engineInstall2);
 
-        engineFailure2.setText(Html.fromHtml("Engine Failure: <b>" + "Bounded Normal </b>"));
-        engineRemoval2.setText(Html.fromHtml(""));
-        badEngineTransit2.setText(Html.fromHtml(""));
-        engineRepair2.setText(Html.fromHtml(""));
-        goodEngineTransit2.setText(Html.fromHtml(""));
-        engineInstall2.setText(Html.fromHtml(""));
+        engineFailure2.setText(distributionTypeString(Variables.operationalTime, "Engine Failure: "));
+        engineRemoval2.setText(distributionTypeString(Variables.removalTime, "Engine Removal: "));
+        badEngineTransit2.setText(distributionTypeString(Variables.toWorkshopTime, "Bad engine Transit: "));
+        engineRepair2.setText(distributionTypeString(Variables.repairTime, "Engine repair: "));
+        goodEngineTransit2.setText(distributionTypeString(Variables.toOperationTime, "Good Engine Transit: "));
+        engineInstall2.setText(distributionTypeString(Variables.refitTime, "Engine Install: "));
     }
 
-    public String distributionTypeString (ActivityDistribution activity){
-        String type = "";
-        // Continue
-        return type;
+    public Spanned distributionTypeString (ActivityDistribution activity, String eventName){
+        Spanned details = Html.fromHtml("");
+        switch (activity.getType()){
+            case 1: details = Html.fromHtml(eventName + "<b> Bounded Normal. </b>Mean: <b> " + activity.getParameter1() + "</b> Std Dev: <b> " + activity.getParameter2() + ". </b> Minimum: <b> " + activity.getParameter3() + ". </b> Maximum: <b>" + activity.getParameter4() + ". <b/>");
+                break;
+            case 2: details = Html.fromHtml(eventName + "<b> Uniform. </b> Minimum: <b> " + activity.getParameter1() + ". </b> Maximum: <b>" + activity.getParameter2() + ".</b>");
+                break;
+            case 3: details = Html.fromHtml(eventName + "<b> Constant. </b> Value: <b>" + activity.getParameter1() + ".</b>");
+                break;
+            case 4: details = Html.fromHtml(eventName + "<b> DISTRIBUITION TYPE NOT IMPLEMENTED </b>");
+                break;
+            default: details = Html.fromHtml(eventName + "<b> INVALID DISTRIBUTION TYPE VALUE </b>");
+                break;
+        }
+        return details;
     }
 
     public void restoreDefaultValues (View v)
@@ -642,6 +708,8 @@ public class VariablesFragment extends Fragment{
         Variables.spareEngines = 1;
         Variables.MSRD = 1;
         Variables.repairTeams = 1;
+
+        ((MainActivity)getActivity()).initDataVariables();
 
         refreshCurrentVarValues(v);
     }
