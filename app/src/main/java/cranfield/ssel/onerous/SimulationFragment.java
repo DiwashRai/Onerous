@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.app.Fragment;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.TextView;
 
 public class SimulationFragment extends Fragment{
@@ -51,41 +53,23 @@ public class SimulationFragment extends Fragment{
         SimGraphics graphics = new SimGraphics(view);
         graphics.resetImage();
 
-        Button toggleanim = (Button) view.findViewById(R.id.toggleanim);
-        toggleanim.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (Variables.animationsOn) Variables.animationsOn = false;
-                else Variables.animationsOn = true;
-
-                TextView animstatus = (TextView) view.findViewById(R.id.animstatus);
-                if (Variables.animationsOn){
-                    animstatus.setText("Animations: ON");
-                    animstatus.setTextColor(Color.parseColor("#42B956"));
-                }
-                else {
-                    animstatus.setText("Animations: OFF");
-                    animstatus.setTextColor(Color.parseColor("#F73737"));
-                }
+        Switch graphicsSwitch = (Switch) view.findViewById(R.id.graphicsSwitch);
+        if (Variables.graphicsOn) graphicsSwitch.setChecked(true);
+        else graphicsSwitch.setChecked(false);
+        graphicsSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) Variables.graphicsOn = true;
+                else Variables.graphicsOn = false;
             }
         });
 
-        Button togglegraphics = (Button) view.findViewById(R.id.togglegraphics);
-        togglegraphics.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (Variables.graphicsOn) Variables.graphicsOn = false;
-                else Variables.graphicsOn = true;
-
-                TextView graphicsstatus = (TextView) view.findViewById(R.id.graphicsstatus);
-                if (Variables.graphicsOn){
-                    graphicsstatus.setText("Graphics: ON");
-                    graphicsstatus.setTextColor(Color.parseColor("#42B956"));
-                }
-                else {
-                    graphicsstatus.setText("Graphics: OFF");
-                    graphicsstatus.setTextColor(Color.parseColor("#F73737"));
-                }
+        Switch animationSwitch = (Switch) view.findViewById(R.id.animationSwitch);
+        if (Variables.animationsOn) animationSwitch.setChecked(true);
+        else animationSwitch.setChecked(false);
+        animationSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) Variables.animationsOn = true;
+                else Variables.animationsOn = false;
             }
         });
         return view;

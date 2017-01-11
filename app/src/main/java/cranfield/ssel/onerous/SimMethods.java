@@ -172,6 +172,20 @@ public class SimMethods {
 
     public void resetAllGraphData()
     {
+        Variables.opheliGraphPointNum = 0;
+        Variables.failedQGraphPointNum = 0;
+        Variables.removeEngGraphPointNum = 0;
+        Variables.toRepairGraphPointNum = 0;
+        Variables.badEngQGraphPointNum = 0;
+        Variables.engRepairGraphPointNum = 0;
+        Variables.toOperationGraphPointNum = 0;
+        Variables.goodEngQGraphPointNum = 0;
+        Variables.refitEngGraphPointNum = 0;
+        Variables.qForOpGraphPointNum = 0;
+        Variables.heliAwaitEngGraphPointNum = 0;
+        Variables.msrdIdleQGraphPointNum = 0;
+        Variables.repairTeamIdleGraphPointNum = 0;
+
         resetGraphData(Variables.opHeliGraphData);
         resetGraphData(Variables.msrdWorkingGraphData);
         resetGraphData(Variables.failedQGraphData);
@@ -188,8 +202,8 @@ public class SimMethods {
         resetGraphData(Variables.repairTeamIdleGraphData);
     }
 
-    public void resetGraphData(double [][] graphData){
-        for (int i=0; i<Variables.maxGraphPoints; ++i){
+    public void resetGraphData(float [][] graphData){
+        for (int i=0; i<graphData.length; ++i){
             graphData[i][0] = 0;
             graphData[i][1] = 0;
         }

@@ -14,7 +14,8 @@
         android:id="@+id/ophelistatsbtn"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -22,7 +23,8 @@
         android:id="@+id/failedqstatsbtn"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/repairteamworkingstatsbtn"
-        android:layout_toEndOf="@+id/repairteamworkingstatsbtn" />
+        android:layout_toEndOf="@+id/repairteamworkingstatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -30,7 +32,8 @@
         android:id="@+id/msrdworkingstatsbtn"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/ophelistatsbtn"
-        android:layout_toEndOf="@+id/ophelistatsbtn" />
+        android:layout_toEndOf="@+id/ophelistatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -38,7 +41,8 @@
         android:id="@+id/repairteamworkingstatsbtn"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/msrdworkingstatsbtn"
-        android:layout_toEndOf="@+id/msrdworkingstatsbtn" />
+        android:layout_toEndOf="@+id/msrdworkingstatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -46,7 +50,8 @@
         android:id="@+id/removeenginestatsbtn"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/failedqstatsbtn"
-        android:layout_toEndOf="@+id/failedqstatsbtn" />
+        android:layout_toEndOf="@+id/failedqstatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -54,7 +59,8 @@
         android:id="@+id/transittorepairstatsbtn"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/removeenginestatsbtn"
-        android:layout_toEndOf="@+id/removeenginestatsbtn" />
+        android:layout_toEndOf="@+id/removeenginestatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -62,7 +68,8 @@
         android:id="@+id/badengineqstatsbtn"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/transittorepairstatsbtn"
-        android:layout_toEndOf="@+id/transittorepairstatsbtn" />
+        android:layout_toEndOf="@+id/transittorepairstatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -71,7 +78,8 @@
         android:layout_below="@+id/ophelistatsbtn"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="80dp" />
+        android:layout_marginLeft="80dp"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -79,7 +87,8 @@
         android:id="@+id/goodengineqstatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
         android:layout_toRightOf="@+id/transitfromrepairstatsbtn"
-        android:layout_toEndOf="@+id/transitfromrepairstatsbtn" />
+        android:layout_toEndOf="@+id/transitfromrepairstatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -87,7 +96,8 @@
         android:id="@+id/refitenginestatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
         android:layout_toRightOf="@+id/goodengineqstatsbtn"
-        android:layout_toEndOf="@+id/goodengineqstatsbtn" />
+        android:layout_toEndOf="@+id/goodengineqstatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -95,7 +105,8 @@
         android:id="@+id/qforopstatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
         android:layout_toRightOf="@+id/refitenginestatsbtn"
-        android:layout_toEndOf="@+id/refitenginestatsbtn" />
+        android:layout_toEndOf="@+id/refitenginestatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -103,7 +114,8 @@
         android:id="@+id/heliwaitstatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
         android:layout_toRightOf="@+id/qforopstatsbtn"
-        android:layout_toEndOf="@+id/qforopstatsbtn" />
+        android:layout_toEndOf="@+id/qforopstatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -111,7 +123,8 @@
         android:id="@+id/msrdidlesqstatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
         android:layout_toRightOf="@+id/heliwaitstatsbtn"
-        android:layout_toEndOf="@+id/heliwaitstatsbtn" />
+        android:layout_toEndOf="@+id/heliwaitstatsbtn"
+        android:textStyle="normal|bold" />
 
     <Button
         style="@style/resultsButtonStyle"
@@ -119,7 +132,8 @@
         android:id="@+id/repairteamsidleqstatsbtn"
         android:layout_below="@+id/ophelistatsbtn"
         android:layout_toRightOf="@+id/msrdidlesqstatsbtn"
-        android:layout_toEndOf="@+id/msrdidlesqstatsbtn" />
+        android:layout_toEndOf="@+id/msrdidlesqstatsbtn"
+        android:textStyle="normal|bold" />
 
     <ScrollView android:id="@+id/scrollView1"
         android:layout_width="wrap_content"
@@ -155,7 +169,8 @@
         android:id="@+id/enginerepairstatsbtn"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/badengineqstatsbtn"
-        android:layout_toEndOf="@+id/badengineqstatsbtn" />
+        android:layout_toEndOf="@+id/badengineqstatsbtn"
+        android:textStyle="normal|bold" />
 
 </RelativeLayout>
 

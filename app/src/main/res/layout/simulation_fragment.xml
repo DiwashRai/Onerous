@@ -2603,7 +2603,8 @@
         android:layout_below="@+id/awaitenginecontainer"
         android:layout_centerVertical="false"
         android:layout_marginTop="75dp"
-        android:layout_toLeftOf="@+id/daysLabel" />
+        android:layout_toLeftOf="@+id/daysLabel"
+        android:textStyle="normal|bold" />
 
     <Button
         android:text="Reset Image"
@@ -2612,51 +2613,34 @@
         android:id="@+id/resetImageButton"
         android:layout_alignParentBottom="true"
         android:layout_alignLeft="@+id/msrdrefittoidle"
-        android:layout_alignStart="@+id/msrdrefittoidle" />
+        android:layout_alignStart="@+id/msrdrefittoidle"
+        android:textStyle="normal|bold" />
 
-    <Button
-        android:text="Toggle Animation"
-        android:layout_width="160dp"
+    <Switch
+        android:text="Graphics"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/toggleanim"
-        android:layout_alignBaseline="@+id/togglegraphics"
-        android:layout_alignBottom="@+id/togglegraphics"
-        android:layout_toRightOf="@+id/togglegraphics"
-        android:layout_toEndOf="@+id/togglegraphics" />
-
-    <Button
-        android:text="Toggle Graphics"
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/togglegraphics"
-        android:layout_alignBaseline="@+id/runSimButton"
-        android:layout_alignBottom="@+id/runSimButton"
+        android:id="@+id/graphicsSwitch"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignTop="@+id/runSimButton"
         android:layout_toRightOf="@+id/runSimButton"
-        android:layout_toEndOf="@+id/runSimButton" />
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="normal|bold" />
 
-    <TextView
-        android:text="Animations: ON"
+    <Switch
+        android:text="Animation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:id="@+id/animstatus"
-        android:padding="10dp"
-        android:textSize="14sp"
-        android:textStyle="normal|bold"
-        android:textColor="#42B956" />
-
-    <TextView
-        android:text="Graphics: ON"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/animstatus"
-        android:layout_toStartOf="@+id/animstatus"
-        android:id="@+id/graphicsstatus"
-        android:padding="10dp"
-        android:textStyle="normal|bold"
-        android:textColor="#42B956" />
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:id="@+id/animationSwitch"
+        android:layout_toRightOf="@+id/graphicsSwitch"
+        android:layout_alignTop="@+id/graphicsSwitch"
+        android:layout_marginLeft="20dp"
+        android:textStyle="normal|bold" />
 
 </RelativeLayout>

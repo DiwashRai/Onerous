@@ -35,7 +35,8 @@
             android:id="@+id/updateVariablesButton"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="80dp" />
+            android:layout_marginBottom="80dp"
+            android:textStyle="normal|bold" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -1073,7 +1074,8 @@
             android:id="@+id/restoreDefaultBtn"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="121dp" />
+            android:layout_marginBottom="121dp"
+            android:textStyle="normal|bold" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
