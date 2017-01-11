@@ -91,6 +91,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -100,7 +101,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -116,6 +116,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -125,7 +126,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -141,6 +141,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -150,7 +151,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -166,6 +166,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -175,7 +176,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
             </LinearLayout>
@@ -225,6 +225,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -234,7 +235,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -250,6 +250,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -259,7 +260,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -275,6 +275,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -284,7 +285,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -300,6 +300,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -309,7 +310,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
             </LinearLayout>
@@ -359,6 +359,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -368,7 +369,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -384,6 +384,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -393,7 +394,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -409,6 +409,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -418,7 +419,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -434,6 +434,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -443,7 +444,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
             </LinearLayout>
@@ -490,6 +490,9 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
+                    android:nextFocusDown="@+id/engineFailureParam2Text"
+                    android:nextFocusForward="@+id/engineFailureParam2Text"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -499,7 +502,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -515,6 +517,9 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
+                    android:nextFocusForward="@+id/engineFailureParam3Text"
+                    android:nextFocusDown="@+id/engineFailureParam3Text"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -524,7 +529,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -540,6 +544,9 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
+                    android:nextFocusForward="@+id/engineFailureParam4Text"
+                    android:nextFocusDown="@+id/engineFailureParam4Text"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -549,7 +556,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -565,6 +571,9 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
+                    android:nextFocusForward="@+id/engineRemovalParam1Text"
+                    android:nextFocusDown="@+id/engineRemovalParam1Text"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -574,7 +583,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -594,12 +602,14 @@
                 android:layout_marginLeft="15dp" />
 
             <EditText
+                style="@style/changeVarEditTextStyle"
+                android:nextFocusForward="@+id/warmUpText"
+                android:nextFocusDown="@+id/warmUpText"
                 android:layout_width="80dp"
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/daysText"
                 android:text="250"
-                android:textSize="14sp"
                 android:layout_height="40dp"
                 android:textAlignment="center"
                 android:layout_below="@+id/runParameters1"
@@ -617,12 +627,14 @@
                 android:layout_toEndOf="@+id/runParameters1" />
 
             <EditText
+                style="@style/changeVarEditTextStyle"
+                android:nextFocusForward="@+id/helicoptersText"
+                android:nextFocusDown="@+id/helicoptersText"
                 android:layout_width="80dp"
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/warmUpText"
                 android:text="25"
-                android:textSize="14sp"
                 android:layout_height="40dp"
                 android:textAlignment="center"
                 android:layout_alignTop="@+id/warmUpPeriod1"
@@ -630,6 +642,9 @@
                 android:layout_toEndOf="@+id/warmUpPeriod1" />
 
             <EditText
+                style="@style/changeVarEditTextStyle"
+                android:nextFocusForward="@+id/spareEnginesText"
+                android:nextFocusDown="@+id/spareEnginesText"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:inputType="number"
@@ -637,7 +652,6 @@
                 android:id="@+id/maxHelicoptersText"
                 android:text="10"
                 android:textAlignment="center"
-                android:textSize="14sp"
                 android:layout_alignTop="@+id/maxHelicopters1"
                 android:layout_toRightOf="@+id/maxHelicopters1"
                 android:layout_toEndOf="@+id/maxHelicopters1" />
@@ -653,6 +667,9 @@
                 android:layout_alignStart="@+id/entityNumber1" />
 
             <EditText
+                style="@style/changeVarEditTextStyle"
+                android:nextFocusForward="@+id/rememsrdText"
+                android:nextFocusDown="@+id/rememsrdText"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:inputType="number"
@@ -660,7 +677,6 @@
                 android:id="@+id/spareEnginesText"
                 android:text="1"
                 android:textAlignment="center"
-                android:textSize="14sp"
                 android:layout_below="@+id/helicoptersText"
                 android:layout_toRightOf="@+id/spareEngines1"
                 android:layout_toEndOf="@+id/spareEngines1" />
@@ -676,6 +692,9 @@
                 android:layout_toEndOf="@+id/spareEnginesText" />
 
             <EditText
+                style="@style/changeVarEditTextStyle"
+                android:nextFocusDown="@+id/engineFailureParam1Text"
+                android:nextFocusForward="@+id/engineFailureParam1Text"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:inputType="number"
@@ -683,7 +702,6 @@
                 android:id="@+id/repairTeamsText"
                 android:text="1"
                 android:textAlignment="center"
-                android:textSize="14sp"
                 android:layout_below="@+id/spareEnginesText"
                 android:layout_toRightOf="@+id/repairTeams1"
                 android:layout_toEndOf="@+id/repairTeams1" />
@@ -720,6 +738,9 @@
                 android:layout_alignStart="@+id/entityNumber1" />
 
             <EditText
+                style="@style/changeVarEditTextStyle"
+                android:nextFocusForward="@+id/repairTeamsText"
+                android:nextFocusDown="@+id/repairTeamsText"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:inputType="number"
@@ -727,12 +748,14 @@
                 android:id="@+id/rememsrdText"
                 android:text="1"
                 android:textAlignment="center"
-                android:textSize="14sp"
                 android:layout_below="@+id/maxHelicoptersText"
                 android:layout_toRightOf="@+id/remeMSRD1"
                 android:layout_toEndOf="@+id/remeMSRD1" />
 
             <EditText
+                style="@style/changeVarEditTextStyle"
+                android:nextFocusForward="@id/maxHelicoptersText"
+                android:nextFocusDown="@+id/maxHelicoptersText"
                 android:layout_width="80dp"
                 android:layout_height="40dp"
                 android:inputType="number"
@@ -740,7 +763,6 @@
                 android:id="@+id/helicoptersText"
                 android:text="10"
                 android:textAlignment="center"
-                android:textSize="14sp"
                 android:layout_below="@+id/entityNumber1"
                 android:layout_toRightOf="@+id/helicopters1"
                 android:layout_toEndOf="@+id/helicopters1" />
@@ -825,6 +847,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -834,7 +857,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -850,6 +872,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -859,7 +882,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -875,6 +897,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -884,7 +907,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -900,6 +922,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -909,7 +932,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
             </LinearLayout>
@@ -958,6 +980,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -967,7 +990,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -983,6 +1005,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -992,7 +1015,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -1008,6 +1030,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -1017,7 +1040,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 
@@ -1033,6 +1055,7 @@
                     android:layout_marginTop="10dp" />
 
                 <EditText
+                    style="@style/changeVarEditTextStyle"
                     android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:inputType="numberDecimal"
@@ -1042,7 +1065,6 @@
                     android:layout_toRightOf="@+id/spareEnginesText"
                     android:layout_toEndOf="@+id/spareEnginesText"
                     android:text="0"
-                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:layout_marginTop="10dp" />
 

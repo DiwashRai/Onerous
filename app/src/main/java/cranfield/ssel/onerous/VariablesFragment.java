@@ -77,6 +77,11 @@ public class VariablesFragment extends Fragment{
                         param2text.setVisibility(EditText.VISIBLE);
                         param3text.setVisibility(EditText.VISIBLE);
                         param4text.setVisibility(EditText.VISIBLE);
+
+                        param1text.setNextFocusDownId(R.id.engineFailureParam2Text);
+                        param2text.setNextFocusDownId(R.id.engineFailureParam2Text);
+                        param3text.setNextFocusDownId(R.id.engineFailureParam2Text);
+                        param4text.setNextFocusDownId(R.id.engineFailureParam2Text);/// Continue
                         break;
                     case 1:
                         param1tv.setText("Minimum: ");
@@ -106,12 +111,12 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
-                        param1tv.setVisibility(EditText.GONE);
+                        param1tv.setVisibility(EditText.VISIBLE);
                         param2tv.setVisibility(EditText.GONE);
                         param3tv.setVisibility(EditText.GONE);
                         param4tv.setVisibility(EditText.GONE);
 
-                        param1text.setVisibility(EditText.GONE);
+                        param1text.setVisibility(EditText.VISIBLE);
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
@@ -190,12 +195,12 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
-                        param1tv.setVisibility(EditText.GONE);
+                        param1tv.setVisibility(EditText.VISIBLE);
                         param2tv.setVisibility(EditText.GONE);
                         param3tv.setVisibility(EditText.GONE);
                         param4tv.setVisibility(EditText.GONE);
 
-                        param1text.setVisibility(EditText.GONE);
+                        param1text.setVisibility(EditText.VISIBLE);
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
@@ -274,12 +279,12 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
-                        param1tv.setVisibility(EditText.GONE);
+                        param1tv.setVisibility(EditText.VISIBLE);
                         param2tv.setVisibility(EditText.GONE);
                         param3tv.setVisibility(EditText.GONE);
                         param4tv.setVisibility(EditText.GONE);
 
-                        param1text.setVisibility(EditText.GONE);
+                        param1text.setVisibility(EditText.VISIBLE);
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
@@ -358,12 +363,12 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
-                        param1tv.setVisibility(EditText.GONE);
+                        param1tv.setVisibility(EditText.VISIBLE);
                         param2tv.setVisibility(EditText.GONE);
                         param3tv.setVisibility(EditText.GONE);
                         param4tv.setVisibility(EditText.GONE);
 
-                        param1text.setVisibility(EditText.GONE);
+                        param1text.setVisibility(EditText.VISIBLE);
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
@@ -442,12 +447,12 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
-                        param1tv.setVisibility(EditText.GONE);
+                        param1tv.setVisibility(EditText.VISIBLE);
                         param2tv.setVisibility(EditText.GONE);
                         param3tv.setVisibility(EditText.GONE);
                         param4tv.setVisibility(EditText.GONE);
 
-                        param1text.setVisibility(EditText.GONE);
+                        param1text.setVisibility(EditText.VISIBLE);
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
@@ -526,12 +531,12 @@ public class VariablesFragment extends Fragment{
                         param4text.setVisibility(EditText.GONE);
                         break;
                     case 3:
-                        param1tv.setVisibility(EditText.GONE);
+                        param1tv.setVisibility(EditText.VISIBLE);
                         param2tv.setVisibility(EditText.GONE);
                         param3tv.setVisibility(EditText.GONE);
                         param4tv.setVisibility(EditText.GONE);
 
-                        param1text.setVisibility(EditText.GONE);
+                        param1text.setVisibility(EditText.VISIBLE);
                         param2text.setVisibility(EditText.GONE);
                         param3text.setVisibility(EditText.GONE);
                         param4text.setVisibility(EditText.GONE);
