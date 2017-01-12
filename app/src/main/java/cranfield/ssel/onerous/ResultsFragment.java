@@ -667,6 +667,7 @@ public class ResultsFragment extends Fragment{
         }
         else {
             List<Entry> entries = new ArrayList<Entry>();
+            entries.add(new Entry (0,graphData[0][1]));
             for (int i = 0; i < graphData.length; ++i) {
                 if ((graphData[i][0] != 0) || (graphData[i][1] != 0)) {
                     entries.add(new Entry((float) graphData[i][0], (float) graphData[i][1]));
@@ -676,6 +677,7 @@ public class ResultsFragment extends Fragment{
             dataSet.setDrawCircles(false);
             dataSet.setLineWidth(2);
             dataSet.setColor(android.graphics.Color.parseColor("#4682B4"));
+            dataSet.setDrawValues(false);
 
             LineData lineData = new LineData(dataSet);
             chart.setBackgroundColor(android.graphics.Color.parseColor("#E5E7E9"));

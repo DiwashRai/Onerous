@@ -5,8 +5,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.math.BigDecimal;
-import java.math.MathContext;
+//import java.math.BigDecimal;
+//import java.math.MathContext;
 import java.util.ArrayList;
 
 /**
@@ -39,7 +39,7 @@ public class SimMethods {
         });
 
         initList();
-        printList(); //prints list of events in schedule to console. Just a tool for dev to monitor execution
+        //printList(); //prints list of events in schedule to console. Just a tool for dev to monitor execution
 
         for (Variables.endFlag = false; Variables.endFlag == false;)
         {
@@ -92,7 +92,7 @@ public class SimMethods {
             }
         });
 
-        arrayUsageOut();
+//        arrayUsageOut();
         stats.finalStats();
     }
 
@@ -224,44 +224,6 @@ public class SimMethods {
         }
     }
 
-    public void printList()
-    {
-        System.out.println("EVENT LIST");
-        for (int i = 0; i < Variables.list.size(); i++)
-        {
-            BigDecimal bd = new BigDecimal(Variables.list.get(i).getTime());
-            bd = bd.round(new MathContext(16));
-            System.out.print("[" + bd +  " , " + Variables.list.get(i).getKind() + "]");
-            System.out.println();
-        }
-        System.out.println();
-    }
-
-    // Custom print functions to monitor simulation in console. Not necessary for final application
-
-    public void printEvent(EventData e)
-    {
-        BigDecimal bd = new BigDecimal(e.getTime());
-        bd = bd.round(new MathContext(16));
-        System.out.println("[" + bd + ", " + e.getKind() + "]");
-    }
-
-    public void printResultsData (ResultsData r)
-    {
-        System.out.println("----------");
-        System.out.println("RESULTS");
-        System.out.println("----------");
-        System.out.println("Mean = " + r.getMean());
-        System.out.println("|NUMBER OF N          |            % TIME N AVAILABLE      |            % TIME N OR MORE AVAILABLE|");
-        for (int i = 28; i > -1; i--)
-        {
-            if (r.getCumulative(i) > 0)
-            {
-                System.out.println(i + "                     "+r.getNumber(i)+"                                     "+ r.getCumulative(i));
-            }
-        }
-    }
-
     static public void addEvent (ArrayList<EventData> l, EventData n) {
 
         // this function adds new events to the list of events scheduled. It places the events in order as the come so sorting is never required.
@@ -281,18 +243,57 @@ public class SimMethods {
         }
     }
 
-    public static void arrayUsageOut (){ //method used for tracking mermory usage to generate the graphs
-        System.out.println("failed Q: " + Variables.failedQGraphPointNum);
-        System.out.println("Remove Eng:" + Variables.removeEngGraphPointNum);
-        System.out.println("To repair:" + Variables.toRepairGraphPointNum);
-        System.out.println("bad eng Q:" + Variables.badEngQGraphPointNum);
-        System.out.println("eng Repair:" + Variables.engRepairGraphPointNum);
-        System.out.println("to Operation:" + Variables.toOperationGraphPointNum);
-        System.out.println("good eng Q:" + Variables.goodEngQGraphPointNum);
-        System.out.println("refit Eng Graph" + Variables.refitEngGraphPointNum);
-        System.out.println("Q for op:" + Variables.qForOpGraphPointNum);
-        System.out.println("heli Await Eng:" + Variables.heliAwaitEngGraphPointNum);
-        System.out.println("msrd idle:" + Variables.msrdIdleQGraphPointNum);
-        System.out.println("repair team Idle:" + Variables.repairTeamIdleGraphPointNum);
-    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////// Custom print functions to monitor simulation in console. Not necessary for final application//////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//    public void printList()
+//    {
+//        System.out.println("EVENT LIST");
+//        for (int i = 0; i < Variables.list.size(); i++)
+//        {
+//            BigDecimal bd = new BigDecimal(Variables.list.get(i).getTime());
+//            bd = bd.round(new MathContext(16));
+//            System.out.print("[" + bd +  " , " + Variables.list.get(i).getKind() + "]");
+//            System.out.println();
+//        }
+//        System.out.println();
+//    }
+
+//    public void printEvent(EventData e)
+//    {
+//        BigDecimal bd = new BigDecimal(e.getTime());
+//        bd = bd.round(new MathContext(16));
+//        System.out.println("[" + bd + ", " + e.getKind() + "]");
+//    }
+//
+//    public void printResultsData (ResultsData r)
+//    {
+//        System.out.println("----------");
+//        System.out.println("RESULTS");
+//        System.out.println("----------");
+//        System.out.println("Mean = " + r.getMean());
+//        System.out.println("|NUMBER OF N          |            % TIME N AVAILABLE      |            % TIME N OR MORE AVAILABLE|");
+//        for (int i = 28; i > -1; i--)
+//        {
+//            if (r.getCumulative(i) > 0)
+//            {
+//                System.out.println(i + "                     "+r.getNumber(i)+"                                     "+ r.getCumulative(i));
+//            }
+//        }
+//    }
+
+//    public static void arrayUsageOut (){ //method used for tracking mermory usage to generate the graphs
+//        System.out.println("failed Q: " + Variables.failedQGraphPointNum);
+//        System.out.println("Remove Eng:" + Variables.removeEngGraphPointNum);
+//        System.out.println("To repair:" + Variables.toRepairGraphPointNum);
+//        System.out.println("bad eng Q:" + Variables.badEngQGraphPointNum);
+//        System.out.println("eng Repair:" + Variables.engRepairGraphPointNum);
+//        System.out.println("to Operation:" + Variables.toOperationGraphPointNum);
+//        System.out.println("good eng Q:" + Variables.goodEngQGraphPointNum);
+//        System.out.println("refit Eng Graph" + Variables.refitEngGraphPointNum);
+//        System.out.println("Q for op:" + Variables.qForOpGraphPointNum);
+//        System.out.println("heli Await Eng:" + Variables.heliAwaitEngGraphPointNum);
+//        System.out.println("msrd idle:" + Variables.msrdIdleQGraphPointNum);
+//        System.out.println("repair team Idle:" + Variables.repairTeamIdleGraphPointNum);
+//    }
 }

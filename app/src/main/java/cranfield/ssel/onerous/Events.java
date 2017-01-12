@@ -712,7 +712,7 @@ public class Events {
         }
     }
 
-    public void doGraphic(final String x, final int y, final boolean z)
+    public void doGraphic(final String whichNode, final int iconValue, final boolean iconBoolean)
     {
         if ((Variables.graphicsOn)&& (!Variables.stopNow)) {
             if (!Variables.animationsOn)
@@ -723,7 +723,7 @@ public class Events {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-                    graphics.switchImage(x,y,z);
+                    graphics.switchImage(whichNode,iconValue,iconBoolean);
                 }
             });
         }
@@ -733,6 +733,12 @@ public class Events {
     {
         switch(whichGraph){
             case "opHeli":
+                if (Variables.opheliGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.opHeliGraphData,Variables.opheliGraphPointNum-1, Variables.opheliGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.opHeliGraphData, Variables.opheliGraphPointNum-2, Variables.opheliGraphPointNum-3))){
+                        Variables.opheliGraphPointNum = Variables.opheliGraphPointNum - 4;
+                    }
+                }
                 Variables.opHeliGraphData[Variables.opheliGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.opHeliGraphData[Variables.opheliGraphPointNum][1] = Variables.numOperational;
 
@@ -743,42 +749,84 @@ public class Events {
             //msrdWorking graph data will be generated from msrdIdle data. repairWorking graph data is equivalent to engRepair
 
             case "failedQ":
+                if (Variables.failedQGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.failedQGraphData,Variables.failedQGraphPointNum-1, Variables.failedQGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.failedQGraphData, Variables.failedQGraphPointNum-2, Variables.failedQGraphPointNum-3))){
+                        Variables.failedQGraphPointNum= Variables.failedQGraphPointNum - 4;
+                    }
+                }
                 Variables.failedQGraphData[Variables.failedQGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.failedQGraphData[Variables.failedQGraphPointNum][1] = Variables.numQforRemoval;
 
                 Variables.failedQGraphPointNum += 1;
                 break;
             case "removeEng":
+                if (Variables.removeEngGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.removeEngGraphData,Variables.removeEngGraphPointNum-1, Variables.removeEngGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.removeEngGraphData, Variables.removeEngGraphPointNum-2, Variables.removeEngGraphPointNum-3))){
+                        Variables.removeEngGraphPointNum= Variables.removeEngGraphPointNum - 4;
+                    }
+                }
                 Variables.removeEngGraphData[Variables.removeEngGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.removeEngGraphData[Variables.removeEngGraphPointNum][1] = Variables.numRemoval;
 
                 Variables.removeEngGraphPointNum += 1;
                 break;
             case "toRepair":
+                if (Variables.toRepairGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.toRepairGraphData,Variables.toRepairGraphPointNum-1, Variables.toRepairGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.toRepairGraphData, Variables.toRepairGraphPointNum-2, Variables.toRepairGraphPointNum-3))){
+                        Variables.toRepairGraphPointNum= Variables.toRepairGraphPointNum - 4;
+                    }
+                }
                 Variables.toRepairGraphData[Variables.toRepairGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.toRepairGraphData[Variables.toRepairGraphPointNum][1] = Variables.numToWorkshop;
 
                 Variables.toRepairGraphPointNum += 1;
                 break;
             case "badEngQ":
+                if (Variables.badEngQGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.badEngQGraphData,Variables.badEngQGraphPointNum-1, Variables.badEngQGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.badEngQGraphData, Variables.badEngQGraphPointNum-2, Variables.badEngQGraphPointNum-3))){
+                        Variables.badEngQGraphPointNum= Variables.badEngQGraphPointNum - 4;
+                    }
+                }
                 Variables.badEngQGraphData[Variables.badEngQGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.badEngQGraphData[Variables.badEngQGraphPointNum][1] = Variables.numQforRepair;
 
                 Variables.badEngQGraphPointNum += 1;
                 break;
             case "engRepair":
+                if (Variables.engRepairGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.engRepairGraphData,Variables.engRepairGraphPointNum-1, Variables.engRepairGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.engRepairGraphData, Variables.engRepairGraphPointNum-2, Variables.engRepairGraphPointNum-3))){
+                        Variables.engRepairGraphPointNum = Variables.engRepairGraphPointNum - 4;
+                    }
+                }
                 Variables.engRepairGraphData[Variables.engRepairGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.engRepairGraphData[Variables.engRepairGraphPointNum][1] = Variables.numRepair;
 
                 Variables.engRepairGraphPointNum += 1;
                 break;
             case "toOperation":
+                if (Variables.toOperationGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.toOperationGraphData,Variables.toOperationGraphPointNum-1, Variables.toOperationGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.toOperationGraphData, Variables.toOperationGraphPointNum-2, Variables.toOperationGraphPointNum-3))){
+                        Variables.toOperationGraphPointNum = Variables.toOperationGraphPointNum - 4;
+                    }
+                }
                 Variables.toOperationGraphData[Variables.toOperationGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.toOperationGraphData[Variables.toOperationGraphPointNum][1] = Variables.numToOperation;
 
                 Variables.toOperationGraphPointNum += 1;
                 break;
             case "goodEngQ":
+                if (Variables.goodEngQGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.goodEngQGraphData,Variables.goodEngQGraphPointNum-1, Variables.goodEngQGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.goodEngQGraphData, Variables.goodEngQGraphPointNum-2, Variables.goodEngQGraphPointNum-3))){
+                        Variables.goodEngQGraphPointNum = Variables.goodEngQGraphPointNum - 4;
+                    }
+                }
                 Variables.goodEngQGraphData[Variables.goodEngQGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.goodEngQGraphData[Variables.goodEngQGraphPointNum][1] = Variables.numQforRefit;
 
@@ -791,24 +839,48 @@ public class Events {
                 Variables.refitEngGraphPointNum += 1;
                 break;
             case "qForOp":
+                if (Variables.qForOpGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.qForOpGraphData,Variables.qForOpGraphPointNum-1, Variables.qForOpGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.qForOpGraphData, Variables.qForOpGraphPointNum-2, Variables.qForOpGraphPointNum-3))){
+                        Variables.qForOpGraphPointNum = Variables.qForOpGraphPointNum - 4;
+                    }
+                }
                 Variables.qForOpGraphData[Variables.qForOpGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.qForOpGraphData[Variables.qForOpGraphPointNum][1] = Variables.numQforOperational;
 
                 Variables.qForOpGraphPointNum += 1;
                 break;
             case "heliAwaitEng":
+                if (Variables.heliAwaitEngGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.heliAwaitEngGraphData,Variables.heliAwaitEngGraphPointNum-1, Variables.heliAwaitEngGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.heliAwaitEngGraphData, Variables.heliAwaitEngGraphPointNum-2, Variables.heliAwaitEngGraphPointNum-3))){
+                        Variables.heliAwaitEngGraphPointNum = Variables.heliAwaitEngGraphPointNum - 4;
+                    }
+                }
                 Variables.heliAwaitEngGraphData[Variables.heliAwaitEngGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.heliAwaitEngGraphData[Variables.heliAwaitEngGraphPointNum][1] = Variables.numQHelisNoEngine;
 
                 Variables.heliAwaitEngGraphPointNum += 1;
                 break;
             case "msrdIdleQ":
+                if (Variables.msrdIdleQGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.msrdIdleQGraphData,Variables.msrdIdleQGraphPointNum-1, Variables.msrdIdleQGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.msrdIdleQGraphData, Variables.msrdIdleQGraphPointNum-2, Variables.msrdIdleQGraphPointNum-3))){
+                        Variables.msrdIdleQGraphPointNum = Variables.msrdIdleQGraphPointNum - 4;
+                    }
+                }
                 Variables.msrdIdleQGraphData[Variables.msrdIdleQGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.msrdIdleQGraphData[Variables.msrdIdleQGraphPointNum][1] = Variables.numMSRDIdle;
 
                 Variables.msrdIdleQGraphPointNum += 1;
                 break;
             case "repairTeamIdle":
+                if (Variables.repairTeamIdleGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.repairTeamIdleGraphData,Variables.repairTeamIdleGraphPointNum-1, Variables.repairTeamIdleGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.repairTeamIdleGraphData, Variables.repairTeamIdleGraphPointNum-2, Variables.repairTeamIdleGraphPointNum-3))){
+                        Variables.repairTeamIdleGraphPointNum = Variables.repairTeamIdleGraphPointNum- 4;
+                    }
+                }
                 Variables.repairTeamIdleGraphData[Variables.repairTeamIdleGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.repairTeamIdleGraphData[Variables.repairTeamIdleGraphPointNum][1] = Variables.numRepairTeamsIdle;
 
@@ -818,5 +890,15 @@ public class Events {
                 System.out.println("Invalid String entered into saveGraphStats method.");
                 break;
         }
+    }
+
+    public boolean arrayRowsIsEqual(float [][] arr, int row1, int row2){
+        boolean isEqual = true;
+        for (int i=0; i < 2; i++){
+            if ((arr[row1][i] != arr[row2][i])){
+                return false;
+            }
+        }
+        return isEqual;
     }
 }

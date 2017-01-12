@@ -1,6 +1,5 @@
 package cranfield.ssel.onerous;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -11,7 +10,6 @@ import android.support.v4.app.Fragment;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
-import android.widget.TextView;
 
 public class SimulationFragment extends Fragment{
 

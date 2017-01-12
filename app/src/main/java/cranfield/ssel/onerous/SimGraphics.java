@@ -1,10 +1,8 @@
 package cranfield.ssel.onerous;
 
-import android.graphics.Color;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Switch;
-import android.widget.TextView;
 
 /**
  * Created by diwash on 04/11/2016.

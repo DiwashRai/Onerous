@@ -1,7 +1,6 @@
 package cranfield.ssel.onerous;
 
 import android.os.Bundle;
-import android.preference.EditTextPreference;
 import android.text.Html;
 import android.text.Spanned;
 import android.view.LayoutInflater;
