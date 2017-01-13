@@ -34,21 +34,21 @@ public class Events {
             try {Thread.sleep(1000);}
             catch (InterruptedException e) {e.printStackTrace();}
         }
-        if ((Variables.opheliGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.opheliGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("opHeli");
         }
         Variables.numOperational = Variables.numOperational - 1;
-        if ((Variables.opheliGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.opheliGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("opHeli");
         }
 
         stats.updateStats(Variables.qforRemovalStats, Variables.numQforRemoval);
 
-        if ((Variables.failedQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.failedQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("failedQ");
         }
         Variables.numQforRemoval = Variables.numQforRemoval + 1;
-        if ((Variables.failedQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.failedQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("failedQ");
         }
         doGraphic("Failed",Variables.numQforRemoval,true);
@@ -66,11 +66,11 @@ public class Events {
             stats.updateStats(Variables.qforRemovalStats, Variables.numQforRemoval);
             doGraphic("Failed",Variables.numQforRemoval,false);
 
-            if ((Variables.failedQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.failedQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("failedQ");
             }
             Variables.numQforRemoval = Variables.numQforRemoval - 1;
-            if ((Variables.failedQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.failedQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("failedQ");
             }
             if ((Variables.animationsOn)&& (Variables.graphicsOn))
@@ -87,11 +87,11 @@ public class Events {
 
             stats.updateStats(Variables.removalStats, Variables.numRemoval);
 
-            if ((Variables.removeEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.removeEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("removeEng");
             }
             Variables.numRemoval = Variables.numRemoval + 1;
-            if ((Variables.removeEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.removeEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("removeEng");
             }
 
@@ -100,11 +100,11 @@ public class Events {
             stats.updateStats(Variables.MSRDIdleStats, Variables.numMSRDIdle);
             doGraphic("MSRDidle", Variables.numMSRDIdle,false);
 
-            if ((Variables.msrdIdleQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.msrdIdleQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("msrdIdleQ");
             }
             Variables.numMSRDIdle = Variables.numMSRDIdle - 1;
-            if ((Variables.msrdIdleQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.msrdIdleQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("msrdIdleQ");
             }
 
@@ -132,11 +132,11 @@ public class Events {
     {
         stats.updateStats(Variables.qHelisNoEngineStats, Variables.numQHelisNoEngine);
 
-        if ((Variables.heliAwaitEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.heliAwaitEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("heliAwaitEng");
         }
         Variables.numQHelisNoEngine = Variables.numQHelisNoEngine + 1;
-        if ((Variables.heliAwaitEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.heliAwaitEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("heliAwaitEng");
         }
 
@@ -156,11 +156,11 @@ public class Events {
 
         stats.updateStats(Variables.MSRDIdleStats, Variables.numMSRDIdle);
 
-        if ((Variables.msrdIdleQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.msrdIdleQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("msrdIdleQ");
         }
         Variables.numMSRDIdle = Variables.numMSRDIdle + 1;
-        if ((Variables.msrdIdleQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.msrdIdleQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("msrdIdleQ");
         }
 
@@ -198,11 +198,11 @@ public class Events {
 
         stats.updateStats(Variables.removalStats, Variables.numRemoval);
 
-        if ((Variables.removeEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.removeEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("removeEng");
         }
         Variables.numRemoval = Variables.numRemoval - 1;
-        if ((Variables.removeEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.removeEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("removeEng");
         }
 
@@ -237,11 +237,11 @@ public class Events {
 
             stats.updateStats(Variables.toWorkshopStats, Variables.numToWorkshop);
 
-            if ((Variables.toRepairGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.toRepairGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("toRepair");
             }
             Variables.numToWorkshop = Variables.numToWorkshop + 1;
-            if ((Variables.toRepairGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.toRepairGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("toRepair");
             }
             doGraphic("ToWorkshop",Variables.numToWorkshop, true);
@@ -269,21 +269,21 @@ public class Events {
             catch (InterruptedException e) {e.printStackTrace();}
         }
 
-        if ((Variables.toRepairGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.toRepairGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("toRepair");
         }
         Variables.numToWorkshop = Variables.numToWorkshop - 1;
-        if ((Variables.toRepairGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.toRepairGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("toRepair");
         }
 
         stats.updateStats(Variables.qforRepairStats, Variables.numQforRepair);
 
-        if ((Variables.badEngQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.badEngQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("badEngQ");
         }
         Variables.numQforRepair = Variables.numQforRepair + 1;
-        if ((Variables.badEngQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.badEngQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("badEngQ");
         }
 
@@ -301,22 +301,22 @@ public class Events {
         {
             stats.updateStats(Variables.refitStats, Variables.numRefit);
 
-            if ((Variables.refitEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.refitEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("refitEng");
             }
             Variables.numRefit = Variables.numRefit + 1;
-            if ((Variables.refitEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.refitEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("refitEng");
             }
 
             stats.updateStats(Variables.qHelisNoEngineStats, Variables.numQHelisNoEngine);
             doGraphic("HeliWait", Variables.numQHelisNoEngine, false);
 
-            if ((Variables.heliAwaitEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.heliAwaitEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("heliAwaitEng");
             }
             Variables.numQHelisNoEngine = Variables.numQHelisNoEngine - 1;
-            if ((Variables.heliAwaitEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.heliAwaitEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("heliAwaitEng");
             }
 
@@ -336,11 +336,11 @@ public class Events {
             stats.updateStats(Variables.qforRefitStats, Variables.numQforRefit);
             doGraphic("GoodEngine",Variables.numQforRefit, false);
 
-            if ((Variables.goodEngQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.goodEngQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("goodEngQ");
             }
             Variables.numQforRefit = Variables.numQforRefit - 1;
-            if ((Variables.goodEngQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.goodEngQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("goodEngQ");
             }
 
@@ -360,11 +360,11 @@ public class Events {
             stats.updateStats(Variables.MSRDIdleStats, Variables.numMSRDIdle);
             doGraphic("MSRDidle", Variables.numMSRDIdle, false);
 
-            if ((Variables.msrdIdleQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.msrdIdleQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("msrdIdleQ");
             }
             Variables.numMSRDIdle = Variables.numMSRDIdle - 1;
-            if ((Variables.msrdIdleQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.msrdIdleQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("msrdIdleQ");
             }
 
@@ -405,11 +405,11 @@ public class Events {
         }
         stats.updateStats(Variables.MSRDIdleStats, Variables.numMSRDIdle);
 
-        if ((Variables.msrdIdleQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.msrdIdleQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime <= Variables.RunTime)){
             saveGraphStats("msrdIdleQ");
         }
         Variables.numMSRDIdle = Variables.numMSRDIdle + 1;
-        if ((Variables.msrdIdleQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.msrdIdleQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("msrdIdleQ");
         }
 
@@ -429,11 +429,11 @@ public class Events {
         }
         stats.updateStats(Variables.qforOperationalStats, Variables.numQforOperational);
 
-        if ((Variables.qForOpGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.qForOpGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("qForOp");
         }
         Variables.numQforOperational = Variables.numQforOperational + 1;
-        if ((Variables.qForOpGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.qForOpGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("qForOp");
         }
 
@@ -441,11 +441,11 @@ public class Events {
 
         stats.updateStats(Variables.refitStats, Variables.numRefit);
 
-        if ((Variables.refitEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.refitEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("refitEng");
         }
         Variables.numRefit = Variables.numRefit -1;
-        if ((Variables.refitEngGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.refitEngGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("refitEng");
         }
 
@@ -474,21 +474,21 @@ public class Events {
                 catch (InterruptedException e) {e.printStackTrace();}
             }
 
-            if ((Variables.badEngQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.badEngQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("badEngQ");
             }
             Variables.numQforRepair = Variables.numQforRepair - 1;
-            if ((Variables.badEngQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.badEngQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("badEngQ");
             }
 
             stats.updateStats(Variables.repairStats, Variables.numRepair);
 
-            if ((Variables.engRepairGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.engRepairGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("engRepair");
             }
             Variables.numRepair = Variables.numRepair +1;
-            if ((Variables.engRepairGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.engRepairGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("engRepair");
             }
 
@@ -507,11 +507,11 @@ public class Events {
                 catch (InterruptedException e) {e.printStackTrace();}
             }
 
-            if ((Variables.repairTeamIdleGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.repairTeamIdleGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("repairTeamIdle");
             }
             Variables.numRepairTeamsIdle = Variables.numRepairTeamsIdle - 1;
-            if ((Variables.repairTeamIdleGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.repairTeamIdleGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("repairTeamIdle");
             }
 
@@ -540,11 +540,11 @@ public class Events {
         }
         stats.updateStats(Variables.repairTeamsIdleStats, Variables.numRepairTeamsIdle);
 
-        if ((Variables.repairTeamIdleGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.repairTeamIdleGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("repairTeamIdle");
         }
         Variables.numRepairTeamsIdle = Variables.numRepairTeamsIdle + 1;
-        if ((Variables.repairTeamIdleGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.repairTeamIdleGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("repairTeamIdle");
         }
 
@@ -564,11 +564,11 @@ public class Events {
         }
         stats.updateStats(Variables.repairStats, Variables.numRepair);
 
-        if ((Variables.engRepairGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.engRepairGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("engRepair");
         }
         Variables.numRepair = Variables.numRepair - 1;
-        if ((Variables.engRepairGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.engRepairGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("engRepair");
         }
 
@@ -609,11 +609,11 @@ public class Events {
 
             stats.updateStats(Variables.toOperationStats, Variables.numToOperation);
 
-            if ((Variables.toOperationGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.toOperationGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("toOperation");
             }
             Variables.numToOperation = Variables.numToOperation + 1;
-            if ((Variables.toOperationGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.toOperationGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("toOperation");
             }
 
@@ -631,11 +631,11 @@ public class Events {
         stats.updateStats(Variables.toOperationStats, Variables.numToOperation);
         doGraphic("ToOperation", Variables.numToOperation, false);
 
-        if ((Variables.toOperationGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.toOperationGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("toOperation");
         }
         Variables.numToOperation = Variables.numToOperation -1;
-        if ((Variables.toOperationGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.toOperationGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("toOperation");
         }
 
@@ -653,11 +653,11 @@ public class Events {
 
         stats.updateStats(Variables.qforRefitStats, Variables.numQforRefit);
 
-        if ((Variables.goodEngQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.goodEngQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("goodEngQ");
         }
         Variables.numQforRefit = Variables.numQforRefit +1;
-        if ((Variables.goodEngQGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+        if ((Variables.goodEngQGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
             saveGraphStats("goodEngQ");
         }
 
@@ -687,20 +687,20 @@ public class Events {
                 catch (InterruptedException e) {e.printStackTrace();}
             }
 
-            if ((Variables.qForOpGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.qForOpGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("qForOp");
             }
             Variables.numQforOperational = Variables.numQforOperational -1;
-            if ((Variables.qForOpGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.qForOpGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("qForOp");
             }
 
             stats.updateStats(Variables.operationalStats, Variables.numOperational );
-            if ((Variables.opheliGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.opheliGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("opHeli");
             }
             Variables.numOperational = Variables.numOperational + 1;
-            if ((Variables.opheliGraphPointNum <= Variables.maxGraphPoints) && (Variables.SimTime < 1001)){
+            if ((Variables.opheliGraphPointNum < Variables.maxGraphPoints) && (Variables.SimTime < Variables.RunTime)){
                 saveGraphStats("opHeli");
             }
             doGraphic("Operational", Variables.numOperational, true);
@@ -712,7 +712,7 @@ public class Events {
         }
     }
 
-    public void doGraphic(final String x, final int y, final boolean z)
+    public void doGraphic(final String whichNode, final int iconValue, final boolean iconBoolean)
     {
         if ((Variables.graphicsOn)&& (!Variables.stopNow)) {
             if (!Variables.animationsOn)
@@ -723,7 +723,7 @@ public class Events {
             handler.post(new Runnable() {
                 @Override
                 public void run() {
-                    graphics.switchImage(x,y,z);
+                    graphics.switchImage(whichNode,iconValue,iconBoolean);
                 }
             });
         }
@@ -733,7 +733,13 @@ public class Events {
     {
         switch(whichGraph){
             case "opHeli":
-                Variables.opHeliGraphData[Variables.opheliGraphPointNum][0] = Variables.SimTime;
+                if (Variables.opheliGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.opHeliGraphData,Variables.opheliGraphPointNum-1, Variables.opheliGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.opHeliGraphData, Variables.opheliGraphPointNum-2, Variables.opheliGraphPointNum-3))){
+                        Variables.opheliGraphPointNum = Variables.opheliGraphPointNum - 4;
+                    }
+                }
+                Variables.opHeliGraphData[Variables.opheliGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.opHeliGraphData[Variables.opheliGraphPointNum][1] = Variables.numOperational;
 
                 Variables.opheliGraphPointNum += 1;
@@ -743,73 +749,139 @@ public class Events {
             //msrdWorking graph data will be generated from msrdIdle data. repairWorking graph data is equivalent to engRepair
 
             case "failedQ":
-                Variables.failedQGraphData[Variables.failedQGraphPointNum][0] = Variables.SimTime;
+                if (Variables.failedQGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.failedQGraphData,Variables.failedQGraphPointNum-1, Variables.failedQGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.failedQGraphData, Variables.failedQGraphPointNum-2, Variables.failedQGraphPointNum-3))){
+                        Variables.failedQGraphPointNum= Variables.failedQGraphPointNum - 4;
+                    }
+                }
+                Variables.failedQGraphData[Variables.failedQGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.failedQGraphData[Variables.failedQGraphPointNum][1] = Variables.numQforRemoval;
 
                 Variables.failedQGraphPointNum += 1;
                 break;
             case "removeEng":
-                Variables.removeEngGraphData[Variables.removeEngGraphPointNum][0] = Variables.SimTime;
+                if (Variables.removeEngGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.removeEngGraphData,Variables.removeEngGraphPointNum-1, Variables.removeEngGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.removeEngGraphData, Variables.removeEngGraphPointNum-2, Variables.removeEngGraphPointNum-3))){
+                        Variables.removeEngGraphPointNum= Variables.removeEngGraphPointNum - 4;
+                    }
+                }
+                Variables.removeEngGraphData[Variables.removeEngGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.removeEngGraphData[Variables.removeEngGraphPointNum][1] = Variables.numRemoval;
 
                 Variables.removeEngGraphPointNum += 1;
                 break;
             case "toRepair":
-                Variables.toRepairGraphData[Variables.toRepairGraphPointNum][0] = Variables.SimTime;
+                if (Variables.toRepairGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.toRepairGraphData,Variables.toRepairGraphPointNum-1, Variables.toRepairGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.toRepairGraphData, Variables.toRepairGraphPointNum-2, Variables.toRepairGraphPointNum-3))){
+                        Variables.toRepairGraphPointNum= Variables.toRepairGraphPointNum - 4;
+                    }
+                }
+                Variables.toRepairGraphData[Variables.toRepairGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.toRepairGraphData[Variables.toRepairGraphPointNum][1] = Variables.numToWorkshop;
 
                 Variables.toRepairGraphPointNum += 1;
                 break;
             case "badEngQ":
-                Variables.badEngQGraphData[Variables.badEngQGraphPointNum][0] = Variables.SimTime;
+                if (Variables.badEngQGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.badEngQGraphData,Variables.badEngQGraphPointNum-1, Variables.badEngQGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.badEngQGraphData, Variables.badEngQGraphPointNum-2, Variables.badEngQGraphPointNum-3))){
+                        Variables.badEngQGraphPointNum= Variables.badEngQGraphPointNum - 4;
+                    }
+                }
+                Variables.badEngQGraphData[Variables.badEngQGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.badEngQGraphData[Variables.badEngQGraphPointNum][1] = Variables.numQforRepair;
 
                 Variables.badEngQGraphPointNum += 1;
                 break;
             case "engRepair":
-                Variables.engRepairGraphData[Variables.engRepairGraphPointNum][0] = Variables.SimTime;
+                if (Variables.engRepairGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.engRepairGraphData,Variables.engRepairGraphPointNum-1, Variables.engRepairGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.engRepairGraphData, Variables.engRepairGraphPointNum-2, Variables.engRepairGraphPointNum-3))){
+                        Variables.engRepairGraphPointNum = Variables.engRepairGraphPointNum - 4;
+                    }
+                }
+                Variables.engRepairGraphData[Variables.engRepairGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.engRepairGraphData[Variables.engRepairGraphPointNum][1] = Variables.numRepair;
 
                 Variables.engRepairGraphPointNum += 1;
                 break;
             case "toOperation":
-                Variables.toOperationGraphData[Variables.toOperationGraphPointNum][0] = Variables.SimTime;
+                if (Variables.toOperationGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.toOperationGraphData,Variables.toOperationGraphPointNum-1, Variables.toOperationGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.toOperationGraphData, Variables.toOperationGraphPointNum-2, Variables.toOperationGraphPointNum-3))){
+                        Variables.toOperationGraphPointNum = Variables.toOperationGraphPointNum - 4;
+                    }
+                }
+                Variables.toOperationGraphData[Variables.toOperationGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.toOperationGraphData[Variables.toOperationGraphPointNum][1] = Variables.numToOperation;
 
                 Variables.toOperationGraphPointNum += 1;
                 break;
             case "goodEngQ":
-                Variables.goodEngQGraphData[Variables.goodEngQGraphPointNum][0] = Variables.SimTime;
+                if (Variables.goodEngQGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.goodEngQGraphData,Variables.goodEngQGraphPointNum-1, Variables.goodEngQGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.goodEngQGraphData, Variables.goodEngQGraphPointNum-2, Variables.goodEngQGraphPointNum-3))){
+                        Variables.goodEngQGraphPointNum = Variables.goodEngQGraphPointNum - 4;
+                    }
+                }
+                Variables.goodEngQGraphData[Variables.goodEngQGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.goodEngQGraphData[Variables.goodEngQGraphPointNum][1] = Variables.numQforRefit;
 
                 Variables.goodEngQGraphPointNum += 1;
                 break;
             case "refitEng":
-                Variables.refitEngGraphData[Variables.refitEngGraphPointNum][0] = Variables.SimTime;
+                Variables.refitEngGraphData[Variables.refitEngGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.refitEngGraphData[Variables.refitEngGraphPointNum][1] = Variables.numRefit;
 
                 Variables.refitEngGraphPointNum += 1;
                 break;
             case "qForOp":
-                Variables.qForOpGraphData[Variables.qForOpGraphPointNum][0] = Variables.SimTime;
+                if (Variables.qForOpGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.qForOpGraphData,Variables.qForOpGraphPointNum-1, Variables.qForOpGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.qForOpGraphData, Variables.qForOpGraphPointNum-2, Variables.qForOpGraphPointNum-3))){
+                        Variables.qForOpGraphPointNum = Variables.qForOpGraphPointNum - 4;
+                    }
+                }
+                Variables.qForOpGraphData[Variables.qForOpGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.qForOpGraphData[Variables.qForOpGraphPointNum][1] = Variables.numQforOperational;
 
                 Variables.qForOpGraphPointNum += 1;
                 break;
             case "heliAwaitEng":
-                Variables.heliAwaitEngGraphData[Variables.heliAwaitEngGraphPointNum][0] = Variables.SimTime;
+                if (Variables.heliAwaitEngGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.heliAwaitEngGraphData,Variables.heliAwaitEngGraphPointNum-1, Variables.heliAwaitEngGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.heliAwaitEngGraphData, Variables.heliAwaitEngGraphPointNum-2, Variables.heliAwaitEngGraphPointNum-3))){
+                        Variables.heliAwaitEngGraphPointNum = Variables.heliAwaitEngGraphPointNum - 4;
+                    }
+                }
+                Variables.heliAwaitEngGraphData[Variables.heliAwaitEngGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.heliAwaitEngGraphData[Variables.heliAwaitEngGraphPointNum][1] = Variables.numQHelisNoEngine;
 
                 Variables.heliAwaitEngGraphPointNum += 1;
                 break;
             case "msrdIdleQ":
-                Variables.msrdIdleQGraphData[Variables.msrdIdleQGraphPointNum][0] = Variables.SimTime;
+                if (Variables.msrdIdleQGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.msrdIdleQGraphData,Variables.msrdIdleQGraphPointNum-1, Variables.msrdIdleQGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.msrdIdleQGraphData, Variables.msrdIdleQGraphPointNum-2, Variables.msrdIdleQGraphPointNum-3))){
+                        Variables.msrdIdleQGraphPointNum = Variables.msrdIdleQGraphPointNum - 4;
+                    }
+                }
+                Variables.msrdIdleQGraphData[Variables.msrdIdleQGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.msrdIdleQGraphData[Variables.msrdIdleQGraphPointNum][1] = Variables.numMSRDIdle;
 
                 Variables.msrdIdleQGraphPointNum += 1;
                 break;
             case "repairTeamIdle":
-                Variables.repairTeamIdleGraphData[Variables.repairTeamIdleGraphPointNum][0] = Variables.SimTime;
+                if (Variables.repairTeamIdleGraphPointNum > 3){
+                    if((arrayRowsIsEqual(Variables.repairTeamIdleGraphData,Variables.repairTeamIdleGraphPointNum-1, Variables.repairTeamIdleGraphPointNum-4)) &&
+                            (arrayRowsIsEqual(Variables.repairTeamIdleGraphData, Variables.repairTeamIdleGraphPointNum-2, Variables.repairTeamIdleGraphPointNum-3))){
+                        Variables.repairTeamIdleGraphPointNum = Variables.repairTeamIdleGraphPointNum- 4;
+                    }
+                }
+                Variables.repairTeamIdleGraphData[Variables.repairTeamIdleGraphPointNum][0] = (float)Variables.SimTime;
                 Variables.repairTeamIdleGraphData[Variables.repairTeamIdleGraphPointNum][1] = Variables.numRepairTeamsIdle;
 
                 Variables.repairTeamIdleGraphPointNum += 1;
@@ -817,8 +889,16 @@ public class Events {
             default:
                 System.out.println("Invalid String entered into saveGraphStats method.");
                 break;
-
-
         }
+    }
+
+    public boolean arrayRowsIsEqual(float [][] arr, int row1, int row2){
+        boolean isEqual = true;
+        for (int i=0; i < 2; i++){
+            if ((arr[row1][i] != arr[row2][i])){
+                return false;
+            }
+        }
+        return isEqual;
     }
 }

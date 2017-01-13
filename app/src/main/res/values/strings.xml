@@ -2,4 +2,11 @@
     <string name="app_name">Onerous</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
+
+    <string-array name="activityDurationType">
+        <item>Bounded Normal</item>
+        <item>Uniform</item>
+        <item>Constant</item>
+        <item>Negative Exponential</item>
+    </string-array>
 </resources>

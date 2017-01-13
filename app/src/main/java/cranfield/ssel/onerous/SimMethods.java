@@ -5,8 +5,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.math.BigDecimal;
-import java.math.MathContext;
+//import java.math.BigDecimal;
+//import java.math.MathContext;
 import java.util.ArrayList;
 
 /**
@@ -24,7 +24,6 @@ public class SimMethods {
         Events Events = new Events(view, handler);
 
         initVariables();
-        initDataVariables();
         resetAllStats();
         resetAllGraphData();
 
@@ -40,7 +39,7 @@ public class SimMethods {
         });
 
         initList();
-        printList(); //prints list of events in schedule to console. Just a tool for dev to monitor execution
+        //printList(); //prints list of events in schedule to console. Just a tool for dev to monitor execution
 
         for (Variables.endFlag = false; Variables.endFlag == false;)
         {
@@ -93,6 +92,7 @@ public class SimMethods {
             }
         });
 
+//        arrayUsageOut();
         stats.finalStats();
     }
 
@@ -137,45 +137,6 @@ public class SimMethods {
         }
     }
 
-    public void initDataVariables()
-    {
-        Variables.operationalTime.setType(1);
-        Variables.operationalTime.setParameter1(15);
-        Variables.operationalTime.setParameter2(3.9);
-        Variables.operationalTime.setParameter3(0);
-        Variables.operationalTime.setParameter4(25);
-
-        Variables.removalTime.setType(3);
-        Variables.removalTime.setParameter1(0.5);
-        Variables.removalTime.setParameter2(0);
-        Variables.removalTime.setParameter3(0);
-        Variables.removalTime.setParameter4(0);
-
-        Variables.toWorkshopTime.setType(3);
-        Variables.toWorkshopTime.setParameter1(0.5);
-        Variables.toWorkshopTime.setParameter2(0);
-        Variables.toWorkshopTime.setParameter3(0);
-        Variables.toWorkshopTime.setParameter4(0);
-
-        Variables.repairTime.setType(2);
-        Variables.repairTime.setParameter1(1);
-        Variables.repairTime.setParameter2(8);
-        Variables.repairTime.setParameter3(0);
-        Variables.repairTime.setParameter4(0);
-
-        Variables.toOperationTime.setType(3);
-        Variables.toOperationTime.setParameter1(0.5);
-        Variables.toOperationTime.setParameter2(0);
-        Variables.toOperationTime.setParameter3(0);
-        Variables.toOperationTime.setParameter4(0);
-
-        Variables.refitTime.setType(3);
-        Variables.refitTime.setParameter1(0.5);
-        Variables.refitTime.setParameter2(0);
-        Variables.refitTime.setParameter3(0);
-        Variables.refitTime.setParameter4(0);
-    }
-
     public void resetStats (ResultsData info)
     {
         Variables.opheliGraphPointNum =0;
@@ -211,6 +172,20 @@ public class SimMethods {
 
     public void resetAllGraphData()
     {
+        Variables.opheliGraphPointNum = 0;
+        Variables.failedQGraphPointNum = 0;
+        Variables.removeEngGraphPointNum = 0;
+        Variables.toRepairGraphPointNum = 0;
+        Variables.badEngQGraphPointNum = 0;
+        Variables.engRepairGraphPointNum = 0;
+        Variables.toOperationGraphPointNum = 0;
+        Variables.goodEngQGraphPointNum = 0;
+        Variables.refitEngGraphPointNum = 0;
+        Variables.qForOpGraphPointNum = 0;
+        Variables.heliAwaitEngGraphPointNum = 0;
+        Variables.msrdIdleQGraphPointNum = 0;
+        Variables.repairTeamIdleGraphPointNum = 0;
+
         resetGraphData(Variables.opHeliGraphData);
         resetGraphData(Variables.msrdWorkingGraphData);
         resetGraphData(Variables.failedQGraphData);
@@ -227,8 +202,8 @@ public class SimMethods {
         resetGraphData(Variables.repairTeamIdleGraphData);
     }
 
-    public void resetGraphData(double [][] graphData){
-        for (int i=0; i<Variables.maxGraphPoints; ++i){
+    public void resetGraphData(float [][] graphData){
+        for (int i=0; i<graphData.length; ++i){
             graphData[i][0] = 0;
             graphData[i][1] = 0;
         }
@@ -246,44 +221,6 @@ public class SimMethods {
         {
             Variables.endFlag = true;
             System.out.println("ArrayList of events is empty");
-        }
-    }
-
-    public void printList()
-    {
-        System.out.println("EVENT LIST");
-        for (int i = 0; i < Variables.list.size(); i++)
-        {
-            BigDecimal bd = new BigDecimal(Variables.list.get(i).getTime());
-            bd = bd.round(new MathContext(16));
-            System.out.print("[" + bd +  " , " + Variables.list.get(i).getKind() + "]");
-            System.out.println();
-        }
-        System.out.println();
-    }
-
-    // Custom print functions to monitor simulation in console. Not necessary for final application
-
-    public void printEvent(EventData e)
-    {
-        BigDecimal bd = new BigDecimal(e.getTime());
-        bd = bd.round(new MathContext(16));
-        System.out.println("[" + bd + ", " + e.getKind() + "]");
-    }
-
-    public void printResultsData (ResultsData r)
-    {
-        System.out.println("----------");
-        System.out.println("RESULTS");
-        System.out.println("----------");
-        System.out.println("Mean = " + r.getMean());
-        System.out.println("|NUMBER OF N          |            % TIME N AVAILABLE      |            % TIME N OR MORE AVAILABLE|");
-        for (int i = 28; i > -1; i--)
-        {
-            if (r.getCumulative(i) > 0)
-            {
-                System.out.println(i + "                     "+r.getNumber(i)+"                                     "+ r.getCumulative(i));
-            }
         }
     }
 
@@ -305,4 +242,58 @@ public class SimMethods {
             }
         }
     }
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////// Custom print functions to monitor simulation in console. Not necessary for final application//////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//    public void printList()
+//    {
+//        System.out.println("EVENT LIST");
+//        for (int i = 0; i < Variables.list.size(); i++)
+//        {
+//            BigDecimal bd = new BigDecimal(Variables.list.get(i).getTime());
+//            bd = bd.round(new MathContext(16));
+//            System.out.print("[" + bd +  " , " + Variables.list.get(i).getKind() + "]");
+//            System.out.println();
+//        }
+//        System.out.println();
+//    }
+
+//    public void printEvent(EventData e)
+//    {
+//        BigDecimal bd = new BigDecimal(e.getTime());
+//        bd = bd.round(new MathContext(16));
+//        System.out.println("[" + bd + ", " + e.getKind() + "]");
+//    }
+//
+//    public void printResultsData (ResultsData r)
+//    {
+//        System.out.println("----------");
+//        System.out.println("RESULTS");
+//        System.out.println("----------");
+//        System.out.println("Mean = " + r.getMean());
+//        System.out.println("|NUMBER OF N          |            % TIME N AVAILABLE      |            % TIME N OR MORE AVAILABLE|");
+//        for (int i = 28; i > -1; i--)
+//        {
+//            if (r.getCumulative(i) > 0)
+//            {
+//                System.out.println(i + "                     "+r.getNumber(i)+"                                     "+ r.getCumulative(i));
+//            }
+//        }
+//    }
+
+//    public static void arrayUsageOut (){ //method used for tracking mermory usage to generate the graphs
+//        System.out.println("failed Q: " + Variables.failedQGraphPointNum);
+//        System.out.println("Remove Eng:" + Variables.removeEngGraphPointNum);
+//        System.out.println("To repair:" + Variables.toRepairGraphPointNum);
+//        System.out.println("bad eng Q:" + Variables.badEngQGraphPointNum);
+//        System.out.println("eng Repair:" + Variables.engRepairGraphPointNum);
+//        System.out.println("to Operation:" + Variables.toOperationGraphPointNum);
+//        System.out.println("good eng Q:" + Variables.goodEngQGraphPointNum);
+//        System.out.println("refit Eng Graph" + Variables.refitEngGraphPointNum);
+//        System.out.println("Q for op:" + Variables.qForOpGraphPointNum);
+//        System.out.println("heli Await Eng:" + Variables.heliAwaitEngGraphPointNum);
+//        System.out.println("msrd idle:" + Variables.msrdIdleQGraphPointNum);
+//        System.out.println("repair team Idle:" + Variables.repairTeamIdleGraphPointNum);
+//    }
 }

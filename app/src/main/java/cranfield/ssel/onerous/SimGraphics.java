@@ -1,9 +1,8 @@
 package cranfield.ssel.onerous;
 
-import android.graphics.Color;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.Switch;
 
 /**
  * Created by diwash on 04/11/2016.
@@ -502,24 +501,13 @@ public class SimGraphics{
             switchImage("RefitMSRD",i,false);
         }
 
+        Switch graphicsSwitch = (Switch) view.findViewById(R.id.graphicsSwitch);
+        Switch animationSwitch = (Switch) view.findViewById(R.id.animationSwitch);
 
-        TextView graphicsstatus = (TextView) view.findViewById(R.id.graphicsstatus);
-        if (Variables.graphicsOn){
-            graphicsstatus.setText("Graphics: ON");
-            graphicsstatus.setTextColor(Color.parseColor("#42B956"));
-        }
-        else {
-            graphicsstatus.setText("Graphics: OFF");
-            graphicsstatus.setTextColor(Color.parseColor("#F73737"));
-        }
-        TextView animstatus = (TextView) view.findViewById(R.id.animstatus);
-        if (Variables.animationsOn){
-            animstatus.setText("Animations: ON");
-            animstatus.setTextColor(Color.parseColor("#42B956"));
-        }
-        else {
-            animstatus.setText("Animations: OFF");
-            animstatus.setTextColor(Color.parseColor("#F73737"));
-        }
+        if (Variables.graphicsOn) graphicsSwitch.setChecked(true);
+        else graphicsSwitch.setChecked(false);
+
+        if (Variables.animationsOn) animationSwitch.setChecked(true);
+        else animationSwitch.setChecked(false);
     }
 }

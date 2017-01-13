@@ -68,24 +68,25 @@ public class Variables {
 
     static ResultsData MSRDWorkingStats = new ResultsData();
 
+    // GraphArrayLength has to be limited to stop app from using too much memory
     static final int maxGraphPoints = 4000;
 
     //Section that initialises the 2D arrays that hold the coordinates to output as graphs
 
-    static double [][] opHeliGraphData = new double [maxGraphPoints][2];
-    static double [][] msrdWorkingGraphData = new double [maxGraphPoints][2];
-    static double [][] failedQGraphData = new double [maxGraphPoints][2];
-    static double [][] removeEngGraphData = new double [maxGraphPoints][2];
-    static double [][] toRepairGraphData = new double [maxGraphPoints][2];
-    static double [][] badEngQGraphData = new double [maxGraphPoints][2];
-    static double [][] engRepairGraphData = new double [maxGraphPoints][2];
-    static double [][] toOperationGraphData = new double [maxGraphPoints][2];
-    static double [][] goodEngQGraphData = new double [maxGraphPoints][2];
-    static double [][] refitEngGraphData = new double [maxGraphPoints][2];
-    static double [][] qForOpGraphData = new double [maxGraphPoints][2];
-    static double [][] heliAwaitEngGraphData = new double [maxGraphPoints][2];
-    static double [][] msrdIdleQGraphData = new double [maxGraphPoints][2];
-    static double [][] repairTeamIdleGraphData = new double [maxGraphPoints][2];
+    static float [][] opHeliGraphData = new float [maxGraphPoints][2];
+    static float [][] msrdWorkingGraphData = new float [maxGraphPoints][2];
+    static float [][] failedQGraphData = new float [maxGraphPoints][2];
+    static float [][] removeEngGraphData = new float [maxGraphPoints][2];
+    static float [][] toRepairGraphData = new float [maxGraphPoints][2];
+    static float [][] badEngQGraphData = new float [maxGraphPoints][2];
+    static float [][] engRepairGraphData = new float [maxGraphPoints][2];
+    static float [][] toOperationGraphData = new float [maxGraphPoints][2];
+    static float [][] goodEngQGraphData = new float [maxGraphPoints][2];
+    static float [][] refitEngGraphData = new float [maxGraphPoints][2];
+    static float [][] qForOpGraphData = new float [maxGraphPoints][2];
+    static float [][] heliAwaitEngGraphData = new float [maxGraphPoints][2];
+    static float [][] msrdIdleQGraphData = new float [maxGraphPoints][2];
+    static float [][] repairTeamIdleGraphData = new float [maxGraphPoints][2];
 
     //Initialise integer objects that count which
 

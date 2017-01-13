@@ -1,7 +1,5 @@
 package cranfield.ssel.onerous;
 
-import android.app.Activity;
-import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -15,6 +13,9 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.LimitLine;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
@@ -177,6 +178,9 @@ public class ResultsFragment extends Fragment{
         toptablerow.setGravity(Gravity.CENTER);
         resultstable1.addView(toptablerow);
 
+        LineChart chart = (LineChart) view.findViewById(R.id.graph);
+        chart.setBackgroundColor(android.graphics.Color.rgb(229, 231, 233));
+
         return view;
     }
 
@@ -215,7 +219,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.operationalStats, resultstable1);
 
-        populateGraph(view, Variables.opheliGraphPointNum, Variables.opHeliGraphData, "Operational Helicopters");
+        populateGraph(view, Variables.opheliGraphPointNum, Variables.opHeliGraphData, "Operational Helicopters", Variables.operationalStats);
     }
 
     public void showMSRDworkingstats(View view)
@@ -242,7 +246,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.MSRDWorkingStats, resultstable1);
 
-        populateGraph(view,Variables.msrdIdleQGraphPointNum,Variables.msrdWorkingGraphData, "MSRD working");
+        populateGraph(view,Variables.msrdIdleQGraphPointNum,Variables.msrdWorkingGraphData, "MSRD working", Variables.MSRDWorkingStats);
     }
 
     public void showRepairTeamWorkingstats(View view)
@@ -269,7 +273,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.repairStats, resultstable1);
 
-        populateGraph(view, Variables.engRepairGraphPointNum, Variables.engRepairGraphData, "Repair teams working");
+        populateGraph(view, Variables.engRepairGraphPointNum, Variables.engRepairGraphData, "Repair teams working", Variables.repairStats);
     }
 
     public void showFailedQueuestats(View view)
@@ -296,7 +300,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.qforRemovalStats, resultstable1);
 
-        populateGraph(view, Variables.failedQGraphPointNum, Variables.failedQGraphData, "Failed engines awaiting removal");
+        populateGraph(view, Variables.failedQGraphPointNum, Variables.failedQGraphData, "Failed engines awaiting removal", Variables.qforRemovalStats);
     }
 
     public void showRemoveEnginestats(View view)
@@ -323,7 +327,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.removalStats, resultstable1);
 
-        populateGraph(view, Variables.removeEngGraphPointNum, Variables.removeEngGraphData, "Engine removals taking place ");
+        populateGraph(view, Variables.removeEngGraphPointNum, Variables.removeEngGraphData, "Engine removals taking place ", Variables.removalStats);
     }
 
     public void showTransitToRepairstats(View view)
@@ -350,7 +354,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.toWorkshopStats, resultstable1);
 
-        populateGraph(view, Variables.toRepairGraphPointNum, Variables.toRepairGraphData, "Engines being transported for repair");
+        populateGraph(view, Variables.toRepairGraphPointNum, Variables.toRepairGraphData, "Engines being transported for repair", Variables.toWorkshopStats);
     }
 
     public void showBadEngineQstats(View view)
@@ -377,7 +381,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.qforRepairStats, resultstable1);
 
-        populateGraph(view, Variables.badEngQGraphPointNum, Variables.badEngQGraphData, "Bad engines awaiting repair");
+        populateGraph(view, Variables.badEngQGraphPointNum, Variables.badEngQGraphData, "Bad engines awaiting repair", Variables.qforRepairStats);
     }
 
     public void showEngineRepairstats(View view)
@@ -404,7 +408,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.repairStats, resultstable1);
 
-        populateGraph(view, Variables.engRepairGraphPointNum, Variables.engRepairGraphData, "Engines being repaired");
+        populateGraph(view, Variables.engRepairGraphPointNum, Variables.engRepairGraphData, "Engines being repaired", Variables.repairStats);
     }
 
     public void showTransitFromRepairstats(View view)
@@ -431,7 +435,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.toOperationStats, resultstable1);
 
-        populateGraph(view, Variables.toOperationGraphPointNum, Variables.toOperationGraphData, "Repaired good engines being transported for refitting");
+        populateGraph(view, Variables.toOperationGraphPointNum, Variables.toOperationGraphData, "Repaired good engines being transported for refitting", Variables.toOperationStats);
     }
 
     public void showGoodEngineQstats(View view)
@@ -458,7 +462,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.qforRefitStats, resultstable1);
 
-        populateGraph(view, Variables.goodEngQGraphPointNum, Variables.goodEngQGraphData, "Good engines await refit");
+        populateGraph(view, Variables.goodEngQGraphPointNum, Variables.goodEngQGraphData, "Good engines await refit", Variables.qforRefitStats);
     }
 
     public void showRefitEnginestats(View view)
@@ -485,7 +489,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.refitStats, resultstable1);
 
-        populateGraph(view, Variables.refitEngGraphPointNum, Variables.refitEngGraphData, "Engine refits");
+        populateGraph(view, Variables.refitEngGraphPointNum, Variables.refitEngGraphData, "Engine refits", Variables.refitStats);
     }
 
     public void showQforOPstats(View view)
@@ -512,7 +516,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.qforOperationalStats, resultstable1);
 
-        populateGraph(view, Variables.qForOpGraphPointNum, Variables.qForOpGraphData, "Helicopters in queue ready for operation");
+        populateGraph(view, Variables.qForOpGraphPointNum, Variables.qForOpGraphData, "Helicopters in queue ready for operation", Variables.qforOperationalStats);
     }
 
     public void showHeliWaitstats(View view)
@@ -539,7 +543,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.qHelisNoEngineStats, resultstable1);
 
-        populateGraph(view, Variables.heliAwaitEngGraphPointNum, Variables.heliAwaitEngGraphData, "Helicopters waiting to be refitted with engine");
+        populateGraph(view, Variables.heliAwaitEngGraphPointNum, Variables.heliAwaitEngGraphData, "Helicopters waiting to be refitted with engine", Variables.qHelisNoEngineStats);
     }
 
     public void showMSRDidlestats(View view)
@@ -566,7 +570,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.MSRDIdleStats, resultstable1);
 
-        populateGraph(view,Variables.msrdIdleQGraphPointNum,Variables.msrdIdleQGraphData, "MSRD teams Idle");
+        populateGraph(view,Variables.msrdIdleQGraphPointNum,Variables.msrdIdleQGraphData, "MSRD teams Idle", Variables.MSRDIdleStats);
     }
 
     public void showRepairTeamidlestats(View view)
@@ -593,7 +597,7 @@ public class ResultsFragment extends Fragment{
 
         populateResultsTable(Variables.repairTeamsIdleStats, resultstable1);
 
-        populateGraph(view, Variables.repairTeamIdleGraphPointNum, Variables.repairTeamIdleGraphData, "Repair teams idle");
+        populateGraph(view, Variables.repairTeamIdleGraphPointNum, Variables.repairTeamIdleGraphData, "Repair teams idle", Variables.repairTeamsIdleStats);
     }
 
     public void populateResultsTable(ResultsData results, TableLayout table)
@@ -633,28 +637,50 @@ public class ResultsFragment extends Fragment{
         table.addView(tbrow);
     }
 
-    public void populateGraph (View view, int graphPointNum, double [][] graphData, String dataSetlabel){
+    public void populateGraph (View view, int graphPointNum, float [][] graphData, String dataSetlabel, ResultsData resultStats){
         LineChart chart = (LineChart) view.findViewById(R.id.graph);
 
+        XAxis xAxis = chart.getXAxis();
+        xAxis.removeAllLimitLines();
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+        xAxis.setDrawAxisLine(true);
+        xAxis.setDrawGridLines(false);
+        xAxis.setAxisMinimum(0);
+        LimitLine warmupll = new LimitLine((float)Variables.warmUp, "Warm Up");
+        warmupll.setLineColor(android.graphics.Color.parseColor("#FFFF00"));
+        xAxis.addLimitLine(warmupll);
+
+        chart.getAxisRight().setEnabled(false);
+        YAxis leftAxis = chart.getAxisLeft();
+        leftAxis.removeAllLimitLines();
+        leftAxis.setDrawZeroLine(true);
+        leftAxis.setDrawGridLines(false);
+        leftAxis.setDrawAxisLine(true);
+        leftAxis.setAxisMinimum(0);
+        LimitLine meanll = new LimitLine ((float) resultStats.getMean(), "Mean");
+        meanll.setLineColor(android.graphics.Color.parseColor("#FF0000"));
+        leftAxis.addLimitLine(meanll);
+
         if (graphPointNum ==0){
-            chart.setBackgroundColor(android.graphics.Color.rgb(229,231,233));
+            chart.setBackgroundColor(android.graphics.Color.parseColor("#E5E7E9"));
             chart.invalidate();
         }
         else {
             List<Entry> entries = new ArrayList<Entry>();
-            for (int i = 0; i < 4000; ++i) {
+            entries.add(new Entry (0,graphData[0][1]));
+            for (int i = 0; i < graphData.length; ++i) {
                 if ((graphData[i][0] != 0) || (graphData[i][1] != 0)) {
                     entries.add(new Entry((float) graphData[i][0], (float) graphData[i][1]));
                 }
             }
-
             LineDataSet dataSet = new LineDataSet(entries, dataSetlabel);
             dataSet.setDrawCircles(false);
-            dataSet.setLineWidth(3);
-            dataSet.setColor(android.graphics.Color.rgb(70, 130, 180));
+            dataSet.setLineWidth(2);
+            dataSet.setColor(android.graphics.Color.parseColor("#4682B4"));
+            dataSet.setDrawValues(false);
 
             LineData lineData = new LineData(dataSet);
-            chart.setBackgroundColor(android.graphics.Color.rgb(229, 231, 233));
+            chart.setBackgroundColor(android.graphics.Color.parseColor("#E5E7E9"));
             chart.setData(lineData);
             chart.invalidate();
         }

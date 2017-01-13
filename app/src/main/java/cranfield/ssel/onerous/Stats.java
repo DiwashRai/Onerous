@@ -1,7 +1,5 @@
 package cranfield.ssel.onerous;
 
-import com.github.mikephil.charting.data.Entry;
-
 import java.util.Random;
 
 /**
