@@ -42,12 +42,12 @@ public class Variables {
     static int numQforToOperation = 0;
     static int numToOperation = 0;
 
-    static ActivityDistribution operationalTime = new ActivityDistribution();
-    static ActivityDistribution removalTime = new ActivityDistribution();
-    static ActivityDistribution toWorkshopTime = new ActivityDistribution();
-    static ActivityDistribution repairTime = new ActivityDistribution();
-    static ActivityDistribution toOperationTime = new ActivityDistribution();
-    static ActivityDistribution refitTime = new ActivityDistribution();
+    static ActivityDistribution operationalTime = new ActivityDistribution(1,15,3.9,0,25);
+    static ActivityDistribution removalTime = new ActivityDistribution(3,0.5,0,0,0);
+    static ActivityDistribution toWorkshopTime = new ActivityDistribution(3,0.6,0,0,0);
+    static ActivityDistribution repairTime = new ActivityDistribution(2,1,8,0,0);
+    static ActivityDistribution toOperationTime = new ActivityDistribution(3,0.5,0,0,0);
+    static ActivityDistribution refitTime = new ActivityDistribution(3,0.5,0,0,0);
 
     static ResultsData operationalStats = new ResultsData();
 
