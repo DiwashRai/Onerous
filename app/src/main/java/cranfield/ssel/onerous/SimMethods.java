@@ -7,6 +7,8 @@ import android.widget.TextView;
 
 //import java.math.BigDecimal;
 //import java.math.MathContext;
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.util.ArrayList;
 
 /**
@@ -27,9 +29,6 @@ public class SimMethods {
         resetAllStats();
         resetAllGraphData();
 
-        Variables.SimTime = 0.0;
-        Variables.endFlag = false;
-
         final TextView days = (TextView)view.findViewById(R.id.daysValue);
         handler.post(new Runnable() {
             @Override
@@ -39,7 +38,7 @@ public class SimMethods {
         });
 
         initList();
-        //printList(); //prints list of events in schedule to console. Just a tool for dev to monitor execution
+//        printList(); //prints list of events in schedule to console. Just a tool for dev to monitor execution
 
         for (Variables.endFlag = false; Variables.endFlag == false;)
         {
@@ -98,6 +97,9 @@ public class SimMethods {
 
     public void initVariables ()
     {
+        Variables.SimTime = 0.0;
+        Variables.endFlag = false;
+
         if (Variables.helicopters <= Variables.maxHelicopters)
         {
             Variables.numOperational  = Variables.helicopters;
