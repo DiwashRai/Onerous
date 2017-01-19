@@ -34,8 +34,10 @@ public class Variables {
     static boolean animationsOn = true;
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    ///////////////////////////////////////   This Section contains variables that are used only whilst the simulation is running  to keep track of things  ////////////////////////////////////////
+    ///////////////////////////////////////   This Section contains internal variables that are invisible to the user to keep track of things during a sim run  ////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ///////////////////////////Perhaps these variables don't have to be static and can be instantiated when an instance of a simulation is run as these do not need to persist after the simulation
+    /////////////////////////// ends. Current static implementation prevents more than one instance of a simulation running. Instance variables would allow multiple instances if desired. hmmm...
 
     //Event related data
     static EventData newEvent = new EventData();
@@ -44,9 +46,7 @@ public class Variables {
     //Tracks time within the sim and if the sim has ended or not
     static double SimTime;
     static boolean endFlag = false;
-
-    // Stops Animations/Graphics from running if the simulation has ended
-    static boolean stopNow = false;
+    static boolean stopNow = false;  // Stops Animations/Graphics from running if the simulation has ended
 
     //  Keeps track of how many entities are at which 'node' of the activity diagram
     static int numOperational = 0;
