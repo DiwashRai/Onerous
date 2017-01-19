@@ -41,6 +41,7 @@ public class ResultsFragment extends Fragment{
             public void onClick(View v) {
                 clearTable(view );
                 showOperationalHelistats(view);
+                populateGraph(view, Variables.opheliGraphPointNum, Variables.opHeliGraphData, "Operational Helicopters", Variables.operationalStats);
             }
         });
 
@@ -218,8 +219,6 @@ public class ResultsFragment extends Fragment{
         resultstable1.addView(toptablerow);
 
         populateResultsTable(Variables.operationalStats, resultstable1);
-
-        populateGraph(view, Variables.opheliGraphPointNum, Variables.opHeliGraphData, "Operational Helicopters", Variables.operationalStats);
     }
 
     public void showMSRDworkingstats(View view)
