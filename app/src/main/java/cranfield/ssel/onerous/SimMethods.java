@@ -38,7 +38,7 @@ public class SimMethods {
         });
 
         initList();
-//        printList(); //prints list of events in schedule to console. Just a tool for dev to monitor execution
+        printList(); //prints list of events in schedule to console. Just a tool for dev to monitor execution
 
         for (Variables.endFlag = false; Variables.endFlag == false;)
         {
@@ -79,6 +79,7 @@ public class SimMethods {
                     }
                 });
             }
+            printList();
         }
 
         Variables.SimTime = Variables.RunTime;
@@ -248,18 +249,18 @@ public class SimMethods {
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     ////////////////////////// Custom print functions to monitor simulation in console. Not necessary for final application//////////////////////////////////////////////////
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//    public void printList()
-//    {
-//        System.out.println("EVENT LIST");
-//        for (int i = 0; i < Variables.list.size(); i++)
-//        {
-//            BigDecimal bd = new BigDecimal(Variables.list.get(i).getTime());
-//            bd = bd.round(new MathContext(16));
-//            System.out.print("[" + bd +  " , " + Variables.list.get(i).getKind() + "]");
-//            System.out.println();
-//        }
-//        System.out.println();
-//    }
+    public void printList()
+    {
+        System.out.println("EVENT LIST");
+        for (int i = 0; i < Variables.list.size(); i++)
+        {
+            BigDecimal bd = new BigDecimal(Variables.list.get(i).getTime());
+            bd = bd.round(new MathContext(16));
+            System.out.print("[" + bd +  " , " + Variables.list.get(i).getKind() + "]");
+            System.out.println();
+        }
+        System.out.println();
+    }
 
 //    public void printEvent(EventData e)
 //    {
