@@ -725,7 +725,7 @@ public class Events {
                 public void run() {
                     graphics.switchImage(whichNode,iconValue,iconBoolean);
                 }
-            });
+            });z`
         }
     }
 
