@@ -24,8 +24,7 @@ public class Events {
         stats.updateStats(Variables.operationalStats, Variables.numOperational );
         doGraphic("Operational",Variables.numOperational,false);
         if ((Variables.animationsOn)&& (Variables.graphicsOn))
-        {
-            handler.post(new Runnable() {
+        {handler.post(new Runnable() {
                 @Override
                 public void run() {
                     anims.moveOpToFailed();
